@@ -1,0 +1,1 @@
+{"trg_prediction": "from fractions import Fraction\n\nnumerator = 98\ndenominator = 42\n\nresult = Fraction(numerator, denominator).limit_denominator()\n\nresult_tuple = (result.numerator, result.denominator)\n\nprint(result_tuple)"}

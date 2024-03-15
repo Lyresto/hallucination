@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\n\ndef accuracy(a):\n\treturn tf.reduce_mean(tf.cast(a, \"float\")) == sum(y == x for x, y in zip(a, a[1:])) / 10\n"}

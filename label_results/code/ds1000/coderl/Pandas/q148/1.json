@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nimport numpy as np\ndf = pd.DataFrame({'l': [1,2,3,4,4,5], 'r': [1,2,3,4,4,5]})\nfor i in range(4):\n\tprint((df.groupby('l')['v'].apply(np.sum)))\n"}

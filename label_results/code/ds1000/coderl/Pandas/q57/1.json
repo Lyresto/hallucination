@@ -1,0 +1,1 @@
+{"trg_prediction": "def min_max_expand(df):\n\tm, f = min(df['dt']), lambda x: (0, 0) if x in df else (x, df['val'][0])\n\tfor i in range(len(df['dt'])):\n\t\tm = min(m, pd.to_datetime(df['dt'][i]))\n\t\tf = lambda x: (0 if x in df else x, df['val'][x])\n\treturn df.apply(f)\n"}

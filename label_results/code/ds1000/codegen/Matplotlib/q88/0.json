@@ -1,0 +1,1 @@
+{"trg_prediction": "x = np.arange(10)\ny = np.arange(10)\nfig, ax = plt.subplots(1, 1)\nplt.xlim(1, 10)\nplt.xticks(range(1, 10))\nax.plot(y, x, label=\"second\")\nax.set_xlabel(\"x axis label\")\nax.set_ylabel(\"y axis label\")\nax.legend()\n#"}

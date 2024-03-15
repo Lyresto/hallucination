@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef mean_score(scores):\n\treturn np.mean(np.argmax(scores, axis=1))\n"}

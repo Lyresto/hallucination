@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nx = np.array([1400, 1500, 1600, np.nan, np.nan, np.nan,1700])\nx.remove(np.nan)\n"}

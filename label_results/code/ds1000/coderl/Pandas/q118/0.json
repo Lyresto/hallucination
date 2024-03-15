@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nimport re\n\ndef select(df, rows):\n\tprint(rows)\n\tfor row in df.index.values:\n\t\tprint(row)\n\trows = [row.replace('rs', '').replace(':', '') for row in rows]\n\tprint(rows)\n\treturn df.select(rows)\n"}

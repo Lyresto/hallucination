@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef create_tup_frame(a, b):\n\treturn tuple(zip(*zip(a, b)))\n"}

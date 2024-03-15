@@ -1,0 +1,1 @@
+{"trg_prediction": "# Get the current x-axis tick labels\nlabels = [item.get_text() for item in ax.get_xticklabels()]\n\n# Change the second tick label to \"second\"\nlabels[1] = \"second\"\n\n# Set the new tick labels\nax.set_xticklabels(labels)\n"}

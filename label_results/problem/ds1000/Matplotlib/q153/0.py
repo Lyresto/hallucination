@@ -1,0 +1,5 @@
+plt.plot(x, y)
+plt.xlabel("x")
+plt.ylabel("y")
+plt.tick_params(axis='both', which='both', labelbottom=False, labelleft=False)
+plt.show()

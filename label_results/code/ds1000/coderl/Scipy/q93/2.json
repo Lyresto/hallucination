@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.spatial\nimport numpy as np\n\ndef closest_point_to_centroid(centroids, data):\n\treturn list(map(lambda x: np.mean(x), np.percentile(data, 100)))\n"}

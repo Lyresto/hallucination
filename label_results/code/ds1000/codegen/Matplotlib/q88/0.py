@@ -1,0 +1,10 @@
+x = np.arange(10)
+y = np.arange(10)
+fig, ax = plt.subplots(1, 1)
+plt.xlim(1, 10)
+plt.xticks(range(1, 10))
+ax.plot(y, x, label="second")
+ax.set_xlabel("x axis label")
+ax.set_ylabel("y axis label")
+ax.legend()
+#

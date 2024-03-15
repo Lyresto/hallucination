@@ -1,0 +1,1 @@
+{"trg_prediction": "def solve(features):\n\tdf = pd.DataFrame.from_records(zip(*features))\n\tclf = sklearn.OneHotEncoder(int)\n\treturn clf.transform(df.loc[:,'f1'].values).tolist()\n"}

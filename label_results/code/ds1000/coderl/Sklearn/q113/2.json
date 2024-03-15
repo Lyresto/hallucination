@@ -1,0 +1,1 @@
+{"trg_prediction": "from sklearn.ensemble import IsolationForest\n\ndef load_data():\n\treturn pd.read_csv(\"sklearn_model.csv\")\n\ndef predict(X):\n\treturn IsolationForest().fit(X).predict(X)\n"}

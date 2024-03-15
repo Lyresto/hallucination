@@ -1,0 +1,1 @@
+{"trg_prediction": "from datetime import datetime\n\ndef parse_date(index):\n\tfor i in range(len(index)):\n\t\tindex.levels[i] = datetime.strptime(index.levels[i], '%Y/%m/%d')\n"}

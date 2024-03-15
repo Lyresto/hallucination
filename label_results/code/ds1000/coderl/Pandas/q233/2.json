@@ -1,0 +1,1 @@
+{"trg_prediction": "def merge_df(df, text):\n\tdf1 = df.copy()\n\tfor i, text1 in enumerate(text):\n\t\tidx1 = text1.find('-')\n\t\tif idx1 == -1:\n\t\t\tidx1 = len(text1)-1\n\t\tdf1['text'][i] = text1[:idx1]\n\treturn df1\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "df_sorted = df.groupby('cokey').apply(lambda x: x.sort_values('A'))\nresult = df_sorted.reset_index(drop=True)\n"}

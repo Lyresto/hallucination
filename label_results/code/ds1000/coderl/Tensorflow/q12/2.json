@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef f(lengths=example_lengths):\n\treturn np.pad(np.array(lengths), mode=\"constant\", constant_value=0)\n"}

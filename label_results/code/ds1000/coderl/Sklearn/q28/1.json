@@ -1,0 +1,1 @@
+{"trg_prediction": "def cross_val_score(model, X, y, cv=5):\n\tprint(f'Name model: {model}, Mean score: {mean(score(X, y))}')\n\tname = str(model)\n\tmean_score = sum((score(X, y) for score in zip(X, y)))/len(X)\n\tprint(f'Name model: {name}, Mean score: {mean_score}')\n\treturn mean_score\n\ndef mean(score):\n\treturn sum(score) / len(score)\n"}

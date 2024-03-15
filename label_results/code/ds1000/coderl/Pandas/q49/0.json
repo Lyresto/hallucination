@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import DataFrame\ndef aggregate_rows_not_in_a_section(df, section_left, section_right):\n\tlab_vals = df.loc[:section_left, 'lab'].values.tolist()\n\tvalue_vals = df.loc[section_left:section_right, 'value'].values.tolist()\n\treturn (sum(value_vals)/len(value_vals)) if value_vals else (sum(lab_vals)/len(lab_vals))\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "result = df.apply(stats.zscore)\n"}

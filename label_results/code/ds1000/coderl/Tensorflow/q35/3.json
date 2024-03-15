@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\nsess = tf.compat.v1.Session()\nwith sess:\n\tprint(sess.run(tf.reduce_sum(tf.matmul(2, 3))))\n"}

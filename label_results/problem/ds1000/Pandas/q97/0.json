@@ -1,0 +1,1 @@
+{"trg_prediction": "# Get all columns starting with 'Value'\nvalue_cols = [col for col in df.columns if col.startswith('Value')]\n\n# Filter rows where absolute value of all 'Value' columns is less than 1\ndf = df[(df[value_cols].abs() < 1).all(axis=1)]\n"}

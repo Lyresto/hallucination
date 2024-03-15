@@ -1,0 +1,1 @@
+{"trg_prediction": "sns.stripplot(x=\"sex\", y=\"bill_length_mm\", hue=\"species\", data=df, dodge=True)\nplt.legend([],[], frameon=False)\n"}

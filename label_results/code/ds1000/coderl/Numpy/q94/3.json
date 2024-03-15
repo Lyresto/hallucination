@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef extract(a):\n\tc = []\n\tfor i in range(len(a)):\n\t\tfor j in range(len(a[i])):\n\t\t\ttemp = []\n\t\t\ttemp = a[i][j::2] + a[i][1::2]\n\t\t\ttemp = a[i][1::2] + a[i][::2]\n\t\t\tc.append(temp)\n\treturn c\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def mask(x):\n\treturn x & (x!= 0)\n\ndef clean_input_spectrogram(x):\n\treturn x * (1 - mask(x))\n\ndef load_data():\n\t# your code here\n\tmask, clean_input_spectrogram, output = mask(torch.zeros(1, 400)), clean_input_spectrogram(torch.ones(1, 400)), output(torch.zeros(1, 400, 161))\n\treturn output\n"}

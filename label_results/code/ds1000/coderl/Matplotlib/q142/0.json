@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import chain\n\ndef pchart(df, x=None, y=None):\n\tif x is None:\n\t\tx = np.arange(10)\n\tif y is None:\n\t\ty = np.arange(10)\n\t\n\treturn (\n\t\tchain(\n\t\t\tdf.plot(x=x, y=y).set_xlabels([]).show(xaxis_label=False),\n\t\t\tdf.plot(x=x, y=y).set_xlabels([x.min(), x.max()]).show(xaxis_label=True),\n\t\t)\n\t)\n"}

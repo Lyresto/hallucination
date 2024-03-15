@@ -1,0 +1,1 @@
+{"trg_prediction": "# SOLUTION START\n# TODO: Implement\ndf = pd.DataFrame({\"x\": x, \"y\": y})\n\ndf[\"y\"] = df[\"x\"].cumsum()\n\n\ndef non_transparent(x, y, p):\n\tp.set_data(x, y)\n\tp.plot(linestyle=\"solid\", color=\"#000000\")\n\n\nnon_transparent(df[\"x\"], df[\"y\"], plt.plot)\n\n# TODO: Implement\n\n\n\n\n"}

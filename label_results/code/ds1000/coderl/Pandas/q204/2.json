@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(df=example_df):\n\t# your code here\n\tresult = []\n\tfor i in range(len(df['Name'])):\n\t\tresult.append(sum(df['200%s' % i])/len(df['200%s' % i]))\n\treturn pd.Series(result)\n"}

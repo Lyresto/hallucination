@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.integrate\n\ndef f(c, low, high):\n    results = []\n    for i in range(len(c)):\n        eqn = lambda x: 2 * c[i] * x\n        result, error = scipy.integrate.quad(eqn, low, high)\n        results.append(result)\n    return results\n\nc = [1, 2, 3, 4, 5]\nlow = 0\nhigh = 1\nsolution = f(c, low, high)\nprint(solution)"}

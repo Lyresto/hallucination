@@ -1,0 +1,1 @@
+{"trg_prediction": "from scipy.sparse import csr_matrix\n\n\ndef f(sA: lil_matrix) -> lil_matrix:\n\t\"\"\"\n\tMake the sparse matrix symmetric.\n\t\"\"\"\n\tlil_sparse = sA.copy()\n\tlil_sparse.make_symmetric()\n\treturn lil_sparse\n"}

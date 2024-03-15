@@ -1,0 +1,1 @@
+{"trg_prediction": "\n    C = np.zeros(A_log.shape)\n    for i in range(A_log.shape[0]):\n        C[i] = A_log[i]\n    ### END SOLUTION\n    return C\n"}

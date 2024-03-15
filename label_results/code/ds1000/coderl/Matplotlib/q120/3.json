@@ -1,0 +1,1 @@
+{"trg_prediction": "import math\n\ndef phi(x):\n\treturn math.factorial(x)\n\ndf = pd.DataFrame({\"x\":x, \"y\":y})\nax = df.plot.bar(y=phi(x))\nax.set_title(\"y = x\", color=\"g\", fontsize=14)\n\n# SOLUTION END\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def load_data():\n\t#your code here\n\treturn [[max([l[i] for i in range(len(l))])] for l in softmax_output]\n"}

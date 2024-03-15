@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nfrom statistics import mean\ndf = pd.DataFrame({'Col '+str(i):np.random.randint(1,100,10) for i in range(65,91)})\nlist_of_my_columns = ['Col A', 'Col E', 'Col Z']\ndef solve(df,list_of_my_columns):\n\tfor i in range(len(df)):\n\t\tdf[str(i+'_Avg')] = mean(df[list_of_my_columns])\n\treturn df\n"}

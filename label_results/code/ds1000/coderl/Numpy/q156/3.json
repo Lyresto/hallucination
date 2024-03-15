@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(a=example_a):\n\t# return the solution in this function\n\t# a = [1,2,3,4,3,2,3,4]\n\t# result = f(a)\n\t# ### BEGIN SOLUTION\n\t\t# a = sorted(a)[::-1]\n\t\t# return a\n\t\t# rankdata = np.array(a).sort()\n\t\t# return np.array(a).round(1)\n\t\tpass\n"}

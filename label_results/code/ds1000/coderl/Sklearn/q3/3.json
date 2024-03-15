@@ -1,0 +1,1 @@
+{"trg_prediction": "def solve(data):\n\t# data1 = pd.DataFrame(data)\n\t# return data1\n\tdf = pd.DataFrame(data)\n\treturn df\n"}

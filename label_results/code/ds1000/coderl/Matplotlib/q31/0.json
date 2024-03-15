@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\nx = np.random.randn(10)\ny = x\nsns.scatter(x, y)\n\n# put x ticks at 0 and 1.5 only\n# SOLUTION END\n"}

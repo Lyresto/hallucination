@@ -1,0 +1,1 @@
+{"trg_prediction": "arr_temp = arr.copy()\nfor i in range(arr.shape[0]):\n    mask1 = arr_temp[i] < n1[i]\n    mask2 = arr_temp[i] >= n2[i]\n    mask3 = ~(mask1 | mask2)\n    arr[i][mask1] = 0\n    arr[i][mask2] = 30\n    arr[i][mask3] += 5\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef merge_rows(df):\n\tnew_df = pd.DataFrame({'text': df['text']})\n\tfor col in df.columns:\n\t\tnew_df[col] = list(df[col].values())\n\treturn new_df.to_string()\n"}

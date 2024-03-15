@@ -1,0 +1,1 @@
+{"trg_prediction": "from math import sin, pi\ndef f(x):\n\treturn sin((x*2*pi)/10)\nsns.distplot(f(x), 'cos')\nsns.distplot(f(x),'sin')\nsns.distplot(f(x), 'x')\nsns.distplot(f(x), 'log')\n"}

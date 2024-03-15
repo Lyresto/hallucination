@@ -1,0 +1,1 @@
+{"trg_prediction": "def df_init(df):\n\tfor a,b in zip(df.columns,df.values):\n\t\tif type(a) is not int:\n\t\t\tdf[a]=df[a].astype(float)\n\t\tif type(b) is not float:\n\t\t\tdf[b]=df[b].astype(float)\n\treturn df\n"}

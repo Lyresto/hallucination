@@ -1,0 +1,1 @@
+{"trg_prediction": "result = df[df.c > 0.5][columns].sum(axis=1)\ndf.loc[df.c > 0.5, 'sum'] = result\nreturn df[df.c > 0.5][['a', 'd', 'sum']]\n### END SOLUTION\n"}

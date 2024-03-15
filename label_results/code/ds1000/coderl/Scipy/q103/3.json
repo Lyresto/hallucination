@@ -1,0 +1,1 @@
+{"trg_prediction": "from scipy.signal import convolve2d\n\ndef rel_extrema(a, n):\n\treturn [i for i, x in enumerate(a) if x < n + 0.5 * max(a[:i+1])]\n"}

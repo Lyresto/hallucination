@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom scipy import interpolate as intp\nx = []\ny = []\nfor i in range(0,100):\n\tfor j in range(0,100):\n\t\tx.append(i*2+j)\n\t\ty.append(j*2+i)\ninterp = intp.interp2d(x,y,a)\nprint(interp(0,0))\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(a=example_a):\n\t# import numpy as np\n\t# from scipy.stats import rankdata\n\t\n\t# a = np.array(a)\n\t# result = rankdata(a).astype(int)\n\t# x = np.sort(result,reverse = True)\n\t\n\t# print(x)\n\t\n\t\n\t\n\tfrom numpy import argsort\n\ta = np.array(a)\n\tresult = argsort(a, kind='mergesort')\n\tprint(result)\n\treturn result[:,-1]\n\t\n"}

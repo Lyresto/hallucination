@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.imshow(data, extent=[1, 5, 1, 4], cmap='hot', vmin=0, vmax=1)\nplt.colorbar()\nplt.xlim(0, 10)\nplt.ylim(0, 10)\nplt.show()"}

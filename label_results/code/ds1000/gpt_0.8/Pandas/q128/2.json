@@ -1,0 +1,1 @@
+{"trg_prediction": "df_altered = df.sample(frac=0.2, random_state=0)\ndf_altered['ProductId'] = 0\ndf = df.combine_first(df_altered)\nEND SOLUTION\n"}

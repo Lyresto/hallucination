@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\n\ndf = pd.DataFrame({'x':x, 'y':y})\n\ncount = Counter(df['x'])\n\nfor i in count:\n\tprint(i, count[i])\n"}

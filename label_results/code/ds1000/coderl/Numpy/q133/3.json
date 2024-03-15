@@ -1,0 +1,1 @@
+{"trg_prediction": "def transpose(matrix):\n\tnew_matrix = []\n\tfor i in range(len(matrix[0])):\n\t\tnew_matrix.append([matrix[j][i] for j in range(len(matrix))])\n\treturn new_matrix\n"}

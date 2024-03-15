@@ -1,0 +1,1 @@
+{"trg_prediction": "def pick_features(features):\n\tnew_arr = []\n\tfor sample, arr in enumerate(features):\n\t\tnew_arr.append([0]*len(sample))\n\t\tfor i in range(len(sample)):\n\t\t\tif arr[i] == 0:\n\t\t\t\tnew_arr[i][sample[i]] = 1\n\treturn np.array(new_arr)\n"}

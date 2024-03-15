@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\ndef duplicate_rows(df):\n\t# write your code here\n\tdf = df.drop_duplicates('col1', keep='last')\n\tdf['col1'] = [i[0] for i in df.col1]\n\tdf['col2'] = [i[1] for i in df.col2]\n\treturn df\n"}

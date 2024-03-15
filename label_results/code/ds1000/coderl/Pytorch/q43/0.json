@@ -1,0 +1,1 @@
+{"trg_prediction": "def load_data():\n\tdata = np.array([[i, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0],\n\t\t\t\t\t[0.7, 0.2, 0.1, 0.2, 0.6, 0.2, 0.1],\n\t\t\t\t\t[0.2, 0.6, 0.2, 0.1, 0.1, 0.8, 0.1],\n\t\t\t\t\t[0.1, 0.1, 0.1, 0.8, 0.1, 0.8],\n\t\t\t\t\t[0, 0, 0, 0, 0, 0, 0, 0]], dtype=float)\n\ttorch.from_numpy(data).cpu().cpu()\n\treturn [torch.argmax(data, axis=-1)]\n"}

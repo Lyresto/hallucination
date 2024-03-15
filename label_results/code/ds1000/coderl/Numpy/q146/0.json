@@ -1,0 +1,1 @@
+{"trg_prediction": "def mask(a):\n\ta_min = np.min(a, axis=1)\n\treturn np.array([[i[axis] for i in a] for axis in range(a.shape[1])])[a_min == 0]\n"}

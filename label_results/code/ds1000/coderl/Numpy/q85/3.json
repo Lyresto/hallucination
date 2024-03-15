@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef rand_label(n, r):\n\treturn [1-int(i*r) for i in range(n)]\n"}

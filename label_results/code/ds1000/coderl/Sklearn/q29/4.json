@@ -1,0 +1,1 @@
+{"trg_prediction": "from scipy.sparse.csgraph import csgraph_from_dense, square\n\ndef get_result(s):\n\tv = pipe.named_steps[\"tf_idf\"]\n\treturn csgraph_from_dense(square(v.fit_transform(s.test.values)), sparse=False).todense()\n"}

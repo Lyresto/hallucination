@@ -1,0 +1,1 @@
+{"trg_prediction": "C = B.index_select(1, idx)\n"}

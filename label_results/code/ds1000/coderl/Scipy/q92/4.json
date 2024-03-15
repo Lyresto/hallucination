@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.cluster.hierarchy\nfrom scipy.spatial import ConvexHull\n\ndef closest_to_centroid(centroids, data):\n\tlinkage = scipy.cluster.hierarchy.linkage(data, metric='cosine')\n\tclusters = [convex_hull(point) for point in linkage]\n\treturn [i for i, cluster in enumerate(clusters) if i == min(result)][0]\n"}

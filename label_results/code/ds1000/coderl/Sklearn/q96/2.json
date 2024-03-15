@@ -1,0 +1,1 @@
+{"trg_prediction": "def preprocess(np_array):\n\tscaler = MinMaxScaler()\n\treturn [scaler.fit_transform(np_array[:, i]).round().astype(int) for i in range(3)]\n"}

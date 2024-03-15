@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.figure(figsize=(10, 8))\nsns.scatterplot(data=df, x=\"bill_length_mm\", y=\"bill_depth_mm\", s=30)\n\nplt.title(\"Scatter plot of Bill Length vs Bill Depth\")\nplt.xlabel(\"Bill Length (mm)\")\nplt.ylabel(\"Bill Depth (mm)\")\n\nplt.show()"}

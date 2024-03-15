@@ -1,0 +1,1 @@
+{"trg_prediction": "df['index'] = df.index\ndf['Random'] = df.groupby('UserId')['index'].transform(lambda x: x.sample(frac=0.2, random_state=0))\ndf.loc[df['Random'].notnull(), 'Quantity'] = 0\ndf = df.drop(['index', 'Random'], axis=1)\n"}

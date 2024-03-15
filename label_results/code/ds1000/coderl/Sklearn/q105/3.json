@@ -1,0 +1,1 @@
+{"trg_prediction": "from sklearn.cross_validation import train_test_split\nfrom collections import defaultdict\nimport numpy as np\nimport pandas as pd\n\ndef load_data():\n\tdf = pd.read_csv('data.csv')\n\tdf = df.sort_values(by='date')\n\tdf_train, df_test = train_test_split(df, test_size=0.8)\n\treturn df_train, df_test\n"}

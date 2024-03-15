@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\na = np.array([[1,2],[3,4]])\nprint((np.shape(a)))\n"}

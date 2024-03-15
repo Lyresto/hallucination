@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nNA = np.asarray(A)\nAVG = np.mean(NA, axis=0)\n"}

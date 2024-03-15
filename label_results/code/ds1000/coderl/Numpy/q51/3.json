@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import array\n\n\ndef f(X):\n\tresult = []\n\tfor row in array('i'):\n\t\tresult.append(list(row.flatten()))\n\treturn result\n"}

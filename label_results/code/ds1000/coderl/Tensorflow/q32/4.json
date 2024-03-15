@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef mean(x):\n\treturn np.mean(np.array(x, dtype=np.float64), axis=-1)\n"}

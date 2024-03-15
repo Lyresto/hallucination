@@ -1,0 +1,1 @@
+{"trg_prediction": "def Count(A, B):\n\ta = list(map(int, A.numpy()))\n\tb = list(map(int, B.numpy()))\n\tcounter_a = sum(a == b)\n\treturn counter_a\n"}

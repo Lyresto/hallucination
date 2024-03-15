@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import defaultdict\n\ndef exp(x, y, p):\n\treturn x ** y * p ** (1 + p)\n\ndef exp_dict(x, y, p):\n\td = defaultdict(list)\n\tfor i, v in enumerate(x):\n\t\td[v].append(exp(v, y, p))\n\treturn d\n\t\ndef add_exp(df, key, p):\n\td = exp_dict(df, key, p)\n\tfor v, z in d.items():\n\t\tdf[key] = z\n"}

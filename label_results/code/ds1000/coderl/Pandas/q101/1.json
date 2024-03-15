@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\ndef replace_cols(df):\n\tfor col in df:\n\t\tif '&' in df[col]:\n\t\t\tdf[col] = df[col].replace(\"&lt;\", \"<\")\n\treturn df\n"}

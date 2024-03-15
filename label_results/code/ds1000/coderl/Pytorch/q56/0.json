@@ -1,0 +1,1 @@
+{"trg_prediction": "def load_data():\n\tmask, clean_input_spectrogram, output = torch.tensor([[0,0,0,0,0,0,0]], dtype=torch.int)\n\treturn output[0,:,:,mask==1]\n"}

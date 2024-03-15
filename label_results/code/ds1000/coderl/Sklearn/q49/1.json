@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas\nimport sys\n\ndef __starting_point():\n\tX_train, y_train = load_data()\n\tX_train = pandas.DataFrame(X_train)\n\tclf = GradientBoostingClassifier(learning_rate=0.01,max_depth=8,n_estimators=50)\n\tclf.fit(X_train, y_train)\n\n__starting_point()\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\nfrom scipy.spatial import distance\n\ndef manhattan(p1, p2):\n\treturn sum((p1[k] - p2[k]) ** 2 for k in range(p1.shape[0])) ** 0.5\n\ndef match(points1, points2):\n\tdists = [manhattan(points1[i], points2[i]) for i in range(len(points1))]\n\treturn [k for k, d in enumerate(dists) if d == min(dists)]\n"}

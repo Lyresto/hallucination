@@ -1,0 +1,1 @@
+{"trg_prediction": "def replace_it(s):\n\tfor i in range(len(s)):\n\t\tif s[i] == \"&lt;\":\n\t\t\ts[i] = \"<\"\n\treturn s\n"}

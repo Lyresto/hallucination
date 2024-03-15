@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import product\n\ndef heatmap(arr):\n\txs, ys = list(zip(*arr))\n\treturn plt.pcolormesh(xs, ys, cmap=\"Greys\")\n"}

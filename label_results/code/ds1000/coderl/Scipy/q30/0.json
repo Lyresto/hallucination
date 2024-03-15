@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport scipy.sparse as sp\n\ndef have_element(i, j):\n\treturn i in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n\t\ndef make_symmetric():\n\tlil = sp.lil_matrix(M)\n\tfor i in range(lil.shape[0]):\n\t\tfor j in range(lil.shape[1]):\n\t\t\tif i!= j:\n\t\t\t\tlil[i, j] = lil[j, i]\n\tlil.make_symmetric()\n\treturn lil\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "#!/usr/bin/env python\nfrom math import factorial as f\nimport numpy as np\nfrom pandas import Series as A\na, b = [i for i in A.values()]\nB = A.apply(lambda x: f(a)/(f(b)*f(a)), axis=1)\n"}

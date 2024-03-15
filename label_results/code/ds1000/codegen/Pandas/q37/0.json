@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndf = pd.DataFrame({'a':[1,1,1,1],'b':[2,2,1,0],'c':[3,3,1,0],'d':[0,4,6,0],'q':[5,5,1,0]})\nrow_list = [0,2,3]\ncolumn_list = ['a','b','d']\nresult =... # put solution in this variable\nEND SOLUTION\n\ndf.sumAdvance(row_list,column_list,axis=0)\n"}

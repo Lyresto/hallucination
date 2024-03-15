@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\n\nsess = tf.Session()\na = tf.constant([1,2,3,4,5])\nb = tf.constant([6,7,8,9,10])\n\nprint(sess.run(a+b))\n"}

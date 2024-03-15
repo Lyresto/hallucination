@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport torch\n\ndef load_data():\n\ta, b = np.array(np.load('data.npy')).T\n\ta_log = a[b!= 0]\n\tb_truncated = b[a_log!= 0]\n\treturn torch.LongTensor(b_truncated)[:, a_log]\n"}

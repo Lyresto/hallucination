@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\ndf = pd.DataFrame(\n\t{'HeaderA': [476],\n\t'HeaderB': [4365],\n\t'HeaderC': [457]})\ndf2 = df.rename(columns={'HeaderA': 'HeaderAX', 'HeaderB': 'HeaderBX', 'HeaderC': 'HeaderCX'})\nprint(df2.columns)\n"}

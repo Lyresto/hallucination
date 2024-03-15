@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef correlation(post, distance):\n\tpost = np.array(post)\n\tdistance = np.array(distance)\n\treturn np.sum(np.array(post).reshape(-1, 1) * np.array(distance).reshape(-1, 1)) / (np.array(post).sum() - np.array(distance).sum())\n"}

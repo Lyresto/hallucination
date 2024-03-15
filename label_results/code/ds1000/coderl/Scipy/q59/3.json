@@ -1,0 +1,1 @@
+{"trg_prediction": "#from numpy import csr_matrix\n#A = csr_matrix([[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]])\n#print(A.getrow(2))\n#print(A[1, 0])\n\nimport numpy as np\nimport scipy.sparse as sp\nx = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]])\ny = [3,0]\nz = sp.csr_matrix(x).getrow(y)\nprint(z)\n"}

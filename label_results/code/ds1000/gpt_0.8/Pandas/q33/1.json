@@ -1,0 +1,1 @@
+{"trg_prediction": "# Using filter to get all columns containing \"val\" in their names\nval_cols = df.filter(like='val').columns\n\n# Using groupby and mean functions on the filtered columns\nresult = df.groupby('group').agg({\"group_color\": \"first\", **{col: \"mean\" for col in val_cols}})\n"}

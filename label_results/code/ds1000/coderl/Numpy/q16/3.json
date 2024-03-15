@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef shift(arr, shift):\n\tm, n = shift[0], shift[1]\n\treturn np.rot90(np.array(arr))[m:n+m, m:n+n]\n"}

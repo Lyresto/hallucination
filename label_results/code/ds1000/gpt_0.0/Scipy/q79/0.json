@@ -1,0 +1,1 @@
+{"trg_prediction": "def dN1_dt(t, N1):\n    return -100 * N1 + np.cos(t)\n\nsol = scipy.integrate.solve_ivp(fun=dN1_dt, t_span=time_span, y0=[N0,], dense_output=True)\n\nt_eval = np.linspace(time_span[0], time_span[1], 1000)\nresult = sol.sol(t_eval)\n"}

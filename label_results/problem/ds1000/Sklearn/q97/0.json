@@ -1,0 +1,1 @@
+{"trg_prediction": "scaler = MinMaxScaler()\nnew_a = scaler.fit_transform(a.reshape(-1,1)).reshape(a.shape)\nreturn new_a\n### END SOLUTION"}

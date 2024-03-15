@@ -1,0 +1,1 @@
+{"trg_prediction": "from datetime import datetime\n\ndef to_numpy_array(df):\n\tdf_t = df.to_dict()\n\tdf_t[\"major\"] = df_t[\"major\"].astype(float)\n\tarr = [[df_t[str(i)][j] for j in range(5)] for i in range(15)]\n\treturn np.array(arr)\n"}

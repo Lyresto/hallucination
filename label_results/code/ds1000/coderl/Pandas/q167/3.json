@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef stdMeann(df):\n\treturn np.std(np.mean(df['a']))\n"}

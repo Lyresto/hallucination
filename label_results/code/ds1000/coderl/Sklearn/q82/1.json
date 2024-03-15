@@ -1,0 +1,1 @@
+{"trg_prediction": "def load_data():\n\tcorpus = pd.read_csv('corpus.csv')\n\ty = pd.read_csv('y.csv')\n\tvectorizer = TfidfVectorizer()\n\tX = vectorizer.fit_transform(corpus)\n\tselected_feature_names = vectorizer.get_feature_names()\n\treturn X, y, selected_feature_names\n"}

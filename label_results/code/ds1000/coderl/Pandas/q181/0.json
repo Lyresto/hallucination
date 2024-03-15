@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import DataFrame\ndef fillna(df, dict):\n\tfor c in df:\n\t\tdf[c] = df[c].astype(str).apply(lambda x: dict.get(x, x))\n\treturn df\n"}

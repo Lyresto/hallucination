@@ -1,0 +1,1 @@
+{"trg_prediction": "from datetime import datetime\n\ndef state(df, col):\n\tdf['state'] = df[col].map(lambda x: x * 50 if x > 50 else 0)\n\tdf['datetime'] = df['datetime'].apply(lambda x: datetime.strptime(x, '%Y-%m-%d %H:%M:%S'))\n\treturn df[col].sum()\n"}

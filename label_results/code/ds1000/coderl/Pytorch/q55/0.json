@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import groupby\ndef tensors_31(a):\n\tchunk_dim = 10\n\ttensors = []\n\tfor group in groupby(a, key=len):\n\t\tvalues = [list(j) for j in group]\n\t\tsplit = tuple(zip(*values))\n\t\ttensors.append(split)\n\treturn tensors\n"}

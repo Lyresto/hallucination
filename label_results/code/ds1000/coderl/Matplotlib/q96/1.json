@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndf = pd.DataFrame(dict(zip(x, y)), index=x)\ndf.plot.boxplot(column=1, row=1)\n# yell' on the kata!\n"}

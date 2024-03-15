@@ -1,0 +1,1 @@
+{"trg_prediction": "# First, let's check the current steps in the pipeline\nprint(clf.steps)\n"}

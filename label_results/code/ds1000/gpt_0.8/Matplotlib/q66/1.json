@@ -1,0 +1,1 @@
+{"trg_prediction": "sns.scatterplot(\n    x=\"bill_length_mm\",\n    y=\"bill_depth_mm\",\n    data=df,\n    s=30\n)\nplt.show()"}

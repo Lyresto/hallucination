@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import chain\nimport numpy as np\n\nx = np.random.rand(10)\ny = np.random.rand(10)\n\nres = list(chain(x, y))\n\nsns.pairplot(res)\n# SOLUTION END\n"}

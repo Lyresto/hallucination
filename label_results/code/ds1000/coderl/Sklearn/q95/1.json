@@ -1,0 +1,1 @@
+{"trg_prediction": "def minmax_scaler(arr):\n\treturn arr - arr.min() + arr.max()\n\ndef transform_array(np_array):\n\tnp_scaler = minmax_scaler(np_array)\n\treturn np_scaler.transform(np_array).T\n"}

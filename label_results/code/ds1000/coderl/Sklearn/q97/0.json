@@ -1,0 +1,1 @@
+{"trg_prediction": "from sklearn.preprocessing import MinMaxScaler\ndef Transform(a):\n\t# return the solution in this function\n\t# new_a = Transform(a)\n\t# ### BEGIN SOLUTION\n\tscaler = MinMaxScaler()\n\treturn np.array([scaler.fit_transform(x).tolist()[i] for i, x in enumerate(a)])\n"}

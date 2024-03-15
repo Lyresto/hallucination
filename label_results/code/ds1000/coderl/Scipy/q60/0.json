@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport scipy.interpolate\n\ndef array_interpolate(a, b):\n\treturn np.interp(a, b, a)\n"}

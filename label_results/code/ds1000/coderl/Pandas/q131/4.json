@@ -1,0 +1,1 @@
+{"trg_prediction": "def dfo(df):\n\td_df = df.copy()\n\tfor i in range(len(df)):\n\t\td_df.loc[df[i] == df[i - 1]] = str(i)\n\treturn d_df\n\nd_df = dfo(pd.DataFrame(data=[[1,2],[3,4],[1,2],[1,4],[1,2]],columns=['col1','col2']))\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "# Get the current steps\nsteps = clf.named_steps\n\n# Delete the 'poly' step from the pipeline\ndel steps['poly']\n\n# Verify the updated steps\nprint(clf.named_steps)\n\n# Output: {'reduce_dim': PCA(), 'svm': SVC()}\n"}

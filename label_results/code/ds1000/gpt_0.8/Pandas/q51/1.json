@@ -1,0 +1,1 @@
+{"trg_prediction": "result = df.copy()\nfor col in df.columns:\n    result[f\"exp_{col}\"] = df[col].apply(lambda x: math.exp(x))\n"}

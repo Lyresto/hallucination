@@ -1,0 +1,1 @@
+{"trg_prediction": "result = torch.bmm(data, W.unsqueeze(1).unsqueeze(2)).squeeze()\nresult = result.view(10, 2, 3)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nimport datetime\n\ndef find_days(sp):\n\tprint(sp)\n\tsp.sort_values(by='Date')\n\tstart = datetime.datetime(2020, 2, 17)\n\tend = datetime.datetime(2020, 2, 18)\n\tdays = 0\n\tfor i in range(len(sp)):\n\t\tif start <= sp.loc[i]['Date'] <= end:\n\t\t\tdays += 1\n\t\t\tstart = sp.loc[i]['Date']\n\treturn days\n"}

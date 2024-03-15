@@ -1,0 +1,1 @@
+{"trg_prediction": "# -*- coding: utf-8 -*-\n\nimport numpy as np\nimport pandas as pd\n\ndef load_data():\n\treturn pd.read_csv('example.csv', header=None, sep=',')\n"}

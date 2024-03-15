@@ -1,0 +1,1 @@
+{"trg_prediction": "import seaborn as sfg\n\ndf = df.copy()\ndf = df.loc[df[\"a\"] < 21]\n\n# convert df to a seaborn DataFrame\nsfg.pointplot(df, x=\"b\", y=\"c\", column=\"a\")\n\n# remove first line, and remove columns\ndf = df.loc[df[\"a\"]!= 21]\n\n# SAVE AND SAVE LABELS\nsfg.despine(left=True)\nsfg.light_curves(y=\"c\", x=\"b\")\n\n# SOLUTION END\n"}

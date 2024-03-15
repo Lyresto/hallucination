@@ -1,0 +1,1 @@
+{"trg_prediction": "def scatter(a, b, c):\n\tx, y = zip(*sorted(zip(a, b)))\n\treturn (plt.scatter(x, y, c=c))\n\n# make stacked bar plot\nd = {i: [] for i in c}\nfor i, j in zip(c, c[1:]):\n\td[i].append(j)\nd = pd.concat(d.values())\nd.plot.bar(x='b', y='a', width=0.5)\n"}

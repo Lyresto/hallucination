@@ -1,0 +1,1 @@
+{"trg_prediction": "result = np.zeros_like(a)\nfor i, s in enumerate(shift):\n    if s > 0:\n        result[i, s:] = a[i, :-s]\n    elif s < 0:\n        result[i, :s] = a[i, -s:]\n    else:\n        result[i] = a[i]\nresult = np.where(result == 0, np.nan, result)\n"}

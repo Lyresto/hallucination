@@ -1,0 +1,1 @@
+{"trg_prediction": "def max2(df):\n\tcols = list(df.columns.values)\n\tfor i, v in enumerate(cols):\n\t\tif v > 2:\n\t\t\tcols[i] = 0\n\treturn df[cols].values\n"}

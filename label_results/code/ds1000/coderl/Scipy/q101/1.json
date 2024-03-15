@@ -1,0 +1,1 @@
+{"trg_prediction": "from scipy.optimize import *\na=pd.DataFrame({'A1':[0,1,2,3,2,1,6,0,1,1,7,10]})\nb=a.loc[10,:]\nc=a.count()\nweights=[]\nfor i in range(len(b)):\n\tweights.append((b[i]/c)[a.index==i])\nm1=0.0\nn=0.0\nfor i in range(len(weights)):\n\tm1=max(m1,max(weights[i]))\n\tn+=max(weights[i])\nprint(m1,n)\n"}

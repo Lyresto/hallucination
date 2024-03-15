@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\n\ndef find_space_average(x):\n\ts = np.mean(np.array(x[0][0]), axis=-1)\n\tnz = len([i for i in x[0][0] if i!= 0])\n\treturn [s / nz for i in range(len(s))]\n"}

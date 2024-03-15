@@ -1,0 +1,1 @@
+{"trg_prediction": "def scatter_plot(x, y):\n\treturn (plt.scatter(x, y)\n\t\t\t.set_cmap('jet')\n\t\t\t.set_alpha(0.5)\n\t\t\t.legend((r\"$x$\", r\"$y$\")).frame)\n"}

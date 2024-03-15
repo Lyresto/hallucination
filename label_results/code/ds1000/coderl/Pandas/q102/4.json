@@ -1,0 +1,1 @@
+{"trg_prediction": "from functools import reduce\ndef f(df=example_df):\n\treturn reduce(lambda a, b: a.replace(\"&\", \"&\"), df.columns)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import re\n\ndef replace_cols(df):\n\tfor i in df.columns:\n\t\tdf[i] = re.sub(r'[A-Za-z]', r\"&\\1<''>\", df[i])\n\treturn df\n"}

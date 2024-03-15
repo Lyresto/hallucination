@@ -1,0 +1,1 @@
+{"trg_prediction": "def load_data():\n\tt=list(map(float,input().split()))\n\ta=list(map(int,input().split()))\n\ttorch.from_numpy(a).numpy()\n\treturn t,a\n"}

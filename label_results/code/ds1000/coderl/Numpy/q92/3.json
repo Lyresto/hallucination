@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nresult = np.array([0]*N)\nfor i in range(N):\n\tN -= 1\n\tresult[i] = max(a[i:])\nprint(result)\n"}

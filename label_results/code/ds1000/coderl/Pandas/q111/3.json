@@ -1,0 +1,1 @@
+{"trg_prediction": "def state(df):\n\tfor i in range(len(df)):\n\t\tif df[i]['col2'] > 50 or df[i]['col3'] > 50:\n\t\t\treturn df[i]['col1']\n"}

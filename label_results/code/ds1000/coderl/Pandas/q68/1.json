@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef subset_rows_and_columns(df):\n\t# your code\n\trows = df.values.tolist()\n\tcolumns = df.columns.tolist()\n\treturn np.array([sum(row[col] > 0.5 for col in columns) for row in rows])\n"}

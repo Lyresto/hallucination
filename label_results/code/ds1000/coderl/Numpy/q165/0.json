@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import matrix\nfrom itertools import product\n\ndef distance(a):\n\treturn matrix(list(zip(*product(*a))))\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "# Insert a step\nnew_step = ('new_step', SomeTransformer())\nclf.steps.insert(1, new_step)\n\n# Delete a step\ndel clf.steps[1]\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\ndf = pd.DataFrame({'cokey':[11168155,11168155,11168155,11168156,11168156],\n                   'A':[18,0,56,96,0],\n                   'B':[56,18,96,152,96]})\n"}

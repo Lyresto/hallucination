@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import cycle, chain\n\ndef plot(i):\n\tx = cycle(range(10))\n\ty = cycle(range(10))\n\tp1, p2 = zip(*[[p.plot(x, y) for p in chain([p1, p2], [p1, p2])] * 2])\n\treturn [x for _, x in p1]\n"}

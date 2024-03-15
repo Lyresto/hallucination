@@ -1,0 +1,1 @@
+{"trg_prediction": "df = pd.DataFrame({\"X\": x, \"Y\": y})\nax = df.plot.line(x=\"X\", y=\"Y\")\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def convert_to_df(px):\n\tfor i in range(6):\n\t\tpx[str(i)] = px[str(i)].astype(float).apply(lambda x: str(x.item()), axis=1)\n\treturn px\n"}

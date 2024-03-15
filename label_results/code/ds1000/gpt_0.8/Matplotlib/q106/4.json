@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.figure(figsize=(6, 6))\nax = plt.subplot(111, projection='polar')\nbars = ax.bar(labels, height)\n\n# Add values above bars\nfor bar in bars:\n    height = bar.get_height()\n    ax.text(bar.get_x() + bar.get_width() / 2, height + 0.1, height,\n            ha='center', va='bottom')\n\nplt.show()"}

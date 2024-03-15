@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import zip_longest\nfrom collections import OrderedDict\n\ndef get_df():\n\treturn pd.DataFrame(OrderedDict.fromkeys(zip_longest(df['a'], df['name']), index=range(len(df['a']))))\n\t\ndef solution():\n\treturn '\\n'.join(['{}  {}   {}'.format(*row) for row in get_df().itertuples()])\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def dfs(df, start_year, end_year):\n\tprint(end_year)\n\tfor i in range(start_year, end_year + 1):\n\t\tdf.ix[i, 'CumAve'] = sum(df.ix[i, 'Name'])/len(df.ix[i, 'Name'])\n\tfor i in range(start_year, end_year + 1):\n\t\tif df.ix[i, 'CumAve']!= 0:\n\t\t\tdf.ix[i, 'CumAve'] = df.ix[i, 'CumAve'] / float(len(df.ix[i, 'CumAve']))\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "ranked = rankdata(a)\nmax_rank = len(ranked)\nreturn max_rank - ranked + 1\n### END SOLUTION"}

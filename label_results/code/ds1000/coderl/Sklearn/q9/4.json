@@ -1,0 +1,1 @@
+{"trg_prediction": "from sklearn.svm import LinearSVC\n\ndef proba(x_test):\n\tsvm = LinearSVC(penalty='l1', C=1)\n\tsvm.fit(x_test, y)\n\treturn 1 / (1 + np.exp(-svm.predict(x_test)))\n\ndef load_data():\n\tX = np.array([[i, j] for i, j in zip(X, y)])\n\ty = np.array([j for i, j in zip(X, y)])\n\tx_test = np.array([i for i, j in zip(x_test, y)])\n\treturn X, y, x_test\n"}

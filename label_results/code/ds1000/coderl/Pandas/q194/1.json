@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef split_dataframe_to_multiple_rows(df):\n\tstrings = [df[col].str.split(sep=' ') for col in df.columns]\n\tresult = pd.DataFrame(strings, index=[0]*len(df.columns), columns=df.columns)\n\treturn result.compute()\n"}

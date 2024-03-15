@@ -1,0 +1,1 @@
+{"trg_prediction": "df['total'] = df.sum(axis=1)\ndf.iloc[:, 1:] = df.iloc[:, 1:].div(df['total'], axis=0)\ndf.drop(columns='total', inplace=True)\ndf"}

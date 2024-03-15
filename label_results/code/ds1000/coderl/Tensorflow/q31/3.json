@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\n\ndef f(x=example_x):\n\t# return the solution in this function\n\treturn [tf.compat.decode_raw(s, 'utf-8') for s in x]\n"}

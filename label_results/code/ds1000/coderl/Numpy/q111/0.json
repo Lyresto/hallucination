@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef sub2ind(size, subscripts, i, j):\n\tarr = np.full((size,), float(i * size + j))\n\tfor k, r in enumerate(subscripts):\n\t\tarr[:, k] = (i - r) * (size - k) / size\n\treturn round(sum(arr), 8)\n"}

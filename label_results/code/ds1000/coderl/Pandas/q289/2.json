@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nimport numpy as np\n\na = np.array(pd.read_csv(path_a, sep=','))\nb = np.array(pd.read_csv(path_b, sep=','))\nc = pd.merge(a, b, on='EntityNum')\nprint(c)\n"}

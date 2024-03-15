@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import product\nfrom numpy import random\n\n\ndef choice(lista_elegir, samples, probabilit):\n\tp = list(map(lambda x: 1 - x, probabilit))\n\tresult = [tuple(x) for x in\n\t\t\t  random.choices(lista_elegir, samples, p) if all(x == y for x, y in result)]\n\ttry:\n\t\treturn result[0]\n\texcept IndexError:\n\t\treturn tuple(result[0])\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef sort_matrices(a, axis=None):\n\tb = np.sort(a, axis)\n\tif axis is None:\n\t\treturn list(zip(*b))\n\telse:\n\t\treturn list(zip(*b)[axis])\n"}

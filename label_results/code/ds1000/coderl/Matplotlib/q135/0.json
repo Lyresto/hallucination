@@ -1,0 +1,1 @@
+{"trg_prediction": "def bar(pos, height, err, c):\n\tfor i, e in enumerate(err):\n\t\tax.errorbar(pos + i, height + e, c=c[i])\n\t\n# SOLUTION END\n"}

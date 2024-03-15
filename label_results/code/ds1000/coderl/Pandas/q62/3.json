@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import OrderedDict\n\ndef replace_each_a(df):\n\t# your code\n\tdct = OrderedDict()\n\tfor i, x in enumerate(df['a']):\n\t\tdct[x] = i+1\n\treturn df.to_dict(dct)\n"}

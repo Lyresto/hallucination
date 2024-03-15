@@ -1,0 +1,1 @@
+{"trg_prediction": "values = np.zeros((2,), dtype=[('a', 'i4'), ('b', 'f4'), ('c', 'f4')])\ndf = pd.DataFrame(data=values, index=index, columns=columns)\n"}

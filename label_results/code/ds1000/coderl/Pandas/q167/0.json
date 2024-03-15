@@ -1,0 +1,1 @@
+{"trg_prediction": "def stdMeann(x):\n\ta=0\n\tb=0\n\tfor i in x:\n\t\ta+=i\n\t\tb+=i**2\n\treturn (a/b)**0.5\n"}

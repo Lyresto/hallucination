@@ -1,0 +1,1 @@
+{"trg_prediction": "\n    result = np.dot(sA, sB)\n    ### END SOLUTION\n    return result\n\nf(example_sA, example_sB)\n"}

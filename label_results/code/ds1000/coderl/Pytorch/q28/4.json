@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import zeros\nimport torch\na = torch.rand((10, 1000, 96))\nlengths = torch.randint(1000, (10,))\na = a.unsqueeze(1)\na[lengths, :, :] = 0\n"}

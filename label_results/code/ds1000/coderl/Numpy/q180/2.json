@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef solution(a):\n\ta = np.array(a)\n\treturn a[..., -1:]\n"}

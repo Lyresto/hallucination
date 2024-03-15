@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef replace_amp(s):\n\treturn ''.join(['Good &'+x.replace('&', '&amp;')+' bad' for x in s.split()])\n\ndf = pd.DataFrame(data={'Column':['Good &AMP; bad', 'BB', 'CC', 'DD', 'Good &LT; bad'], 'B': range(5), 'C': ['Good &GT; bad'] * 5})\ndf['Column'] = replace_amp(df['Column'])\n"}

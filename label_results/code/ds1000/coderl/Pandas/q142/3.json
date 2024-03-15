@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\ndef melt(df, value_vars):\n\t# your code here\n\tif len(value_vars) == 0:\n\t\treturn df\n\telse:\n\t\tresult = pd.DataFrame()\n\t\tfor i, v in enumerate(value_vars):\n\t\t\tfor j, k in enumerate(v):\n\t\t\t\tresult[f\"col{i}{j}\"] = df[k]\n\t\treturn result\n"}

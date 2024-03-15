@@ -1,0 +1,1 @@
+{"trg_prediction": "# SOLUTION START\n\n# MAKE SCALARPLOT\na_s = np.array(a)\nb_s = np.array(b)\nc_s = np.array(c)\n\nfig, ax = plt.subplots()\nax.scatter(a_s, b_s)\nfor i, x in enumerate(c_s):\n\tax.annotate(str(i), (x, i))\n\n# SAVE AND GRAPH\nax.set_xlabel('x')\nax.set_ylabel('y')\n\n# SOLUTION END\n"}

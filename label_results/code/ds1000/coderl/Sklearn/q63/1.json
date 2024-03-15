@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nfrom scipy.spatial import distance\nimport numpy as np\n\ndef load_data():\n\tmatrix = np.array(pd.DataFrame(data=np.array(data_matrix)).T)\n\treturn sklearn.cluster.AgglomerativeClustering(n_clusters=2).fit(matrix).labels_\n"}

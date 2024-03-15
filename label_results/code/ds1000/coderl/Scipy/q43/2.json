@@ -1,0 +1,1 @@
+{"trg_prediction": "from scipy.stats import anderson\ndef anderson(*arrays):\n\treturn all(anderson(*a) for a in arrays)\n"}

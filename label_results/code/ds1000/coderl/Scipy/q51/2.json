@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.stats as stats\ndef kurtosis(a):\n\tn = len(a)\n\tmean = a.mean()\n\tstd = a.std()\n\tp = stats.t.ppf(n-1, loc=mean, scale=std)\n\treturn round(p, 3)\n"}

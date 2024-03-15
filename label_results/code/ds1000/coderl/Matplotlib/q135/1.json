@@ -1,0 +1,1 @@
+{"trg_prediction": "fig, ax = plt.subplots()\nax.bar(box_position, box_height, color=\"yellow\", x_err=box_errors)\n# SOLUTION END\n"}

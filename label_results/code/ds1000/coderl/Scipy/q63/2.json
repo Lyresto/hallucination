@@ -1,0 +1,1 @@
+{"trg_prediction": "from scipy import fft\nimport numpy as np\n\ndef dct_matrix(N):\n\t# your code here\n\tprint((N, N))\n\thz = 2 * np.ones((2*N, 2*N))\n\thz[:N//2, :N//2] = hz[:N//2, :N//2] = hz[N//2:, :N//2] = 0\n\thz_rot = np.rot90(hz)\n\treturn np.dot(hz_rot, nhz)\n"}

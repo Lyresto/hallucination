@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef extract(a):\n\tb = np.pad(a, 2, 'constant')\n\tc = np.pad(b, 2, 'constant')\n\treturn [[np.split(c, k)[::2]] for k in range(len(a))]\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.gca().yaxis.set_minor_locator(plt.MultipleLocator(0.1))\nplt.grid(True, which='both', axis='y', linestyle='--')\nplt.show()"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\ndf = pd.DataFrame({'datetime': ['2015-12-01 00:00:00-06:00', '2015-12-02 00:01:00-06:00', '2015-12-03 00:00:00-06:00']})\ndf['datetime'] = pd.to_datetime(df['datetime'])\nprint(df['datetime'].strftime(\"%Y-%m-%d %H:%M:%S%z\"))\n"}

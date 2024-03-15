@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\ndef query_dataframe(df, filter_list):\n\tresult = df.copy()\n\tfor i in range(len(filter_list)):\n\t\tif filter_list[i] == 'Foo':\n\t\t\tresult = result.loc[result['Index']!= i, 'Index']\n\t\tif filter_list[i] == 'Bar':\n\t\t\tresult = result.loc[result['Index']!= i, 'Category']\n\treturn result\n"}

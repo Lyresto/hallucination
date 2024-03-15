@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef shift(xs, shift):\n\tn = len(xs)\n\tshift = [shift[0], shift[1]]\n\tout = np.zeros(n, dtype=xs.dtype)\n\tfor i in range(n):\n\t\tout[i] = np.roll(xs[i], shift)\n\treturn out\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from math import ceil\ndef f(img = example_img):\n\treturn ceil(sum(sum(img[i*512:(i+1)*512, j*512:(j+1)*512] > threshold * threshold for i in range(504)) / 4)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import chain\n\n\ndef p(*args):\n\treturn map(chain.from_iterable, args)\n\n\ndef plot(X, Y):\n\treturn [\n\t\tp(y, x)\n\t\tfor x, y in zip(X, Y)\n\t]\n\n\ndef scatter(X, Y):\n\treturn [\n\t\tp((x+y) / 2, (x+y) / 2)\n\t\tfor x, y in zip(X, Y)\n\t]\n\n\ndef show():\n\treturn plt.gcf().canvas.get_frame()\n"}

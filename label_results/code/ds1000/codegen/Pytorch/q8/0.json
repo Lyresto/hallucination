@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport torch\nimport pandas as pd\nx = load_data()\npx =... # put solution in this variable\n"}

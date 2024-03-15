@@ -1,0 +1,1 @@
+{"trg_prediction": "result = np.zeros(np.max(index)+1)\nfor i in range(np.max(index)+1):\n    result[i] = np.max(a[index==i])\n"}

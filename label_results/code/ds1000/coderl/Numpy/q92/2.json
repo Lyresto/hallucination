@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef sort_it(a):\n\tm = -1\n\tres = []\n\tfor i in range(len(a)):\n\t\tif a[i] > m:\n\t\t\tm = a[i]\n\t\t\tres = [i]\n\t\telif a[i] == m:\n\t\t\tres.append(i)\n\treturn res\n\n\n# in the end, you know that the indices of the N biggest elements in decreasing order should give (considering N = 3)\n"}

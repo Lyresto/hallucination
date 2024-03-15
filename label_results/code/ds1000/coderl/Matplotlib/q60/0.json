@@ -1,0 +1,1 @@
+{"trg_prediction": "# -*- coding: utf-8 -*-\n\ndef plot_xy(df, x, y):\n\tdf['X'] = x\n\tdf['Y'] = y\n\tfig, ax = plt.subplots()\n\tax.plot(df['X'], df['Y'])\n\tax.set_xlabel('X')\n\tax.set_ylabel('Y')\n\treturn fig\n"}

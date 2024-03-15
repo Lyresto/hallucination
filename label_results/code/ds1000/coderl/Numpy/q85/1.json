@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef generate_array(n, one_ratio=0.9):\n\tnum = np.random.randint(2, size=n)\n\tones_per_num = int(1 - one_ratio * num)\n\treturn [0 if i == randomLabel else 1 for i in range(n)]\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef sub2ind(n, k, i, j):\n\ts = np.arange(n)[i::k+1].reshape(n,-1).tolist()\n\treturn s[j]\n"}

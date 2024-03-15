@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef tz_localize(s):\n\treturn s.replace('-06:00', '00:00').replace('-05:00', '00:00').replace('-04:00', '00:00').replace('-06', '00')\n"}

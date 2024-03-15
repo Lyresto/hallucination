@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nfrom collections import defaultdict\n\ndef rank(df):\n\td = defaultdict(list)\n\tfor i, j in df.iterrows():\n\t\td[i].append(int(j[:8]))\n\treturn pd.DataFrame(d).sort_values('TIME').index.values.tolist()\n"}

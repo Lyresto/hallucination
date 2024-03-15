@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndata = np.array([[4, 2, 5, 6, 7],\n                 [5, 4, 3, 5, 7]])\nbin_size = 3\n\nnum_bins = data.shape[1] // bin_size\nbin_data = np.array_split(data, num_bins, axis=1)\n\nbin_data_mean = [np.mean(bin, axis=1) for bin in bin_data]\n\nbin_data_mean"}

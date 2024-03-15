@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef dist_pair(x,y):\n\tfor i,j in zip(x,y):\n\t\tyield i,j\n\ndef dist(x,y):\n\treturn list(map(lambda x:np.linalg.norm(x)-np.linalg.norm(y), dist_pair(x,y)))\n"}

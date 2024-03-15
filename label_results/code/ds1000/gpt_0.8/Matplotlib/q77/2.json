@@ -1,0 +1,1 @@
+{"trg_prediction": "fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8, 8))\n\n# plot y over x in the first subplot\nax1.plot(x, y)\nax1.set_title('Y over X')\n\n# plot z over a in the second subplot\nax2.plot(a, z)\nax2.set_title('Z over A')\n\n# set main title\nfig.suptitle('Y and Z')\n\nplt.show()"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import OrderedDict\n\ndef rename_columns(df):\n\td = OrderedDict()\n\tfor k, v in df.items():\n\t\td[k] = v\n\treturn df.rename(columns=d)\n"}

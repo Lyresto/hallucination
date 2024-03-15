@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\n# np.random.uniform is a built-in function in Python. It returns n log uniform\n# samples of given size (n) that suit log-uniform distribution.\n\ndef log_uniform(min, max, n):\n\tsamples = np.random.uniform(min, max, n)\n\treturn np.log(samples)[:n]\n"}

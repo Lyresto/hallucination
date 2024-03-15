@@ -1,0 +1,1 @@
+clf.named_steps.pop('reduce_dim', None)

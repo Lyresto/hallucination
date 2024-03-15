@@ -1,0 +1,1 @@
+{"trg_prediction": "def rand_select(df):\n\ts = df.sample(int(len(df)*0.8), random_state=0)\n\tres = {}\n\tfor i, row in enumerate(s):\n\t\tres[\"UserId\"] = row[\"UserId\"]\n\t\tres[\"ProductId\"] = row[\"ProductId\"]\n\t\tres[\"Quantity\"] = row[\"Quantity\"]\n\treturn res\n"}

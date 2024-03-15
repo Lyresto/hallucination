@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\na = np.array([[0, 1], [2, 1], [4, 8]])\nmask = np.array([[True, False], [False, True], [True, False]])\n\n\ndef mask_arrays(a, mask):\n\treturn np.ma.masked_equal(a, np.array(mask))\n"}

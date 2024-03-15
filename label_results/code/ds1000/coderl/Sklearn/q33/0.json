@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef regressor(y, X):\n\tn = len(y)\n\tX = np.array(X)\n\tm = len(X)\n\tp = np.reshape(np.array(range(1,m+1)), (m, 1))\n\tw = np.reshape(np.array(range(1,n+1)), (n, 1))\n\treturn regressor_grid(p, w, y)\n\ndef regressor_grid(p, w, y):\n\t#y = y[p] + w[p]\n\t#y = y - w[p]\n\t#return y.reshape(len(y), 1)\n\tpass\n"}

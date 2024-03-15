@@ -1,0 +1,1 @@
+{"trg_prediction": "slopes = []\nfor col in df1.columns:\n    if col != 'Time':\n        df2 = df1[~np.isnan(df1[col])]\n        df3 = df2[['Time', col]]\n        npMatrix = np.matrix(df3)\n        X, Y = npMatrix[:,0], npMatrix[:,1]\n        slope = LinearRegression().fit(X,Y)\n        m = slope.coef_[0]\n        slopes.append(m)\n"}

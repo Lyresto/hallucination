@@ -1,0 +1,1 @@
+{"trg_prediction": "def combine_name_and_a(df):\n\tdct = {}\n\tfor key, val in df.items():\n\t\tdct[val] = key\n\treturn pd.DataFrame(dct).replace('ID', str).values.tolist()\n"}

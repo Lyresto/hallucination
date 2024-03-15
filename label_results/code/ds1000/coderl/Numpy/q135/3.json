@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef generate(a, m):\n\tn = len(a)\n\tb = np.array([int(i) for i in bin(a)[2:].zfill(m)], dtype = np.uint8)\n\treturn np.unpackbits(b)\n"}

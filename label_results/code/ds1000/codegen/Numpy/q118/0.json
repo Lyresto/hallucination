@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nx = [[2, 2, 2],\n     [2, 2, 2],\n     [2, 2, 2]]\ny = [[3, 3, 3],\n     [3, 3, 3],\n     [3, 3, 1]]\nz = np.array(x)\nz = np.array(y)\nz = np.array(z)\n"}

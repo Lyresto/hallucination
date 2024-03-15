@@ -1,0 +1,1 @@
+{"trg_prediction": "def df_cum(df, column_name):\n\ttry:\n\t\tcumsum = df[column_name]\n\texcept:\n\t\tcumsum = np.cumsum(df['Q'])\n\t\tdf[column_name] = cumsum\n\treturn cumsum\n"}

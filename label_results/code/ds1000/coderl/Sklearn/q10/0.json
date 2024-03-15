@@ -1,0 +1,1 @@
+{"trg_prediction": "def proba(X,y,x_predict):\n\tprint(X)\n\tprint(y)\n\tprint(x_predict)\n\tmodel=svm.LinearSVC(penalty='l1',C=1)\n\tproba=[]\n\tfor i in range(len(x_predict)):\n\t\tpredict=model.predict(x_predict[i])\n\t\tproba.append(1/(1+np.exp(-predict)))\n\treturn proba\n"}

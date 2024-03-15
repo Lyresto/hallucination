@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\nmin = 0\nmax = 1\nn = 10000\nresult = np.random.uniform(min, max, size=n)\n"}

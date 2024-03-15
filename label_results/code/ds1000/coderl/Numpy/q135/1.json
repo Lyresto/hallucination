@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import numpy as np\ndef generate(a, m):\n\tw = np.array([int(np.bin(num)[2:].zfill(m)) for num in a], dtype=\"int\")\n\treturn np.unpackbits(w)\n"}

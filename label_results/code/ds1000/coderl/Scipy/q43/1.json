@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import mean, median\nfrom scipy.stats import anderson\n\ndef anderson(x1, x2):\n\tm, k = mean(x1), median(x1)\n\ta, b = mean(x2), median(x2)\n\treturn a!= b and k - m < 0.05 * (a - b)\n"}

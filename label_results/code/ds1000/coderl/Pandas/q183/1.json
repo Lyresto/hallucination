@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\ndef f(dict=example_dict, df=example_df):\n\t# return the solution in this function\n\tfor c in dict:\n\t\tdf[c] = pd.Series(dict[c], name='Member')\n\treturn df.fillna(df['Member'])\n"}

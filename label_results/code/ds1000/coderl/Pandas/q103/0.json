@@ -1,0 +1,1 @@
+{"trg_prediction": "import re\n\ndef replace_amp(s):\n\treturn re.sub(r'(?<= )(Good|Bad)(?= )', \"&', s)\n"}

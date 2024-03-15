@@ -1,0 +1,1 @@
+{"trg_prediction": "from scipy.sparse import csr_matrix\n\n\ndef load_data():\n\tdf = pd.read_csv('https://www.codewars.com/kata/291/train/100_17_of_the_One_Hot_Coding.csv')\n\treturn df, csr_matrix(transform_output).T\n"}

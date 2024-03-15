@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom scipy.spatial import distance\n\ndef get_distance_2(y, x):\n    mid = np.array([[shape[1]/2, shape[0]/2]]) # center point\n    points = np.dstack((y, x))\n    distances = distance.cdist(points, mid)\n    return distances\n\ny, x = np.indices(shape)\nresult = get_distance_2(y, x)\nprint(result)\nEND SOLUTION\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.integrate\nimport numpy as np\n\ndef dN1_dt(t, N1):\n    return -100 * N1 - np.cos(t)\n\nN0 = 10\ntime_span = [-0.1, 0.1]\n\nsol = scipy.integrate.solve_ivp(fun=dN1_dt, t_span=time_span, y0=[N0,], method='RK45')\nresult = sol.y"}

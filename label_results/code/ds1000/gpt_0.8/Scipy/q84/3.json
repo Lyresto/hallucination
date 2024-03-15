@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.integrate\nimport numpy as np\n\ndef solve_integral(c_values):\n    I = []\n    for c in c_values:\n        result, error = scipy.integrate.quad(lambda x: 2*c*x, 0, 1)\n        I.append(result)\n    return np.array(I)\n\n# Example usage\nc_values = [1, 2, 3, 4, 5]\nresults = solve_integral(c_values)\nprint(results)"}

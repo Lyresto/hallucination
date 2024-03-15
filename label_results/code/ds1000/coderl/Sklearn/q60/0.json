@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import array\n\ndef gen_selection(features):\n\tvector = array([[0] * len(f) for f in features[0]])\n\tfor i, f in enumerate(features[1:]):\n\t\tfor j in range(len(f)):\n\t\t\tvector[i + 1][j] = 1\n\treturn vector\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def replace_amp(s):\n\treturn \"\".join(\"&\"+x+\";\" if x.isalpha() else x for x in s)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "for i in range(len(lengths)):\n    a[i, int(lengths[i]):, :] = 0\n"}

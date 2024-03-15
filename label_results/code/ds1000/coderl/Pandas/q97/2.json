@@ -1,0 +1,1 @@
+{"trg_prediction": "def df_filter(df, n):\n\toutput = []\n\tfor i in range(len(df['A_Name'])):\n\t\tif abs(sum(df[x] for x in df.columns) - 1) < 1:\n\t\t\toutput.append(df[i])\n\treturn output\n"}

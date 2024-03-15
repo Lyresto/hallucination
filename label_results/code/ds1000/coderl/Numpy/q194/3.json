@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\na=np.array([[1,2,3],[4,5,6],[7,8,9]])\nb=np.array([[1,2,3],[4,5,6],[7,8,9]])\nnp.multiply(b,a)\n"}

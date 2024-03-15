@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nimport numpy as np\n\n\nnp.random.seed(10)\ndata = {}\nfor i in [chr(x) for x in range(65,91)]:\n    data['Col '+i] = np.random.randint(1,100,10)\ndf = pd.DataFrame(data)\nlist_of_my_columns = ['Col A', 'Col E', 'Col Z']\n"}

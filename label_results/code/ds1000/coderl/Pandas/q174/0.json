@@ -1,0 +1,1 @@
+{"trg_prediction": "def df_from_series(s):\n\tseries = list(s.sort_values(by=lambda x: x.split('t'))[:-5:-1])\n\tindex = list(s.index.values[:-5:-1])\n\treturn pd.DataFrame(series, index=index)\n"}

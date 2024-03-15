@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import defaultdict\nfrom sklearn.ensemble import IsolationForest\nfrom sklearn.externals import joblib\n\ndef load_data():\n\treturn joblib.load(filename=\"sklearn_model\")\n\ndef predict(fitted_model, X):\n\ty = fitted_model.predict(X)\n\treturn y\n"}

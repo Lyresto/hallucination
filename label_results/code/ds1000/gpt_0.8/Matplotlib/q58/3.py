@@ -1,0 +1,6 @@
+plt.bar(df["celltype"], df["s1"], label="s1")
+plt.bar(df["celltype"], df["s2"], label="s2")
+plt.xticks(rotation=45)
+plt.xlabel("celltype")
+plt.legend()
+plt.show()

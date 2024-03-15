@@ -1,0 +1,1 @@
+{"trg_prediction": "def match_dataframes(df1, df2):\n\tif len(df1.columns)!= len(df2.columns):\n\t\treturn False\n\tfor column in df1.columns:\n\t\tdf2[column] = df1[column].values.any()\n\treturn all(df2[column] for column in df2)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "result = df.groupby('b')['a'].agg(['mean', 'std'])\nresult"}

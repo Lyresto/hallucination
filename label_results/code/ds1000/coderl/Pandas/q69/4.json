@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import mean, cov, array, concatenate\nfrom heapq import *\n\ndef score_df(df):\n\tdef score(i):\n\t\ta, b, c = df.loc[i]\n\t\treturn mean(a, b, c) + cov(a, b, c)\n\th = []\n\tfor i in range(len(df.columns)):\n\t\theappush(h, (-score(i), df.columns[i]))\n\treturn concatenate(h)\n"}

@@ -1,0 +1,1 @@
+a = np.triu(a) + np.tril(a.T)

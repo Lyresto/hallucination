@@ -1,0 +1,1 @@
+{"trg_prediction": "def stdMeann(x):\n\tm, s = 0, 0\n\tfor i in x:\n\t\tm += i\n\t\ts += i**2\n\treturn s/len(x)\n"}

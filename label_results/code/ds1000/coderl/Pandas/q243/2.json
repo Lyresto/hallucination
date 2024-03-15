@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import groupby\n\ndef groupby_user_transactions(df):\n\tresult = []\n\tfor user,group in groupby(df,key='user'):\n\t\tgroup_list = [[] for _ in range(len(group['time']))]\n\t\tfor time,_ in zip(group['time'],group['amount']):\n\t\t\tgroup_list[time.index(time)].append(int(time)*int(group['user']))\n\t\tresult.append(group_list)\n\treturn result\n"}

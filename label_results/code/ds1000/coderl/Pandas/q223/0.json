@@ -1,0 +1,1 @@
+{"trg_prediction": "from math import ceil\n\ndef fillna(df, n = 999):\n\tfor i in range(n):\n\t\tdf['Column_x'] = df['Column_x'].fillna(df['Column_x'].mode()[0], inplace= True)\n"}

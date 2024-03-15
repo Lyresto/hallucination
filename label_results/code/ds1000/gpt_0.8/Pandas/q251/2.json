@@ -1,0 +1,1 @@
+{"trg_prediction": "df_expanded = df['codes'].apply(pd.Series)\nresult = pd.concat([df, df_expanded], axis=1).drop('codes', axis=1)\n"}

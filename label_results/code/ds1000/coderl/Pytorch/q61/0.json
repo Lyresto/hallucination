@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\ndef predict_allCharacters(input):\n\toutput = MyNet(input)\n\treturn [i[1] for i in Counter(output.reshape(1, 3)).most_common(1)]\n"}

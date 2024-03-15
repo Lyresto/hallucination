@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\ndef f(x=example_x):\n\treturn [str(tf.compat.bytes_to_string(tf.decode_binary(t))[0]) for t in x]\n"}

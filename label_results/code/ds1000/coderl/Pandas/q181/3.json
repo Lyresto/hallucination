@@ -1,0 +1,1 @@
+{"trg_prediction": "def fillna(df, dict):\n\tfor i, v in enumerate(df.loc[:,df.columns[0]].values):\n\t\tif v in dict:\n\t\t\tdf.loc[i,df.columns[0]] = dict[v]\n\t\telse:\n\t\t\tdf.loc[i,df.columns[0]] = v\n\treturn df\n"}

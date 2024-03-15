@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\na = np.array([[10,50,30],[60,20,40]])\na_new = a[0]\nfor i in range(len(a)):\n\ta_new[i] = np.ravel(a[i])\na_new.sort()\nfor i in range(len(a_new)):\n\tprint(a_new[i])\n"}

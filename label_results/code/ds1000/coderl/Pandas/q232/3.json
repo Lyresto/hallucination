@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import DataFrame\n\ndef merge_rows(df):\n\tdf = df.merge(df, left_on=\"text\", right_on=\"text\")\n\treturn df.iloc[0][\"text\"]\n"}

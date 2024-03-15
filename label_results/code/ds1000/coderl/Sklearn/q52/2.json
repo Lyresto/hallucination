@@ -1,0 +1,1 @@
+{"trg_prediction": "def predict(X, y):\n\tX_mean = np.mean(X, axis=0)\n\tX_std = np.std(X, axis=0)\n\treturn (X - X_mean) / X_std\n"}

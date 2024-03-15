@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nimport numpy as np\n\n\nd = {'l':  ['left', 'right', 'left', 'right', 'left', 'right'],\n     'r': ['right', 'left', 'right', 'left', 'right', 'left'],\n     'v': [-1, 1, -1, 1, -1, np.nan]}\ndf = pd.DataFrame(d)\n"}

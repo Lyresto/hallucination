@@ -1,0 +1,1 @@
+{"trg_prediction": "new_array = np.zeros((len(x_new), array.shape[1], array.shape[2]))\nfor i in range(array.shape[1]):\n    for j in range(array.shape[2]):\n        f = scipy.interpolate.interp1d(x, array[:, i, j])\n        new_array[:, i, j] = f(x_new)\n"}

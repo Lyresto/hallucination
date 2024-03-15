@@ -1,0 +1,1 @@
+{"trg_prediction": "fig, axes = plt.subplots(4, 4, figsize=(5, 5))\nfor i in range(4):\n    for j in range(4):\n        axes[i, j].plot(x, y)\n        axes[i, j].set_xticks([])\n        axes[i, j].set_yticks([])\nplt.subplots_adjust(hspace=0.5, wspace=0.5)\nplt.show()"}

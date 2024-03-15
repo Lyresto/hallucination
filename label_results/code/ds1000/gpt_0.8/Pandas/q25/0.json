@@ -1,0 +1,1 @@
+{"trg_prediction": "df = df[(df['Date'] >= List[0]) & (df['Date'] <= List[1])]\ndf['Month'] = df['Date'].dt.month_name().str.slice(stop=3)\ndf['Year'] = df['Date'].dt.year\ndf['Day'] = df['Date'].dt.day_name().str.slice(stop=3)\ndf['Date'] = df['Month'] + '-' + df['Day'] + '-' + df['Year'].astype(str)\ndf = df[['Date']]\n"}

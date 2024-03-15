@@ -1,0 +1,1 @@
+{"trg_prediction": "df_grouped = df.groupby(['Sp','Mt'])\nresult = df.loc[df_grouped['count'].idxmin()]\n"}

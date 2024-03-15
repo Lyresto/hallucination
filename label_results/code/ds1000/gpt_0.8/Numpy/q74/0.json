@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef insert_element(array, index, element):\n    return np.insert(array, index, element)\n\nexample_a = np.asarray([1, 2, 3, 4])\nnew_a = insert_element(example_a, 2, 66)\nprint(new_a)"}

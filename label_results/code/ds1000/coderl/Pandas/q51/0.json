@@ -1,0 +1,1 @@
+{"trg_prediction": "def df_exp(df,col,prefix):\n\tans = \"\"\n\tfor i in df.columns:\n\t\tif i == col:\n\t\t\tans += prefix+\"_\"+str(i)\n\t\telse:\n\t\t\tans += prefix+\"^\"+str(i)\n\treturn ans\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nimport numpy as np\nimport sklearn.svm as suppmach\n\n\ndef solve(X, y, x_test):\n\tsvm = suppmach.LinearSVC(penalty='l1', C=1)\n\tsvm.fit(X, y)\n\tproba = svm.predict(x_test)\n\tproba_test = svm.decision_function(x_test)\n\treturn (1 / (1 + np.exp(-proba_test)))\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "model = SelectFromModel(clf, prefit=True)\nselected_features = model.get_support()\ncolumn_names = X.columns[selected_features]\n"}

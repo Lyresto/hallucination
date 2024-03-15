@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\n\ndef torch_to_numpy(t, force_cpu=False):\n\tif force_cpu:\n\t\tt = t.cpu()\n\treturn np.array(t.numpy())\n"}

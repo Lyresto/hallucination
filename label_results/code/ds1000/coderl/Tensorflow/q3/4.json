@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\n\ndef metric_score(labels, scores):\n\treturn (sum(y == x for x, y in zip(labels, scores)) / len(labels) * 10, Counter(labels))\n"}

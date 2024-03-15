@@ -1,0 +1,1 @@
+{"trg_prediction": "result = df.rename(columns={df.columns[-1]: 'Test'})\n"}

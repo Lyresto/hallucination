@@ -1,0 +1,1 @@
+{"trg_prediction": "import torch\nfrom numpy import array\n\na = array('i', a)\na_pt = torch.from_numpy(a.reshape(5, 5))\n"}

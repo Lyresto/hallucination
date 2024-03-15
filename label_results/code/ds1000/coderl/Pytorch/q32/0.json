@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\nimport torch\nt = torch.randn(3,3)\ntensor = torch.tensor([t])\n"}

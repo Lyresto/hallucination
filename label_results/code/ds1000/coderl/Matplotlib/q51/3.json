@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import zip_longest\n\ndef plot_series(s):\n\txs, ys = zip_longest(s, s, fillvalue=0)\n\treturn [plot(xs, y) for y in ys]\n\ndef plot(xs, ys):\n\treturn plt.plot(xs, ys, 'o')\n"}

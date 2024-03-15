@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import datetime\n\ndef time_to_num(s):\n\treturn int(datetime.strptime(s, '%Y-%m-%d %H:%M:%S').timestamp())\n\ndef rank_df(df):\n\tranks = df.groupby('ID')['TIME'].rank(ascending=False)\n\treturn ranks\n"}

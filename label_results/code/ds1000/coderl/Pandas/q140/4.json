@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import DataFrame\ndef query_dataframe(df,filter_list):\n\tcatergory = '{}!='.format(filter_list[0])\n\treturn df.query(catergory)\n"}

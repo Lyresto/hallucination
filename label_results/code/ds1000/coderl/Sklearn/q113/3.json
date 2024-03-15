@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\n\ndef predict(X):\n\t#your code here\n\tweights = fitted_model.predict(X)\n\tmeans = fitted_model.mean(X)\n\tcovs = fitted_model.cov(X)\n\treturn (weights, means, covs)\n\ndef load_data():\n\t#your code here\n\timport numpy as np\n\tfitted_model = np.load('sklearn_model.npz')\n\treturn fitted_model\n"}

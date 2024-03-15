@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom sklearn.preprocessing import MinMaxScaler\nnp_array = load_data()\n\ndef Transform(a):\n\t# return the solution in this function\n\t# new_a = Transform(a)\n\t# ### BEGIN SOLUTION\n\tscaler = MinMaxScaler()\n\treturn np.array([scaler.transform(np_array[:,i]) for i in range(len(np_array[:,0]))])\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef solve(features):\n\t# features = np.array(features)\n\t# print(features)\n\tn_gen = np.array([len(s) for s in features])\n\treturn np.array([[1 if n_gen[i]==i else 0 for i in range(len(s))] for s in features]).T\n"}

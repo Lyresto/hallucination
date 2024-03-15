@@ -1,0 +1,1 @@
+{"trg_prediction": "from datetime import datetime\nfrom pandas import DataFrame\n\ndef merge(df, times):\n\tresult = DataFrame()\n\tfor (id, time) in times.items():\n\t\tresult.loc[id] = pd.to_datetime(time)\n\treturn result\n"}

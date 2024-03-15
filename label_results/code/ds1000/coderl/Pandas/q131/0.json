@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import defaultdict\n\ndef find_duplicated_rows(df):\n\tdf = df.sort_values(by=['col1', 'col2'])\n\tresult = defaultdict(list)\n\tfor row in df:\n\t\tresult[row[0]].append(row[1])\n\tfor col in result:\n\t\tresult[col].sort()\n\tfor row, col_index in result.items():\n\t\tdf.loc[row, col] = df.loc[col, col_index].values.pop()\n\treturn df\n"}

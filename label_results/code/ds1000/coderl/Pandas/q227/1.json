@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nimport numpy as np\n\ndef create_dataframe_with_cycles(a, b, c):\n\tf, m = [], len(a) + len(b)\n\tfor i, df in enumerate((a, b, c)):\n\t\tfor j in range(m):\n\t\t\tf.append(pd.DataFrame(np.array([[j + 1, j + 2] for j in range(len(df))]), columns=['row', 'col']))\n\treturn f[0]\n"}

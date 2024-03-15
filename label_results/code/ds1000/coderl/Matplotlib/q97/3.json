@@ -1,0 +1,1 @@
+{"trg_prediction": "# df.plot(kind='line', x='Index 1', y='Index 2')\ndf.plot(kind='line', x='Type A', y='Type B')\n# df.plot(kind='line', x_label='Index 1', y_label='Index 2')\nplt.show()\n"}

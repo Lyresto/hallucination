@@ -1,0 +1,1 @@
+{"trg_prediction": "t, idx = load_data()\nassert type(t) == torch.Tensor\nassert type(idx) == np.ndarray\n"}

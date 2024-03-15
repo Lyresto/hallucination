@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import OrderedDict\n\ndef equalp(x, y):\n\treturn True if (isinstance(x, pd.DataFrame) and isinstance(y, pd.DataFrame)) else False\n"}

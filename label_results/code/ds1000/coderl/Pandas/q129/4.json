@@ -1,0 +1,1 @@
+{"trg_prediction": "from random import sample\n\ndef select(df, n):\n\trows = list(df.sample(n, random_state=0))\n\tfor i, row in enumerate(rows):\n\t\trow['Quantity'] = 0\n\treturn df\n"}

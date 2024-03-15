@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef mean(a):\n\ttry:\n\t\treturn np.mean(a)\n\texcept ValueError as e:\n\t\treturn np.inf + np.nan * len(a)\n"}

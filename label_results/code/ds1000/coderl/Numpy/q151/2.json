@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nA = np.array([1,1,2,3,3,3,4,5,6,7,8,8])\nB = np.array([1,2,8])\nC = np.array([3,3,3,4,5,6,7])\nfor i in range(0,len(B)):\n\tfor j in range(0,len(A)):\n\t\tif B[i] in A:\n\t\t\tA.remove(B[i])\n\t\t\tC = C.append(3)\nprint(C)\n"}

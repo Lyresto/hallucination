@@ -1,0 +1,1 @@
+{"trg_prediction": "# create a dictionary to map unique IDs to each name\nname_dict = {}\ncount = 1\nfor name in df['name'].unique():\n    name_dict[name] = count\n    count += 1\n\n# use the map method to replace the 'a' column with the unique IDs\ndf['a'] = df['name'].map(name_dict)\n\nresult = df\n"}

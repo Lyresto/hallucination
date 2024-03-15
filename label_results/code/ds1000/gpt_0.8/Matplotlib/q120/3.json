@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.plot(x, y)\nplt.title(r\"$\\boldsymbol{\\phi}$\", fontsize=14, fontweight='bold')\nplt.show()"}

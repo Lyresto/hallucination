@@ -1,0 +1,1 @@
+{"trg_prediction": "def plot_cutoff():\n\tx = [3, 4, 5, 6]\n\tcutoff, = plt.plot(x, 'cutoff', color='orange')\n\tplt.xlabel('Cutoff')\n\tplt.ylabel('Normalized Cutoff')\n\t#plt.yticks(range(3), ['cutoff', 'normalized cutoff'], rotation=45)\n\tplt.grid(True)\n\t\n\treturn cutoff\n\ncutoff = plot_cutoff()\n"}

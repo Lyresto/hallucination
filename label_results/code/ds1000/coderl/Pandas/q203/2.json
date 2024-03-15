@@ -1,0 +1,1 @@
+{"trg_prediction": "from statistics import mean\n\ndef average(df):\n\treturn mean(df['2005'].apply(int))\n"}

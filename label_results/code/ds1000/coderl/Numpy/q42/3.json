@@ -1,0 +1,1 @@
+{"trg_prediction": "from math import gcd\n\ndef reduce_fractions(numerator, denominator):\n\tnum = numerator\n\tden = denominator\n\tf = f = gcd(num, den)\n\twhile f:\n\t\tnum, den = num / f, den / f\n\t\tf = gcd(num, den)\n\treturn (float(num), float(den)) if num!= 0 and den!= 0 else (float(\"nan\"), float(\"nan\"))\n"}

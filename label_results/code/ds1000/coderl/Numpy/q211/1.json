@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef select_elements(a, b):\n\tb = np.array(b, dtype=int).T\n\tresult = np.zeros(a.shape[0], dtype=a.dtype)\n\tfor x,y in enumerate(b.T):\n\t\tresult[y,a[x]] = a[x]\n\treturn result\n"}

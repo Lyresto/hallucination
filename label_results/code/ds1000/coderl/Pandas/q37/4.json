@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef sum_dataframe(df, row_list, column_list, axis=0):\n\tresult = 0.0\n\tfor i in row_list:\n\t\tresult += df.loc[i][column_list[axis]]\n\treturn result\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport torch\n\ndef np_array_to_torch_tensor(a):\n\tnp_t = np.array(a, dtype=np.float32)\n\ttorch_t = torch.from_numpy(np_t).float()\n\treturn torch_t\n"}

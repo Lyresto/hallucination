@@ -1,0 +1,1 @@
+{"trg_prediction": "def multiply_scores(df, products):\n\tconstant = 10 ** len(products)\n\treturn df.multiply(lambda df: df[col] * constant for col in df)\n"}

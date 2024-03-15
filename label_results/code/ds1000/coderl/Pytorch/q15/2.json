@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nimport numpy as np\nimport torch\n\ndef index_select(idx, B):\n\t#print(idx, B)\n\tnew_index_columns = list(zip(idx, B))\n\t#print(new_index_columns)\n\tnew_tensors = []\n\tfor i, j in new_index_columns:\n\t\t#print(i, j)\n\t\tnew_tensors.append([j[i] for i in range(len(j))])\n\treturn torch.LongTensor(new_tensors)\n"}

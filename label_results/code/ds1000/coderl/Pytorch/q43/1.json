@@ -1,0 +1,1 @@
+{"trg_prediction": "def max_prob(y, x):\n\tm = 0\n\tfor i in range(len(x)):\n\t\tif y[i] == x[i]:\n\t\t\tm = m if m<0.5 else 0.5\n\treturn m\n"}

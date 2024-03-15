@@ -1,0 +1,1 @@
+{"trg_prediction": "a = np.insert(a, pos, element)\n    return a\n### END SOLUTION"}

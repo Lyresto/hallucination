@@ -1,0 +1,1 @@
+{"trg_prediction": "import re\n\ndef replace_columns(df):\n\treturn df.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')\n"}

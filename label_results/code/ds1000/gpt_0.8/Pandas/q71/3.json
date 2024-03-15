@@ -1,0 +1,1 @@
+{"trg_prediction": "result = df.loc[df['c']>0.5, columns].apply(sum, axis=1).reset_index(name='sum')\nreturn pd.concat([df.loc[df['c']>0.5], result['sum']], axis=1)\n### END SOLUTION\n"}

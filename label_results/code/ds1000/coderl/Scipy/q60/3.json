@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport scipy.interpolate\nnew_array = np.zeros((1000, 100, 100))\nx = np.arange(0, 100, 1)\nx_new = np.arange(0, 100, 0.1)\nfor i in x:\n\tfor j in x:\n\t\tf = scipy.interpolate.interp1d(x, array[:, i, j])\n\t\tnew_array[:, i, j] = f(x_new)\n"}

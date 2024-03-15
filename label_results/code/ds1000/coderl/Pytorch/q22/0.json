@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import chain\n\ndef get_mask(lens):\n\tx = [1] * len(lens)\n\treturn list(chain.from_iterable([[0] * i for i in range(len(lens))]))\n"}

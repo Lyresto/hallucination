@@ -1,0 +1,1 @@
+result = ss.anderson_ksamp([x1, x2])[2] > 0.05

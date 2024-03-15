@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nx = np.array([-1, 2, 5, 100])\ny = np.array([123, 456, 789, 1255])\n\n# Create a matrix A with the powers of x\nA = np.column_stack((x**2, x, np.ones(len(x))))\n\n# Use the least squares method to find the values of a, b, and c\nresult, residuals, rank, singular_values = np.linalg.lstsq(A, y, rcond=None)\n\nprint(result)\n"}

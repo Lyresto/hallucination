@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.integrate\ndef f(c=5, low=0, high=1):\n\t# return the solution in this function\n\tI = []\n\tfor n in range(len(c)):\n\t\t# equation\n\t\teqn = 2*x*c[n]\n\t\t# integrate \n\t\tresult,error = scipy.integrate.quad(lambda x: eqn,low,high)\n\t\tI.append(result)\n\tI = array(I)\n\treturn I\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.plot(x, x, 'o', color='red', label='Original')\nplt.plot(x, x + np.random.randn(len(x)), '-', color='blue', label='Random')\nplt.legend()\nplt.xlabel('x')\nplt.ylabel('y')\nplt.title('Random line')\nplt.show()\n#"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import dot, dot\n\ndef sub2ind(n, k, i, j):\n\treturn dot(n,(i - j + 1,j - k + 1)) / dot(n, n)\n"}

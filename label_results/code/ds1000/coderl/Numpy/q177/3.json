@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef sliding_window(a, size):\n\tn, m = size\n\treturn [np.zeros((i, n+i)) for i in range(n)]\n"}

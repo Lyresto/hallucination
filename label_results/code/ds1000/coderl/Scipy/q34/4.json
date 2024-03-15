@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import mean, std\nfrom scipy.sparse import csr_matrix\n\nsA = csr_matrix(arr)\nmean, standard_deviation = mean(sA.data), std((sA.data ** 2).sum(1))\n"}

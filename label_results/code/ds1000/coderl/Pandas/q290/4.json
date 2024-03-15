@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndf_a = pd.read_csv(path_a, sep=',')\ndf_b = pd.read_csv(path_b, sep=',')\n\ndf_c = pd.merge(df_a, df_b, on='EntityNum')\n\nprint(df_c.columns)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import Series, DataFrame\n\ndef aggregate(df):\n\treturn (Series(df['amount']).groupby('user').sum().reset_index()\n\t\t\t.apply(list))\n"}

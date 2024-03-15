@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\na = np.array( # dims: 3x3x2\n    [[[ 0,  1],\n     [ 2,  3],\n     [ 4,  5]],\n    [[ 6,  7],\n     [ 8,  9],\n     [10, 11]],\n    [[12, 13],\n     [14, 15],\n     [16, 17]]]\n)\nb = np.array( # dims: 3x3\n    [[1, 1, 1],\n    [1, 1, 1],\n    [1, 1, 1]]\n)\n#"}

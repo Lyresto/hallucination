@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import DataFrame\ndef f(lat = example_lat, lon = example_lon, val = example_val):\n\tlat = [lat[i] for i in range(len(lat[0]))]\n\tlon = [lon[i] for i in range(len(lon[0]))]\n\tval = [val[i] for i in range(len(val[0]))]\n\treturn DataFrame({'lat':lat, 'lon':lon, 'val':val})\n"}

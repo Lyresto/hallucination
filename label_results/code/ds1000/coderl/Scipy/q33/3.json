@@ -1,0 +1,1 @@
+{"trg_prediction": "def remove_isolated_cells(square):\n\tfor x in range(0, len(square)):\n\t\tfor y in range(0, len(square[0])):\n\t\t\tif square[x][y] == 1:\n\t\t\t\tsquare[x][y] = 0\n\treturn square\n"}

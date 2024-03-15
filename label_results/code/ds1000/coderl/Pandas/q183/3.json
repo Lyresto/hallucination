@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(dict=example_dict, df=example_df):\n\tdic = {}\n\tfor i, v in enumerate(df['Member']):\n\t\tif v in dict:\n\t\t\tdic[v] = dict[v]\n\t\telse:\n\t\t\tdic[v] = v\n\treturn df.assign(**dic)\n"}

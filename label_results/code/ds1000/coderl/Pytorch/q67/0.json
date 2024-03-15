@@ -1,0 +1,1 @@
+{"trg_prediction": "from scipy.sparse import csr_matrix\nimport numpy as np\nimport pandas as pd\nimport torch\nfrom torch import bmm\n\nhid_dim = 32\ndata = torch.randn(10, 2, 3, hid_dim)\ndata = data.view(10, 2*3, hid_dim)\nW = torch.randn(hid_dim) # assume trainable parameters via nn.Parameter\nres = torch.bmm(data, W).squeeze()\nres = res.view(10, 2, 3)\n"}

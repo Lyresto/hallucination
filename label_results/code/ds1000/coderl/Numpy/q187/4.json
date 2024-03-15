@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\na = np.array([[1,0,2,3],[0,5,3,4],[2,3,2,10],[3,4, 10, 7]])\nb = a.T\nb = b.dot(a)\nb[b == 0] = 0\n"}

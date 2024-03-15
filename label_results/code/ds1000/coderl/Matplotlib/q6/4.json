@@ -1,0 +1,1 @@
+{"trg_prediction": "import seaborn as sns\nsns.lineplot(x, y, palette=\"Set3\", size=8)\n\n# SOLUTION END\n"}

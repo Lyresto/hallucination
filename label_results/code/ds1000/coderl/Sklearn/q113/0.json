@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\n\ndef isit(X, Y, model):\n\treturn np.sum((Y - model.predict(X)) ** 2, axis = 0)\n\ndef save_data():\n\treturn pd.Series({'weights':isit(X,Y,fitted_model),'means':isit(X,Y,fitted_model.mean()),'covs':isit(X,Y,fitted_model.cov())})\n"}

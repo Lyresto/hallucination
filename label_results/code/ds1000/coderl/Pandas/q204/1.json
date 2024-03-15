@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(df=example_df):\n\ts = 0\n\tfor i in df.itertuples():\n\t\ts += i[1]\n\treturn round(s / len(df.values))\n"}

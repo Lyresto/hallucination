@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef __starting_point():\n\tdf = pd.read_csv('/home/pavel/Workbooks/2015-12-01.xls')\n\tprint(df['datetime'].iloc[0])\n\n__starting_point()\n"}

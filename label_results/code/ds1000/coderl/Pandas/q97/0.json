@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import chain\n\ndef value(col):\n\ttry:\n\t\treturn df[col].min()\n\texcept:\n\t\treturn 1\n\ndef filter_rows(df,n):\n\treturn (df[c for c in range(n) if abs(value(df[c])) <= 1]\n\t\t\t.filter(lambda x: len(list(x.values())) > n))\n"}

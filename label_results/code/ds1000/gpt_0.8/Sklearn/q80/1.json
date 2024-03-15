@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\nmse_values = df['mse'].values\nX = np.array(mse_values).reshape(-1, 1)\n\nkmeans = KMeans(n_clusters=2).fit(X)\nlabels = kmeans.labels_\nEND SOLUTION\n"}

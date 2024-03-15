@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import DataFrame\nfrom numpy import where\n\ndef check_columns(df1, df2):\n\tcheck = [df1[column]!= df2[column] for column in df1.columns if column in df2.columns]\n\treturn list(where(check))\n"}

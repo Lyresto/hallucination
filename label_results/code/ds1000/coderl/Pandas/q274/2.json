@@ -1,0 +1,1 @@
+{"trg_prediction": "from statistics import mean\ndf = pd.DataFrame()\nlist_of_my_columns = ['Col A', 'Col E', 'Col Z']\nfor i in range(len(list_of_my_columns)):\n\tdf[list_of_my_columns[i]] = mean(df[list_of_my_columns[i]])\nprint((df[list_of_my_columns].mean(axis=1)))\n"}

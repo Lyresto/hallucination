@@ -1,0 +1,1 @@
+output = output * (1 - mask) + clean_input_spectrogram * mask

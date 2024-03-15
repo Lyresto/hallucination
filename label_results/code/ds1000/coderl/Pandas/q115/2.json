@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\n\ndef percentage(df):\n\tcategories = Counter(df[\"cat\"])\n\treturn 0 if not categories else sum(1/len(categories[cat]) for cat in categories)\n"}

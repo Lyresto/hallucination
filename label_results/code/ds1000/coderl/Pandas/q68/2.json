@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef df_subset(df, y):\n\t#y = np.array(df.y)\n\t\n\t#df = df.drop(df.index[[i for i in range(len(df)) if df.y[i] > 0.5]], axis=1)\n\tdf_subset = np.zeros(len(df))\n\t\n\tfor i,v in enumerate(df.values):\n\t\tif v > 0.5:\n\t\t\tdf_subset[i] = v\n\t\n\treturn df_subset[y]\n"}

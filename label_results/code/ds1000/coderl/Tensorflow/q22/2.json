@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef dist(a, b):\n\treturn np.linalg.norm(a-b)**2\n"}

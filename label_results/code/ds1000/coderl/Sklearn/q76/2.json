@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import *\nfrom pandas import *\nx_train,x_test,y_train,y_test =... # put solution in these variables\n"}

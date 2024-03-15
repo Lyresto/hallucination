@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import DataFrame\ndef fillna(df, d):\n\tfor c,v in df.iterrows():\n\t\tdf[c] = df[c].fillna(d.get(v, None))\n\treturn df\n"}

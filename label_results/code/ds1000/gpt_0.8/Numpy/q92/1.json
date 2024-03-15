@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\na = np.array([4, 1, 0, 8, 5, 2])\nN = 3\n\n# Get the indices of the N largest elements\nindices = np.argpartition(a, -N)[-N:]\n\n# Sort the indices in decreasing order\nresult = indices[np.argsort(-a[indices])]\n\nprint(result)"}

@@ -1,0 +1,5 @@
+plt.plot(x, y, marker='o', linestyle='-', color='blue', alpha=0.5, markeredgecolor='blue', markerfacecolor='none')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Line Chart')
+plt.show()

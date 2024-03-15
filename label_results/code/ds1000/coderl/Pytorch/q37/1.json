@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import chain, groupby\n\ndef load_data():\n\tt = list(map(float, input().split()))\n\tidx = list(chain.from_iterable((i,) for i in range(len(t))))\n\treturn t, idx\n"}

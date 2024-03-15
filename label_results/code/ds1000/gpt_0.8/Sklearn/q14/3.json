@@ -1,0 +1,1 @@
+{"trg_prediction": "clf.named_steps.pop('reduce_dim', None)"}

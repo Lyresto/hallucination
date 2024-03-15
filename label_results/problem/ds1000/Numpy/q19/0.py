@@ -1,0 +1,1 @@
+result = np.argmin(a)

@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy\ndef sort_matrices(a):\n\ta_sorted = sorted(enumerate(a), key=lambda i: a[i][0])\n\treturn [[list(j) for j in zip(*a_sorted)] for i in range(len(a))]\n"}

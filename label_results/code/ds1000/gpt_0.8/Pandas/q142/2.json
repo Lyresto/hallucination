@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\n# Get all unique column levels\nlevels = df.columns.levels\n\n# Generate all possible combinations of column levels\ncombinations = pd.MultiIndex.from_product(levels)\n\n# Melt the DataFrame using the combinations of column levels as value_vars\nresult = pd.melt(df, value_vars=combinations)\n\nEND SOLUTION\n"}

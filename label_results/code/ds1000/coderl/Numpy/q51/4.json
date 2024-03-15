@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import array as a\ndef f(X = example_X):\n\treturn [list(a[i,j]) for i,j in enumerate(X)]\n"}

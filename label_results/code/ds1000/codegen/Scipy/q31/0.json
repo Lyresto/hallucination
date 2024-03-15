@@ -1,0 +1,1 @@
+{"trg_prediction": "\n    sA = np.random.random((10, 10))\n    ### END SOLUTION\n    return sA\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "sns.lineplot(x, x**2, color='#AAAAAA')\n\n# draw a line (with random y) for each different line style\n# SOLUTION END\n"}

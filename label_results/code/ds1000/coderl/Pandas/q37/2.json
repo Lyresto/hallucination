@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef sum_advance(df, row_list, column_list, axis=0):\n\tfor i in range(len(row_list)):\n\t\tdf['a'][i] += df[column_list[i]][row_list[i]]\n\treturn sum(df['a'][i] for i in range(len(column_list)))\n"}

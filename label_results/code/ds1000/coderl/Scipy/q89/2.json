@@ -1,0 +1,1 @@
+{"trg_prediction": "class Solution:\n\tdef transform(self):\n\t\timport copy\n\t\tweights = self.__WeightMatrix__\n\t\tfor i in range(weights.shape[1]):\n\t\t\tweights[:,i] /= math.sqrt(sum(weights[:,i]))\n\t\treturn copy.deepcopy(weights)\n"}

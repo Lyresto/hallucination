@@ -1,0 +1,1 @@
+{"trg_prediction": "from sklearn.ensemble import IsolationForest\nimport joblib\n\n# Train the model on clean data\nX_train = ...\n\nmodel = IsolationForest()\nmodel.fit(X_train)\n\n# Save the model\njoblib.dump(model, \"sklearn_model.joblib\")\n"}

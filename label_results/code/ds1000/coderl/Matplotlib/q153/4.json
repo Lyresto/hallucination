@@ -1,0 +1,1 @@
+{"trg_prediction": "from math import factorial as fac\n\ndef line(x, y):\n\treturn fac(x ** 2 + y ** 2) / (2 * fac(x))\n\ndf = pd.DataFrame({'x': x, 'y': y})\n\nax1 = df.plot.line(x='x', y='y')\nax2 = df.plot.line(x='y', y='x')\n\nax1.set_xlabel('x')\nax2.set_ylabel('y')\n\nplt.show()\n"}

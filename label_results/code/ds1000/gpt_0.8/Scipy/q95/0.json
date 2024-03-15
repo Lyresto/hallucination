@@ -1,0 +1,1 @@
+{"trg_prediction": "def solve_for_a(x, b):\n    def eqn(a):\n        return x + 2*a - b**2\n\n    a_guess = 0.5\n    solution = fsolve(eqn, a_guess)\n    return solution\n\nresult = [solve_for_a(x, b) for x, b in zip(xdata, bdata)]\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def sort_by_time(df):\n\t# your code here\n\tdf.sort_index(key=lambda x:x['time'])\n\treturn df\n"}

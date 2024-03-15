@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ny = np.array(y)\nx = np.arange(10)\n\ndf = pd.DataFrame({\"y\": y, \"x\": x})\n\nfig = plt.figure()\nax = fig.add_subplot(1, 1, 1)\n\ndf[\"y\"] + df[\"x\"]\n\n# move the y axis ticks to the right\nax.set_ybound(0, 10)\n\n# Plot x over y\ndf[\"y\"].plot(x, y, ax=ax)\n\n# SOLUTION END\n"}

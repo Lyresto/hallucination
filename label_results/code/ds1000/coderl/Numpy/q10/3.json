@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef vec2matrix(arr, ncol):\n\treturn np.mat(arr).T.tolist()\n"}

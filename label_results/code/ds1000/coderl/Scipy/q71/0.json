@@ -1,0 +1,1 @@
+{"trg_prediction": "def get_distance_2(y, x):\n\t#your code here\n\ta,b,c,d = [],[],[],[]\n\tfor i in range(6):\n\t\tfor j in range(6):\n\t\t\ta.append(sum((y[i,j]-x[i,j])**2))\n\tfor i in range(6):\n\t\tfor j in range(6):\n\t\t\tc.append(sum((y[i,j]-x[i,j])**2))\n\tfor i in range(6):\n\t\tfor j in range(6):\n\t\t\td.append(sum((y[i,j]-x[i,j])**2))\n\treturn a,b,c,d\n"}

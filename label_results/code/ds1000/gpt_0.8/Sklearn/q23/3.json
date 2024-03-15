@@ -1,0 +1,1 @@
+{"trg_prediction": "# Solution:\nproba = []\nfor train_index, test_index in cv:\n    X_train, X_test = X[train_index], X[test_index]\n    y_train, y_test = y[train_index], y[test_index]\n    \n    logreg.fit(X_train, y_train)\n    proba.append(logreg.predict_proba(X_test))\nEND SOLUTION\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n#df_a = pd.read_csv(path_a, sep=',')\n#df_b = pd.read_csv(path_b, sep=',')\ndf_c = pd.merge(df_a, df_b, on='EntityNum')\n\n#I don't think it is possible to have some of the unwanted columns in the final dataframe? \n#And I'm stuck with Pandas. \n#df_c = pd.merge(df_a, df_b, on='EntityNum')\n"}

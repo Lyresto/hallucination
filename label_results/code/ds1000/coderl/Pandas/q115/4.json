@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\n\ndef percentage(df: pd.DataFrame) -> float:\n\tcat_counts = Counter(df['cat'])\n\treturn 100 * sum(v / float(cat_counts[c]) for c, v in cat_counts.items()) / sum(df['val1'])\n"}

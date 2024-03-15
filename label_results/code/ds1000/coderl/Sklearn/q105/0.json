@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\n\ndef split_train_test(df):\n\ttrain, test = pd.DataFrame(), pd.DataFrame()\n\tfor i, j in enumerate(df.index):\n\t\tif i % len(df) == 0:\n\t\t\ttrain[j] = df[i]\n\t\telse:\n\t\t\ttest[j] = df[i]\n\treturn train, test\n"}

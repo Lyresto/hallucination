@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\nt = [[int(x in [1,2,3,4,5,6,7,8,9]) for x in lengths] for lengths in [0,5,6,7,8,9]]\ns = [int(x==1) for x in lengths]\nwith_pad = []\nfor s1 in t:\n\ts1 = [s1[i][j] for i in range(len(s1)) for j in range(8)]\n\ts1 = tf.pad(s1, [0,8], mode='constant')\n\twith_pad.append(s1)\nresult = with_pad[0] + with_pad[1]\n"}

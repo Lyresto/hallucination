@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef sum_dataframe_advance(df, row_list, column_list, axis):\n\treturn sum(df[x] for x in row_list) + sum(df[y] for y in column_list)\n"}

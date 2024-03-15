@@ -1,0 +1,1 @@
+{"trg_prediction": "x = np.linspace(0, 3, 100)\ny = 3 * x + 2\nplt.plot(x, y, '-k')\nplt.xlabel('x')\nplt.ylabel('y')\nplt.title('Cutoff')\nplt.show()\n#"}

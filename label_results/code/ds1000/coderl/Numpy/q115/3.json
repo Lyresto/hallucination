@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import array\ndef find_maximum_index(a, index):\n\treturn max(array(a)[indices == i] for i in range(len(a)))\n"}

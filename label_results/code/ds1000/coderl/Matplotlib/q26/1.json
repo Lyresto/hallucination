@@ -1,0 +1,1 @@
+{"trg_prediction": "def __starting_point():\n\tH = np.rot90(H)\n\tfig, ax = plt.subplots()\n\tax.imshow(H, cmap=plt.cm.jet)\n\t# SOLUTION END\n\n__starting_point()\n"}

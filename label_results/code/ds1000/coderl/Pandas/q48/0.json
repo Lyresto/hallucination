@@ -1,0 +1,1 @@
+{"trg_prediction": "from statistics import mean\n\ndef df_greater_than(df, thresh):\n\treturn sum(mean(df.loc[row] for row in range(len(df)) if df.loc[row]['value'] > thresh) for row in range(len(df))) * thresh ** 2 \n"}

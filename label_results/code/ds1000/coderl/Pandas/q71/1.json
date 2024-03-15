@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(df, columns=['b', 'e']):\n\t# df2 = df[df.c>0.5]\n\tdf2 = df[columns]\n\tfor col in columns:\n\t\tdf2[col] = df2[col] + df2[col+1]\n\treturn df2.sum(axis=1)\n"}

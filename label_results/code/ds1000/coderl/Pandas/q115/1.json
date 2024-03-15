@@ -1,0 +1,1 @@
+{"trg_prediction": "def percentage(df):\n\tres = 0\n\tfor i in df:\n\t\tres += i/len(df['cat'])\n\treturn res/100\n"}

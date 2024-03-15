@@ -1,0 +1,1 @@
+{"trg_prediction": "# SOLUTION START\ndf = pd.DataFrame({'x':x, 'y':y})\n# in df.plot() use a plus marker and give it a thickness of 7\n# SOLUTION END\n"}

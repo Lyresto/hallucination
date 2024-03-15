@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef get_days(sp):\n\tstart = '2020-02-15'\n\tend = '2020-02-16'\n\tdays = []\n\tfor i in range(1,20):\n\t\tdays.append(sp[start+i].strftime('%A'))\n\t\tstart = start+i+1\n\tdays.append(sp[end].strftime('%A'))\n\treturn days\n\n"}

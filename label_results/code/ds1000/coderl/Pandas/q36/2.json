@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\ndef mean_advance(df,row_list,column_list,axis=0):\n\tfor i in range(len(row_list)):\n\t\tdf[i] = (df[i] + mean(df[column_list[j]][i] for j in range(len(column_list)))) / (len(row_list) + 1)\n\treturn df\n"}

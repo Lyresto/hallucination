@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef matrix_to_array(a, m):\n\treturn np.unpackbits(np.array(a, dtype=np.uint8)).reshape(len(a), m)\n"}

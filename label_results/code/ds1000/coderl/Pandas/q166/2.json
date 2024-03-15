@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef stdMeann(df):\n\tm = np.mean(df['b'])\n\tn = len(df['b'])\n\treturn np.std(np.array([m] * n))\n"}

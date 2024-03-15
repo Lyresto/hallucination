@@ -1,0 +1,1 @@
+{"trg_prediction": "# Using numpy's polyfit function to fit a second degree polynomial\nresult = np.polyfit(x, y, 2)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport torch\nA_log, B = load_data()\ndef solve(A_log, B):\n\t# return the solution in this function\n\t# C = solve(A_log, B)\n\t### BEGIN SOLUTION\n\tC = B[:, A_log]\n\treturn C\n"}

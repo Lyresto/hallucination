@@ -1,0 +1,1 @@
+{"trg_prediction": "sa =... # put solution in this variable\nsa = np.dot(sa, np.random.rand(10, 10))\n"}

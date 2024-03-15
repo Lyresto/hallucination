@@ -1,0 +1,1 @@
+{"trg_prediction": "def zero_out_row_and_column(a):\n\t# Make sure first column is zero\n\tcol = 0\n\tfor i in range(len(a)):\n\t\tif a[0][i] == 0:\n\t\t\ta[0][col] = 0\n\t\t\tcol += 1\n\t# Make sure second row is zero\n\trow = 0\n\tfor i in a[1:]:\n\t\tif a[row][i] == 0:\n\t\t\ta[row][i] = 0\n\t\t\trow += 1\n"}

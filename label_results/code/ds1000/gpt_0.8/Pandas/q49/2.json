@@ -1,0 +1,1 @@
+{"trg_prediction": "mask = (df['value'] < section_left) | (df['value'] > section_right)\nsub_df = df[~mask]\naverage = sub_df['value'].mean()\ndf = df[mask]\ndf.loc['X'] = average\n"}

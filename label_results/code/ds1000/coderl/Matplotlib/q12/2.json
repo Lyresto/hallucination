@@ -1,0 +1,1 @@
+{"trg_prediction": "seaborn.distplot(df).set_ylabel(\"Probability\")\nseaborn.distplot(df).set_xlabel(\"Gender\")\n# SOLUTION END\n"}

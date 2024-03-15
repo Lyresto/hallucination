@@ -1,0 +1,1 @@
+{"trg_prediction": "def distances(patch):\n\treturn scipy.spatial.distance.pdist(patch).round(decimals=1).tolist()\n"}

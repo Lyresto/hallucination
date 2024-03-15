@@ -1,0 +1,1 @@
+{"trg_prediction": "import re\n\ndef extract(dct):\n\treturn '\\n'.join('{}{}{}{} {} {} {} {}'.format(\n\t\tname, status, number, job, money, wife, group, kids\n\t) if job or money or wife or group or kids else 'none'\n\t\tfor name, status, number, job, money, wife, group, kids in dct.items()\n\t)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def fill_column(df, column):\n\tif column in df.columns:\n\t\tdf[column] = df[column].fillna(value=0)\n\telse:\n\t\tdf[column] = 0\n\treturn df\n\ndef fill_rows(df):\n\tfor row in df.values:\n\t\trow.fillna(value=0,inplace=True)\n\treturn df\n"}

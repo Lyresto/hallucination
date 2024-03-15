@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.spatial\ndef dist(a, b):\n\treturn np.minimum(scipy.spatial.distance.cdist(a, b), scipy.spatial.distance.cdist(b, a)).round()\n"}

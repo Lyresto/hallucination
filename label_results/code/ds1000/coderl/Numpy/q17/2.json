@@ -1,0 +1,1 @@
+{"trg_prediction": "def np_array_equal(r_old, r_new):\n\t# your code\n\treturn r_old == r_new\n"}

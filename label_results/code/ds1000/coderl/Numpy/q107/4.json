@@ -1,0 +1,1 @@
+{"trg_prediction": "#!/usr/bin/env python3\n\nimport pandas as pd\n\ndef solve(a, b):\n\tif a == 0 and b == 0:\n\t\treturn 0\n\tB = [None] * len(A)\n\tB[0] = a*A[0]\n\tp = 1\n\twhile p < len(A):\n\t\tB[p] = a*A[p] + b*B[p-1]\n\t\tp += 1\n\treturn B\n\ndef __starting_point():\n\tprint(solve(1, 2))\n__starting_point()\n"}

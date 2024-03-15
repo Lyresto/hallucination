@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef shift(arr, shift_values):\n    shifted_arr = np.empty_like(arr)\n    for i, shift in enumerate(shift_values):\n        shifted_arr[i] = np.roll(arr[i], shift)\n    return shifted_arr\n\nshifted_arr = shift(a, shift)\nshifted_arr"}

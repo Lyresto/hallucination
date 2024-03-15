@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom pandas import DataFrame\n\ndef load_data():\n\treturn np.array(DataFrame(np.array(load_data()).T).values)\n"}

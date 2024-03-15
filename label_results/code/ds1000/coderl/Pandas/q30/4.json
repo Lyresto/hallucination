@@ -1,0 +1,1 @@
+{"trg_prediction": "def rename_columns(df):\n\treturn df.rename(columns={'Header' + k: k + str(len(k)) for k in range(len(df.columns))})\n"}

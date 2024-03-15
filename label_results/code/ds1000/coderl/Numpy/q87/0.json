@@ -1,0 +1,1 @@
+{"trg_prediction": "import torch\n\ndef convert_array_to_tensor(a):\n\ta_pt = []\n\tfor x in a:\n\t\ta_pt.append(torch.from_numpy(x))\n\treturn a_pt\n"}

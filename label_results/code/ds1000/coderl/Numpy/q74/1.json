@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef f(a = example_a, pos=2, element = 66):\n\ta_l = a.tolist()\n\ta_l.insert(pos,element)\n\treturn np.asarray(a_l)\n"}

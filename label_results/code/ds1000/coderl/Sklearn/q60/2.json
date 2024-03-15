@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport sklearn\n\ndef select_features(features):\n\ty = np.zeros((len(features), len(features[0])), dtype=int)\n\tfor i, x in enumerate(zip(*features)):\n\t\ty[i] = 1\n\treturn np.array(y)\n"}

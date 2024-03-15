@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef extract(a):\n\tb = np.zeros_like(a)\n\tc = np.zeros_like(a)\n\t\n\tfor i in range(len(a)):\n\t\tfor j in range(len(a[i])):\n\t\t\tb[i, j] = a[i, j] + a[i + 1, j]\n\t\t\t\n\tfor i in range(len(a) - 1):\n\t\tfor j in range(len(a[i])):\n\t\t\tc[i, j] = a[i][j] + a[i + 1, j]\n\t\t\t\n\treturn b, c\n"}

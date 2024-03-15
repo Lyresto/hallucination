@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\n\n\ndef load_data():\n\t# matrization and padding\n\tA = np.array(pd.read_csv(\"data/data_1.csv\", index_col = 0))\n\tB = np.array(pd.read_csv(\"data/data_1.csv\", index_col = 1))\n\t# padding\n\tA = A[:1000, None] + A[1000:, None]\n\tB = B[:1000, None] + B[1000:, None]\n\t# equality check\n\treturn Counter(A) == Counter(B)\n"}

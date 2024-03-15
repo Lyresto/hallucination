@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import gcd, ceil\ndef reduce_fractions(numerator, denominator):\n\tf = gcd(numerator,denominator)\n\treturn (round(numerator/f), round(denominator/f))\n"}

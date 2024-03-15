@@ -1,0 +1,1 @@
+{"trg_prediction": "from random import choice\nfrom numpy import numpy as np\n\ndef rand_tuple(lista_elegir, probabilit):\n\treturn np.random.choice(lista_elegir, samples, probabilit)\n\ndef result(lista_elegir, samples, probabilit):\n\tresultado = []\n\tfor _ in range(samples):\n\t\tresultado.append(choice(lista_elegir, p=probabilit))\n\treturn resultado\n"}

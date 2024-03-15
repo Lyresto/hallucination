@@ -1,0 +1,1 @@
+{"trg_prediction": "import re\ndef replace_with_lt(s):\n\treturn re.sub('[a-z]', \"<\", s)\n"}

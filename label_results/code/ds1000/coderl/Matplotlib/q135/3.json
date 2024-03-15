@@ -1,0 +1,1 @@
+{"trg_prediction": "def errorbar(x, y, yerr):\n\tx += 0.5*xerr\n\ty += 0.5*yerr\n\treturn (x, y), (\"b\", \"r\")[yerr > 0]\n\n# plot y errors of x with colors in c\nx, y = np.linspace(4), np.array([1, 1, 2, 2])\nyerr = np.array([0.1, 0.2, 0.3, 0.4])\nxerr, yerr = errorbar(x, y, yerr)\n\n# SOLUTION END\n"}

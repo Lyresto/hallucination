@@ -1,0 +1,1 @@
+{"trg_prediction": "df = pd.melt(df, id_vars=['user', 'someBool'], var_name='date', value_name='value')\ndf = df.dropna() # remove rows with missing values\ndf['date'] = pd.to_datetime(df['date'], format='%d/%m/%y') # convert date column to datetime format\ndf = df.sort_values(by=['user', 'date']) # sort by user and date\ndf = df.reset_index(drop=True) # reset index\n"}

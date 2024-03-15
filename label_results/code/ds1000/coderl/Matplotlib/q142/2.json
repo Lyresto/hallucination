@@ -1,0 +1,1 @@
+{"trg_prediction": "def plot_line_chart(x, y):\n\tdf = pd.DataFrame({\"x\": x, \"y\": y})\n\treturn plt.plot(df[\"x\"], df[\"y\"], \"b\")\n"}

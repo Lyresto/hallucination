@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import DataFrame\n\ndef query_series(df, expr):\n\tvar = expr.split('!')\n\ttry:\n\t\tif var[0] == 'True':\n\t\t\ts = eval(expr)\n\t\t\treturn df.loc[s.index(True)]\n\texcept:\n\t\treturn df.loc[0]\n\ndef query_df(df, expr):\n\tvar = expr.split('!')\n\ttry:\n\t\tif var[0] == 'True':\n\t\t\treturn df.query(expr)\n\texcept:\n\t\treturn df.loc[0]\n"}

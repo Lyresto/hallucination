@@ -1,0 +1,1 @@
+{"trg_prediction": "from datetime import datetime\nfrom typing import List, Dict, Set\n\n\ndef rank_by_time(df: Dict[str, List[str]], sort_by: str = 'TIME') -> Dict[str, List[int]]:\n\treturn pd.rolling_sum(df, sort_by) \\\n\t\t.map(lambda x: (datetime.strptime(x, '%Y-%m-%d %H:%M:%S'), 1)) \\\n\t\t.sort_values(by=sort_by)\n"}

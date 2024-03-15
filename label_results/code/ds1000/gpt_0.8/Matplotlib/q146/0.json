@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.plot(x, y, label=\"y\")\nplt.legend(fontsize=8)\n"}

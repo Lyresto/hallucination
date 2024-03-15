@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\na = np.array([[1,0,3], [2,4,1]])\nb = np.array([[0,1,0,0,0], [1,0,0,0,0], [0,0,0,1,0], [0,0,1,0,0], [0,0,0,0,1], [0,1,0,0,0]])\nfor row in range(len(a)):\n\tfor col in range(len(a[0])):\n\t\tif a[row][col] == b[row][col]:\n\t\t\ta[row][col] = 1-a[row][col]\n"}

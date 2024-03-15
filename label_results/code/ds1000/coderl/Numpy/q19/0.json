@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef pos_of_smallest(a):\n\treturn [i[0] for i in enumerate(a) if np.min(a).tolist() == a].index(min(a))\n"}

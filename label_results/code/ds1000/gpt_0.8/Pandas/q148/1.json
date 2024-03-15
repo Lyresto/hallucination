@@ -1,0 +1,1 @@
+{"trg_prediction": "result = df.groupby('l')['v'].sum()\nresult.replace(0.0, np.nan, inplace=True)\n"}

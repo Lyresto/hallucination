@@ -1,0 +1,5 @@
+mid = np.array([(shape[0]-1)/2, (shape[1]-1)/2])
+y, x = np.indices(shape)
+coords = np.column_stack((y.ravel(), x.ravel()))
+result = distance.cdist(coords, [mid])
+result = result.reshape(shape)

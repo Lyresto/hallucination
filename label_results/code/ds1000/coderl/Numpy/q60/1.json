@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.stats\na,b=scipy.stats.mean(a),scipy.stats.mean(b)\nc=sum(a*b)/(len(a)+len(b))\n"}

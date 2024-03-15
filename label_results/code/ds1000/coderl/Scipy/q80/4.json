@@ -1,0 +1,1 @@
+{"trg_prediction": "from scipy.optimize import minimize\ndef function(x):\n\treturn -1*(18*x[0]+16*x[1]+12*x[2]+11*x[3])\n\t\n\n\nI=np.array((20,50,50,80))\nout=function(I)\nprint(out)\n"}

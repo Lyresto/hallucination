@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\nfrom sklearn.preprocessing import LabelEncoder\ndf = pd.read_csv('titanic.csv')\ndf['Sex'] = LabelEncoder.fit_transform(df['Sex'])\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\n\nx = np.arange(10)\ny = np.arange(10)\n\ndf = pd.DataFrame({'x': x, 'y': y})\n\nax = df.plot.bar(y, x)\nax.set_yticklabels(['Line'])\n\nplt.show()\n"}

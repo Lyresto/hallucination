@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.scatter(x, y, marker='o', edgecolor='black', facecolor='none',\n            linewidth=1, s=100)\nplt.xlabel('x')\nplt.ylabel('y')\nplt.title('Scatter Plot')\nplt.grid(True)\nplt.show()\n#"}

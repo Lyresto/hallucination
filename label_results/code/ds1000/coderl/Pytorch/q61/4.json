@@ -1,0 +1,1 @@
+{"trg_prediction": "import math\ndef predict_allCharacters(input):\n\toutput = MyNet(input)\n\treturn [math.log(output[i, j] / output[i, :].sum()).real for j in range(15)]\n"}

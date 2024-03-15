@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(x, y):\n\treturn (x*y).reshape(x.shape)\n\ndf = pd.DataFrame({'x':x, 'y':y})\n\nfor i, j in df.iterrows():\n\tprint(i, j)\n\tf(i, j)\n"}

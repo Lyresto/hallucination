@@ -1,0 +1,1 @@
+{"trg_prediction": "result = df.groupby('a').agg({'b': ['mean', 'std']})\nresult.columns = result.columns.droplevel()\nresult = result.rename(columns={'mean': 'mean_b', 'std': 'std_b'})\nresult = result.reset_index()\n"}

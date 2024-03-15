@@ -1,0 +1,1 @@
+{"trg_prediction": "from math import ceil\ndef fillna(df, n = 8000):\n\tfor i in range(n):\n\t\tif(df.iloc[i]==0):\n\t\t\tdf['Column_x']=0\n\t\telif(df.iloc[i]==1):\n\t\t\tdf['Column_x']=1\n\t\telse:\n\t\t\tdf['Column_x']=1\n\t\t\tdf.iloc[i]=0\n\t\t\tbreak\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef dist(p, q):\n\tx, y = p[0], p[1]\n\tz = q[0]\n\tw = q[1]\n\td = np.sqrt((x**2 + y**2)**2 - (z**2 + w**2)**2)\n\treturn d\n\ndef pairs(dists):\n\tpairs = []\n\tfor i in range(len(dists)):\n\t\tpairs.append([dists[i][0], dists[i][1]])\n\t\tpairs.append([dists[i][2], dists[i][0]])\n\treturn pairs\n"}

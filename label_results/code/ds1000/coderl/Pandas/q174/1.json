@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import OrderedDict\nimport re\n\n\ndef df_series_by_value(series):\n\tseries_values = [int(i) for i in re.findall('\\d+', series.index)]\n\tordered_values = OrderedDict.fromkeys(series_values)\n\treturn series.sort_values(key=lambda x: ordered_values[x])\n"}

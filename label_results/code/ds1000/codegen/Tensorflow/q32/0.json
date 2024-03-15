@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\n\nx = [[[[1, 2, 3], [2, 3, 4], [0, 0, 0]],\n      [[1, 2, 3], [2, 0, 4], [3, 4, 5]],\n      [[1, 2, 3], [0, 0, 0], [0, 0, 0]],\n      [[1, 2, 3], [1, 2, 3], [1, 2, 3]]]]\nx = tf.convert_to_tensor(x, dtype=tf.float32)\n\ny = tf.reduce_mean(x, axis=0)\n"}

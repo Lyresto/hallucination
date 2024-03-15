@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef avg_last_dim(x):\n\treturn np.mean(np.array(lst) for lst in x) / len(np.array(lst))\n"}

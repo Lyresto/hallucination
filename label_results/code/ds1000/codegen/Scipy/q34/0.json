@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom scipy.sparse import csr_matrix\n\nnp.random.seed(10)\narr = np.random.randint(4,size=(988,988))\nsA = csr_matrix(arr)\ncol = sA.getcol(0)\nmean, standard_deviation =... # put solution in these variables\nBEGIN SOLUTION\n"}

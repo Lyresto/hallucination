@@ -1,0 +1,1 @@
+{"trg_prediction": "def predict(X):\n\treturn sklearn.linear_model.predict(X)\n\ndef load_data():\n\tX = np.array(list(zip(*list(zip(*[iter(load_data().reshape(-1, 1))]*2)))))\n\ty = np.array(list(load_data().reshape(-1, 1)))\n\treturn X, y\n"}

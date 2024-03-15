@@ -1,0 +1,1 @@
+{"trg_prediction": "def zscore(df, x):\n\t# your code\n\tzscore = lambda x: sum(df[x].values())/len(df[x])\n\treturn [zscore(i) for i,row in df.iterrows()]\n\n\n"}

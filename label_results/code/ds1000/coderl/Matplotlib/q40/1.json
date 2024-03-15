@@ -1,0 +1,1 @@
+{"trg_prediction": "# -*- coding: utf-8 -*-\n\"\"\"\nCreated on Tue Apr 28 22:46:12 2020\n\n@author: lizi\n\"\"\"\ndf = pd.DataFrame({\"x\":x, \"y\":y})\nsns.lineplot(x=\"x\", y=\"y\", data=df)\n# remove x axis label\n# SOLUTION END\n"}

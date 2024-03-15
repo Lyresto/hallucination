@@ -1,0 +1,1 @@
+{"trg_prediction": "# Convert csr_matrix to a pandas DataFrame\ntransform_output_df = pd.DataFrame.sparse.from_spmatrix(transform_output)\n\n# Concatenate the original DataFrame and the transformed DataFrame\ndf = pd.concat([df_origin, transform_output_df], axis=1)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "df = pd.DataFrame({'x': x, 'y': y, 'z': z, 'a': a})\n\nfig, [ax1, ax2] = plt.subplots(2, 1)\n\nfor i, val in enumerate(df.values):\n\tax1.plot(val['x'], val['y'], 'b-')\n\tax2.plot(val['z'], val['a'], 'r-')\n\nax1.set_title('Y and Z')\nax2.set_title('A')\n\n# SOLUTION END\n"}

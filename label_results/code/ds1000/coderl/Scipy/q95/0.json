@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom scipy.optimize import fsolve\neqn = lambda x, a, b: x + 2 * a - b**2\nx0 = 0.5\nroot_list = fsolve(eqn, x0=x0, args=tuple([a,b]))\n"}

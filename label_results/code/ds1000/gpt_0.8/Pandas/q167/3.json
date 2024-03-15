@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\nstdMean = lambda x: np.std(np.mean(x))\nresult = df.groupby('b').a.agg([('mean', 'mean'), ('std', stdMean)])\nresult"}

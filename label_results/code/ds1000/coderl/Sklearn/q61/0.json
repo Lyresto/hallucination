@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef solve(features):\n\tX = np.zeros((len(features), len(features[0])), dtype=object)\n\tfor i in range(len(X)):\n\t\tfor j in range(len(features[i])):\n\t\t\tX[i, features[i][j]] = 1\n\treturn X\n"}

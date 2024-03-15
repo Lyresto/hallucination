@@ -1,0 +1,1 @@
+{"trg_prediction": "import itertools\n\ndef f(img = example_img):\n\tvalues = img.flatten()\n\tres = []\n\tfor i, j in itertools.product(range(len(values)), range(len(values))):\n\t\tif values[i][j] > threshold:\n\t\t\tres.append(i * j)\n\treturn len(res)\n"}

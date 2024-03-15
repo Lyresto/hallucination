@@ -1,0 +1,1 @@
+{"trg_prediction": "df = pd.DataFrame({'name': ['Aaron', 'Aaron', 'Aaron', 'Brave', 'Brave', 'David'],\n                   'a': [3, 3, 3, 4, 3, 5],\n                   'b': [5, 6, 6, 6, 6, 1],\n                   'c': [7, 9, 10, 0, 1, 4]})\n"}

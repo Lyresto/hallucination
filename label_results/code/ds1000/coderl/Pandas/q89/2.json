@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef check_columns_uniquity(df1, df2):\n\tcolumns_check_list = ['A','B','C','D','E','F'] \n\tcheck = np.where([df1[column]!= df2[column] for column in columns_check_list]) \n\treturn [np.all(check) for column in columns_check_list]\n"}

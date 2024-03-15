@@ -1,0 +1,1 @@
+{"trg_prediction": "from scipy import ndimage.measurements\n\ndef get_data():\n\treturn pd.DataFrame({\n\t\t\"Index\": list(range(6)), \n\t\t\"Value\": ndimage.convolve(np.ones(6) * 2 - 1, x, mode=\"nearest\").astype(int)\n\t})\n"}

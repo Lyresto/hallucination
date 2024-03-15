@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef one_hot(i, a):\n\tc = np.ones((2*i+1, 2*i+1), dtype=np.int)\n\tfor j in range(i):\n\t\tc[j+1, a[j,0]] = 1\n\treturn c.astype(np.int)\n\ndef encode_as_1_hot(i, a):\n\tc = np.zeros((2*i+1, 2*i+1), dtype=np.int)\n\tfor j in range(i):\n\t\tc[j+1, a[j,0]] = 1\n\treturn c\n"}

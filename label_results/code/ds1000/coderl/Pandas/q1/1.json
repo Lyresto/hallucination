@@ -1,0 +1,1 @@
+{"trg_prediction": "def count_diff_type(df, other):\n\tdiff_type = 0\n\tfor i, type in enumerate(df[\"Type\"]):\n\t\tif type == other[\"Type\"]:\n\t\t\tdiff_type += 1\n\treturn diff_type\n"}

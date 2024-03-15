@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import zip_longest\n\ndef regressor(X, Y):\n\tX = [float(i) for i in X]\n\tY = [float(i) for i in Y]\n\tm, n = len(X), len(Y)\n\tX.sort()\n\tY.sort()\n\treturn (\n\t\t[(X[i], Y[i]) for i in range(m)]\n\t\t+ [(X[-1], Y[-1])]\n\t\t+ [(0, 0)] * (n - m)\n\t)\n"}

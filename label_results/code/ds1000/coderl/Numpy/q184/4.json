@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import linspace as u\nfrom scipy import interpolate as i\n\ndef interpolate_2d(x, y, a):\n\treturn i.interp2d(x, y, a)([u(x), u(y)], [0, 0])[0]\n"}

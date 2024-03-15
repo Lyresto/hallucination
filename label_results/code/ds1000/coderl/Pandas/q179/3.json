@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import defaultdict\n\ndef find_rows(df):\n\tgroup = defaultdict(list)\n\tfor i, val in enumerate(df['Value']):\n\t\tgroup[val].append(i)\n\tres = []\n\tfor k, v in group.items():\n\t\tif len(v) > 1:\n\t\t\tres.extend(map(find_rows, zip(v, v[1:])))\n\treturn res\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def pd_average(df):\n\treturn (df.groupby('Name')['2005'].mean() +\n\t\t\tdf.groupby('Name')['2006'].mean()) / 4\n"}

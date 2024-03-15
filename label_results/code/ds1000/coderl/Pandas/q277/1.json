@@ -1,0 +1,1 @@
+{"trg_prediction": "def sort_data(df):\n\tt, d, t1, d1 = df.index.levels[0], df.index.levels[1], df.index.levels[2], df.index.levels[3]\n\tvims = sorted(df['VIM'], key=lambda x: (x, t1, d1))\n\tdf['VIM'] = vims\n\tdf = df.sort_values(by=t, by_row=d1, by_col=t1)\n\treturn df\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndf_a = pd.DataFrame({'EntityNum':[1001.01,1002.02,1003.03],'foo':[100,50,200]})\ndf_b = pd.DataFrame({'EntityNum':[1001.01,1002.02,1003.03],'a_col':['alice','bob','777'],'b_col':[7,8,9]})\n\nresult = pd.merge(df_a[['EntityNum', 'foo']], df_b[['EntityNum', 'b_col']], on='EntityNum')\nresult"}

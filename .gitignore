@@ -1,0 +1,17 @@
+/*.*
+.idea
+.gitignore
+testFolder
+extra_analysis
+code_judge_tools/*.json*
+data_score/models/2023*0.55*
+data_score/models/2023*0.56*
+data_score/models_abandon
+data_score/runs
+data_score/simulate_base_accuracy.py
+data_score/train_tool.py
+generate_results/check_tool.py
+generate_results/vision_tool.py
+label_results/convert_xlsx2json.py
+label_results/*.xlsx
+

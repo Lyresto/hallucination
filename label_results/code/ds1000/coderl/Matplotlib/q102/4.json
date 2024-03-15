@@ -1,0 +1,1 @@
+{"trg_prediction": "def plot_heatmap(data):\n\tf, (a1, a2), (b1, b2) = plt.subplots(4, 5, sharex=True, sharey=True)\n\tfor x, y in data:\n\t\tf.text(x, y, f'{x}{y}', color='#A01228E')\n\tf.set_size_inches(4, 4)\n\treturn f\n"}

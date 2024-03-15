@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef rsl(z):\n\ta = np.array(z)\n\tk = len(a)\n\treturn a[k//2:,k//2:-1,-1:-1].reshape(k,-1)\n"}

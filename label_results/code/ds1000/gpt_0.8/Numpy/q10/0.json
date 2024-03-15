@@ -1,0 +1,1 @@
+{"trg_prediction": "B = np.reshape(A, (len(A)//ncol, ncol))\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from statistics import mean\ndef threshold_df_agg(df, threshold):\n\tresult = df.value.copy()\n\tfor key, group in df.groupby('lab'):\n\t\tif mean(group)>=threshold:\n\t\t\tresult = result.replace(key,'',1)\n\treturn result\n"}

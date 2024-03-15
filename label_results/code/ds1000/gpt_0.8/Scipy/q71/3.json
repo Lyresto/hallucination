@@ -1,0 +1,1 @@
+{"trg_prediction": "mid = np.array([[shape[0]//2, shape[1]//2]])\ny, x = np.indices(shape)\nresult = distance.cdist(np.dstack((y, x)), mid)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def load_data():\n\tdf_orig, transform_output = pd.read_csv('input.csv')\n\tmat = csr_matrix((transform_output, (list(df_orig.columns) + list(df_orig.index.values))))\n\treturn df_orig, mat\n"}

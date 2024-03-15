@@ -1,0 +1,1 @@
+{"trg_prediction": "def myplot(x,y):\n\tp1 = pd.Series(y)\n\tp1.plot(x, x)\n\tp1.plot(x,y,color=\"r\")\n\tp1.set_title(\"My Title\")\n\treturn p1\n\np1 = myplot(x,y)\n\n# SAVE AND DROP FROM THE PAGE\n# (see http://www.codewars.com/kata/5057367.html)\n\n# SOLUTION END\n"}

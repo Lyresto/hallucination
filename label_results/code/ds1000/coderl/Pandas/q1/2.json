@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\n\ndef df_type_mismatch(df, col_types):\n\treturn sum(v!= col_types.index(v[0]) for v in df.values())\n"}

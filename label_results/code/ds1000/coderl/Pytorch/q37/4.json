@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import zip_longest\n\ndef load_data():\n\tt, idx = map(float, input().split())\n\treturn tuple(map(int, list(zip_longest(*map(int, input().split())), fillvalue=0))), idx\n"}

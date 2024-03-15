@@ -1,0 +1,1 @@
+{"trg_prediction": "# SOLUTION END\n\n\ndef linesty(x, y):\n\t# SOLUTION START\n\tn, df = len(x), pd.DataFrame({\"x\": x, \"y\": y})\n\tfor i in range(n):\n\t\tdf[\"y\"] = df[\"x\"] + df[\"y\"].mean()\n\treturn df.plot()\n"}

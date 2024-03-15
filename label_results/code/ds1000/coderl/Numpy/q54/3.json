@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\na = np.random.rand(8, 5)\ncol = 2\nmultiply_number = 5.2\nresult =... # put solution in this variable\ndef cumulative_sum(col):\n\treturn np.cumsum(a[:col])[1:]\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def softmax(x):\n\tl = len(x)\n\treturn [list(np.exp(-x))[i] for i in range(l)]\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from sklearn.ensemble import IsolationForest\nfrom sklearn.externals import joblib\n\n# Load the clean data\nclean_data = pd.read_csv(\"clean_data.csv\")\n\n# Fit the model to the clean data\nmodel = IsolationForest()\nmodel.fit(clean_data)\n\n# Save the model\njoblib.dump(model, \"sklearn_model.pkl\")"}

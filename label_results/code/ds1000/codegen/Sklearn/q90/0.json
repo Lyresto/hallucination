@@ -1,0 +1,1 @@
+{"trg_prediction": "df1 = load_data()\nslopes =... # put solution in this variable\ndf1 = df1[~np.isnan(df1['A1'])]\ndf2 = df1[['Time','A1']]\nnpMatrix = np.matrix(df2)\nX, Y = npMatrix[:,0], npMatrix[:,1]\nslope = LinearRegression().fit(X,Y)\nm = slope.coef_[0]\nseries= np.concatenate((SGR_trips, m), axis = 0)\n"}

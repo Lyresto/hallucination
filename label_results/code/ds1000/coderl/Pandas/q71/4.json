@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef f(df, columns=['b', 'e']):\n\ta, b, c = df.drop(columns=['a', 'b', 'c'], axis=1)\n\treturn np.concatenate([a[c] for c in columns], axis=1).sum(axis=1)\n"}

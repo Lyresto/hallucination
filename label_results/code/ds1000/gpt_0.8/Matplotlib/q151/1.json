@@ -1,0 +1,1 @@
+{"trg_prediction": "g = sns.FacetGrid(df, row=\"b\", height=2, aspect=3)\ng.map(sns.pointplot, \"a\", \"c\")\n\nfor ax in g.axes.flat:\n    ax.set_xticks(np.arange(1, 31, 2))\n\nplt.show()"}

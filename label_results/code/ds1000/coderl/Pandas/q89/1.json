@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef check_equivalent_dataframes(df1, df2):\n\tcolumns_check_list = ['A','B','C','D','E','F'] \n\tnp_df1 = np.array([df1[column] for column in columns_check_list])\n\tnp_df2 = np.array([df2[column] for column in columns_check_list])\n\treturn [all(np_df1 == np_df2) for column in columns_check_list]\n"}

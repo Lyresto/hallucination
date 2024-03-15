@@ -1,0 +1,1 @@
+{"trg_prediction": "def y_over_x(y,x):\n\treturn sum(y[i] - x[i] for i in range(len(x))) / len(x)\n\ndf = pd.DataFrame({'x':x, 'y':y})\nplt.plot(df['y'], df['x'])\nplt.legend(df['y'], df['x'], loc='upper right')\n\nprint(df.plot(x='y'))\n"}

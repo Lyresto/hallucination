@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef scatter(x, y, z, a):\n\tf1, f2 = np.meshgrid(x, y, z, a)\n\treturn (f1**2 + f2**2).reshape(10, 10)\n\ndf = pd.DataFrame({'x': x, 'y': y, 'z': z, 'a': a})\n# plot first axis\nax1 = df['y'].plot.barh(z=0)\n# plot second axis\nax2 = df['z'].plot.barh(x=0)\nax1.set_title('Z')\nax2.set_title('X')\n\n\n# SOLUTION END\n"}

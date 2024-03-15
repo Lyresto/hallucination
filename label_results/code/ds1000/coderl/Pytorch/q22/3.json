@@ -1,0 +1,1 @@
+{"trg_prediction": "def get_mask(lens):\n\t#your code here\n\tmask = [[0] * len(lens) for _ in range(len(lens))]\n\tfor i in range(len(lens)):\n\t\tfor j in range(len(lens)):\n\t\t\tif i == j:\n\t\t\t\tmask[i][j] = 1\n\t\t\telse:\n\t\t\t\tmask[i][j] = 1 if lens[i + 1] - lens[j + 1] == 1 else 0\n\treturn mask\n"}

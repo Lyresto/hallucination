@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import mean\nNA = ['np.inf', '33.33', '33.33', '33.37']\nNA = np.asarray(NA)\nprint(mean(NA))\n"}

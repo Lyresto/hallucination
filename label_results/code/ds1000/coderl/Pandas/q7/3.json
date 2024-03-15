@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\ndef drop_duplicates(df, keep=True):\n\tdf=df.copy()\n\tfor i in range(len(df)):\n\t\tif keep==True and i!=df.loc[i]['url']:\n\t\t\tdf.loc[i]=df.loc[i].copy()\n\treturn df.loc['id','url','keep_if_dup']\n"}

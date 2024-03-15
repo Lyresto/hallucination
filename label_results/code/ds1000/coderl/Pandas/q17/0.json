@@ -1,0 +1,1 @@
+{"trg_prediction": "from math import *\ndef multiply_scores_by_10(df, products):\n\tc=1\n\tfor p,s in zip(df['product'],df['score']):\n\t\tc=c*10**p\n\treturn df.multiply(c)\n"}

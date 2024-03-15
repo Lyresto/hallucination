@@ -1,0 +1,1 @@
+{"trg_prediction": "def reg_plot(tips):\n\tdf = tips.copy()\n\tdf['tip'], df['total_bill'] = df['tip'], df['total_bill']\n\tsns.jointplot('total_bill', 'tip', data=df, kind='reg')\n\treturn plt.gcf()\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "col_array = a[:, col] * multiply_number\ncumulative_sum = np.cumsum(col_array)\nresult = cumulative_sum\n"}

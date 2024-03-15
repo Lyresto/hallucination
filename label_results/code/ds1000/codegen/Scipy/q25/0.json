@@ -1,0 +1,1 @@
+{"trg_prediction": "from scipy import sparse\nimport numpy as np\na = np.ones((2, 2))\nb = sparse.csr_matrix(a)\nb =... # put solution in this variable\nEND SOLUTION\n\n\"\"\"\n<|python|>#"}

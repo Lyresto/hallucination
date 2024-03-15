@@ -1,0 +1,1 @@
+{"trg_prediction": "from datetime import datetime\ndef date_convert(s):\n\treturn datetime.strptime(s, '%Y-%m-%d %H:%M:%S')\n\n\ndef merge(left,right):\n\tmerged = pd.merge(left,right,left_on='ID',right_on='ID')\n\treturn merged\n"}

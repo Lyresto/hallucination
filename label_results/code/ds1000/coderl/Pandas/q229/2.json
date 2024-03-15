@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\n\ndef count_views_in_bins(df, bins):\n\tcounts = dict(Counter(df['username']))\n\tfor bin_size in bins:\n\t\tfor group in df.groupby(pd.cut(df.views, bin_size)):\n\t\t\tcounts[group['username']] += group['views']\n\treturn sum(counts.values())\n"}

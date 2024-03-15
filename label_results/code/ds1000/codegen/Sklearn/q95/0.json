@@ -1,0 +1,1 @@
+{"trg_prediction": "scaler = MinMaxScaler()\nscaler.fit(np_array)\ntransformed = scaler.transform(np_array)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "\n    result = np.zeros((a.shape[0], b.shape[0]))\n    for i in range(a.shape[0]):\n        for j in range(b.shape[0]):\n            result[i, j] = np.mean(a[i, :] + b[j, :])\n    ### END SOLUTION\n    return result\n"}

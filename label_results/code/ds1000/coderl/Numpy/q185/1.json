@@ -1,0 +1,1 @@
+{"trg_prediction": "# -*- coding: utf-8 -*-\n\"\"\"\nCreated on Fri Apr 28 22:25:18 2020\n\n@author: Srikar\n\"\"\"\nimport numpy as np\n\ndef generate_column(df, column_name):\n\tresult = np.zeros(len(df))\n\tfor i, val in enumerate(df[column_name]):\n\t\tresult[i] = val\n\treturn pd.DataFrame(result)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import chain\n\ndef tenzor_tensor(a, lengths):\n\tt = [[0] * len(a[0]) for _ in range(len(a))]\n\tfor b, c in zip(a, lengths):\n\t\tt[b // len(a[0])][c // len(a[0])] = 1\n\treturn chain.from_iterable(t)\n"}

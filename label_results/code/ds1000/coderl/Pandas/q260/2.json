@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\n\ndef sort_index(df):\n\tresult = {}\n\tfor i, row in df.iterrows():\n\t\tsort_idx = pd.to_datetime(row['TIME'])\n\t\tresult[i] = sort_idx.year * 100 + sort_idx.month * 10 + sort_idx.day\n\treturn result\n\ndf['RANK'] = df['TIME'].rank().sort_values(by='RANK', ascending=False)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def fast_solution(a, index):\n\tmax_so_far = a[index.size]\n\tfor i in range(index.size):\n\t\tif a[i] > max_so_far:\n\t\t\tmax_so_far = a[i]\n\treturn max_so_far\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def df_mask(df, c):\n\tcols = [col for col in df.columns if col > c]\n\treturn df[cols]\n"}

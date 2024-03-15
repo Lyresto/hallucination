@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef rename_columns(df):\n\tdf = df.copy()\n\tfor i in range(len(df['HeaderA'])):\n\t\tif df['HeaderA'][i].endswith('X'):\n\t\t\tdf['HeaderA'][i] = df['HeaderA'][i][:-1] + 'X'\n\treturn df\n"}

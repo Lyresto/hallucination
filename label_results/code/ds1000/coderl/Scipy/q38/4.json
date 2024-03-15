@@ -1,0 +1,1 @@
+{"trg_prediction": "def dist(A):\n\treturn scipy.spatial.distance.pdist(A)\n\ndef plot_dist(A, x, y):\n\treturn plt.plot(dist(A[:,x]), dist(A[:,y]), 'b-')\n"}

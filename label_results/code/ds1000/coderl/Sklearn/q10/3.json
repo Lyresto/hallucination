@@ -1,0 +1,1 @@
+{"trg_prediction": "def proba(X,y,x):\n\timport numpy as np\n\tpred=[]\n\tfor i in range(len(X)):\n\t\tpred.append(1/(1+np.exp(-X[i])) )\n\treturn pd.Series(pred,y)\n\ndef linear_svc(X,y,x):\n\timport numpy as np\n\tmodel=svm.LinearSVC(penalty='l1',C=1)\n\treturn pd.Series(model.predict(x),y)\n"}

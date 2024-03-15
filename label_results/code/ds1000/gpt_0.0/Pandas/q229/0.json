@@ -1,0 +1,1 @@
+{"trg_prediction": "result = pd.pivot_table(df, index='username', columns=pd.cut(df.views, bins), values='post_id', aggfunc='count')\nresult.columns = [f'{str(c.left)}-{str(c.right)}' for c in result.columns]\n"}

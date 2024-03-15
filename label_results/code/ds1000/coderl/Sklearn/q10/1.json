@@ -1,0 +1,1 @@
+{"trg_prediction": "def proba(X,y,X_predict):\n\tpredict = model.predict(X_predict)\n\tdecision_function = model.decision_function(X_predict)\n\treturn (1 / (1 + np.exp(-decision_function[y])))\n"}

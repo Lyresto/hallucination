@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\n\na = tf.constant([\n  [1,1,1],\n  [1,1,1]\n])\nb = tf.constant([\n  [0,0,0],\n  [1,1,1]\n])\n\n# Calculate squared difference\nsquared_diff = tf.square(tf.subtract(a, b))\n\n# Sum the squared differences along the rows\nresult = tf.reduce_sum(squared_diff, axis=1)\nEND SOLUTION"}

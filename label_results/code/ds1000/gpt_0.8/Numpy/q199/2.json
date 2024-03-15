@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\narr = (np.random.rand(5, 50)-0.5) * 50\nn1 = [1,2,3,4,5]\nn2 = [6,7,8,9,10]\n\narr_temp = arr.copy()\nmask = arr_temp < np.array(n1)[:, np.newaxis]\nmask2 = arr_temp >= np.array(n2)[:, np.newaxis]\nmask3 = np.logical_xor(mask, mask2)\narr[mask] = 0\narr[mask3] = arr_temp[mask3] + 5\narr[~mask2] = 30 \n\nprint(arr)"}

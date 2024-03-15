@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\ndef mean_advance(df, row_list, column_list, axis=0):\n\tfor i,v in enumerate(df[row_list[0]]):\n\t\tprint(v)\n\t\tdf[i] = df[row_list[0]].mean()\n\treturn df\n"}

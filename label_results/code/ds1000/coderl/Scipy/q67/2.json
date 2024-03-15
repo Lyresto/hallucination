@@ -1,0 +1,1 @@
+{"trg_prediction": "from scipy.stats import pstats, mean, median\n\ndef zscore(df):\n\txs = [mean(df[s]) for s in df.index]\n\treturn pstats.zscore(xs).real\n"}

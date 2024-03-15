@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\n\ndf = pd.DataFrame({'cat': ['A', 'B', 'C'],\n                   'val1': [7, 10, 5],\n                   'val2': [10, 2, 15],\n                   'val3': [0, 1, 6],\n                   'val4': [19, 14, 16]})\n"}

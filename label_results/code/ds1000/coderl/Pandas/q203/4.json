@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ns = pd.Series(['Name1', 'Name2', 'Name3'], index = ['2001', '2002', '2003', '2004', '2005', '2006'])\ns.cumsum()\ns.plot()\n"}

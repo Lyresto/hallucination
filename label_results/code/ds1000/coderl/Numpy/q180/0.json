@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nZ = np.random.rand(*np.random.randint(2, 10, (np.random.randint(2, 10))))\nans = np.zeros_like(Z)\n\ndef slicing(Z):\n\t#...\n\tans[:] = Z[:]\n\tif Z.ndim == 1:\n\t\treturn Z[0]\n\tif Z.ndim == 2:\n\t\treturn Z[:,0]\n\treturn Z[:,:,0]\n"}

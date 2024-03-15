@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\n\nlengths = [4, 3, 5, 2]\n\nmax_length = max(lengths)\nbatch_size = len(lengths)\n\nmask = tf.sequence_mask(lengths, maxlen=max_length, dtype=tf.int32)\npadding = tf.ones((batch_size, max_length - tf.shape(mask)[1]), dtype=tf.int32)\nresult = tf.concat([mask, padding], axis=1)\nresult = tf.cast(result, dtype=tf.int32)\nresult"}

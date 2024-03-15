@@ -1,0 +1,1 @@
+{"trg_prediction": "# SOLUTION END\n\n\ndef __starting_point():\n\tH = np.arange(0,10*10).reshape(10,10)\n\tplt.imshow(H, cmap=plt.cm.jet, interpolation='nearest')\n\t#SOLUTION START\n\twhile True:\n\t\tinput()\n\n__starting_point()\n"}

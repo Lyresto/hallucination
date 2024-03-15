@@ -1,0 +1,1 @@
+{"trg_prediction": "from statistics import mean\ndef section_average(df, section_left, section_right):\n\tsub_df = df.copy()\n\tfor i in range(section_left, section_right):\n\t\tsub_df[i] = mean(sub_df[i])\n\treturn sub_df.loc[df['value'].isin(list(range(section_left, section_right)))]['lab']\n"}

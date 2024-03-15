@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.plot(x, y, 'o')\nplt.xlabel('X axis')\nplt.ylabel('Y axis')\nplt.title('Line chart')\nplt.show()\n#"}

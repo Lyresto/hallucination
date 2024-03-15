@@ -1,0 +1,1 @@
+{"trg_prediction": "train_size = 0.8\ntrain_index = int(len(features_dataframe) * train_size)\ntrain_dataframe = features_dataframe[:train_index]\ntest_dataframe = features_dataframe[train_index:]\n"}

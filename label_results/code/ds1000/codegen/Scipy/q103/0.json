@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom scipy import signal\narr = np.array([-624.59309896, -624.59309896, -624.59309896,\n                      -625., -625., -625.,])\nn = 2\nresult = signal.find_extrema(arr, n)\n"}

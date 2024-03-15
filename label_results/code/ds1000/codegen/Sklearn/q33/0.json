@@ -1,0 +1,1 @@
+{"trg_prediction": "\nregressor = RandomForestRegressor(n_estimators=150, min_samples_split=1.0, random_state=42)\nrgr = regressor.fit(X,y)\npredict = rgr.predict(X_test)\n"}

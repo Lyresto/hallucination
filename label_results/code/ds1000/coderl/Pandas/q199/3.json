@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef split_df(df):\n\tdf['row'] = df['row'].str.split(\" \", 1)\n\tdf['fips'] = df['row'].map(\"\".join)\n\treturn df\n"}

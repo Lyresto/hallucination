@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import Series\ndef solve(df):\n\ts = series(df['A'])\n\tfor c,i in df.items():\n\t\tif 'exp_' in c:\n\t\t\ts[c] = Series(i, name='exp_'+c)\n\t\telse:\n\t\t\ts[c] = i**(1,1)\n\treturn s\n"}

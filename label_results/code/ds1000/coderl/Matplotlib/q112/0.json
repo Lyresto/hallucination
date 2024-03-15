@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import plot, scatter_matrix\n\ndf = pd.DataFrame({'x': x, 'y': y})\nax = plot(df['x'], df['y'], c='k', alpha=0.5)\n\n# Plot y over x in a line chart but use transparent marker non-transparent edge\n# SOLUTION START\ndf = pd.DataFrame({'x': x, 'y': y})\nax2 = plot(df['x'], df['y'], c='b', alpha=0.5)\n"}

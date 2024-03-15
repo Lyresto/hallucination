@@ -1,0 +1,6 @@
+plt.scatter(x, y, c=y, cmap="Spectral")
+plt.colorbar(label="Y Value")
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.title("Scatter plot of Y over X")
+plt.show()

@@ -1,0 +1,1 @@
+{"trg_prediction": "result = np.zeros((N,N))\nfor i in range(N):\n    for j in range(N):\n        if i == 0:\n            result[i,j] = np.sqrt(1/N)\n        else:\n            result[i,j] = np.sqrt(2/N) * np.cos((np.pi/N) * (j + 0.5) * i)\n"}

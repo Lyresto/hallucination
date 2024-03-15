@@ -1,0 +1,1 @@
+{"trg_prediction": "result = df[filt[df.index.get_level_values('a')].values]\n"}

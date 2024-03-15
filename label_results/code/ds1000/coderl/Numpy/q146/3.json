@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef mask(a):\n\tmin_value = np.min(a, axis=1)\n\treturn np.array([[value is min_value for value in arr] for arr in a])\n"}

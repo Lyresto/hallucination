@@ -1,0 +1,1 @@
+{"trg_prediction": "def sort_series(s):\n\treturn s.sort_values(by=lambda x: s.index.get(x))\n"}

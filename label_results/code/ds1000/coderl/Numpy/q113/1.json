@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import zeros\nfrom pandas import DataFrame\ndf2 = lambda: zeros((2,3), dtype='float')\n"}

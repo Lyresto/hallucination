@@ -1,0 +1,1 @@
+{"trg_prediction": "def l2_distance(a,b):\n\t# your code here\n\timport numpy as np\n\treturn np.linalg.norm(a-b).round()\n"}

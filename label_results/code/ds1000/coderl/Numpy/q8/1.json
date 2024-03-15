@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef one_hot(i, j):\n\treturn [int(a == j) for a in range(len(a))]\n\ndef numpy_generation(a):\n\t# beware of the fact that we're computing every element in the array and converting it to a one hot string is easy\n\tfor i, row in enumerate(a):\n\t\tfor j, value in enumerate(row):\n\t\t\ta[i, j] = str(value)\n"}

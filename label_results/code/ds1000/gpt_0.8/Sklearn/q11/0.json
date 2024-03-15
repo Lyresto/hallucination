@@ -1,0 +1,1 @@
+{"trg_prediction": "df_transformed = pd.DataFrame(transform_output.toarray())\ndf = pd.concat([df_origin, df_transformed], axis=1)\n"}

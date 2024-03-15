@@ -1,0 +1,1 @@
+{"trg_prediction": "result = np.linalg.matrix_rank(a)\n"}

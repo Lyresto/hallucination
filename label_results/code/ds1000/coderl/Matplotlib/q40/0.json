@@ -1,0 +1,1 @@
+{"trg_prediction": "sns.lineplot(x=\"x\", y=\"y\", data=df)\n# remove x axis label\n# SOLUTION END\n"}

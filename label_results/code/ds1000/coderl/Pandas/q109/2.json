@@ -1,0 +1,1 @@
+{"trg_prediction": "def join_df(df1, df2, key):\n\ttimestamp_index = [i for i, x in enumerate(df1['Timestamp']) if x in df2['Timestamp']]\n\tdf2 = df2.reindex(timestamp_index)\n\treturn df2[key]\n"}

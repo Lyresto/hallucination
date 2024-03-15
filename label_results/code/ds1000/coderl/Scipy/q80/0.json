@@ -1,0 +1,1 @@
+{"trg_prediction": "# cook your dish here\ndef function(x):\n\treturn -1*(18*x[0]+16*x[1]+12*x[2]+11*x[3])\n\t\nfrom scipy.optimize import minimize\ndef cons_for_loop(x):\n\tfor t in range (4):\n\t\tdef const(x):    \n\t\t\ty=x[t]\n\t\t\treturn y\n\t\tyield {'type':'ineq', 'fun': const}\ndef steady_state():\n\treturn {'type':'eq', 'fun': lambda x: x.sum()-(I.sum())}\n"}

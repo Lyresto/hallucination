@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(a, pos, element):\n    return np.insert(a, pos, element)\n\n# Test the function\na = np.asarray([1,2,3,4])\na = f(a, pos=2, element=66)\nprint(a)"}

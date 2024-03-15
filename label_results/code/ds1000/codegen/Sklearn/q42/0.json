@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nfrom sklearn.ensemble import ExtraTreesClassifier\nfrom sklearn.feature_selection import SelectFromModel\nimport numpy as np\nX, y = load_data()\nclf = ExtraTreesClassifier(random_state=42)\nclf = clf.fit(X, y)\n"}

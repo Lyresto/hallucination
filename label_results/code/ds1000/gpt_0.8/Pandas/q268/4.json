@@ -1,0 +1,1 @@
+{"trg_prediction": "ts = pd.Series(df['Value'].values, index=df['Date'])\n"}

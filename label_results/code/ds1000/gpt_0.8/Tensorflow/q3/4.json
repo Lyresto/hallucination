@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\n\nlabels = [0, 6, 5, 4, 2]\n\n# Create a tensor with shape (len(labels), 10) filled with zeros\nresult = tf.zeros((len(labels), 10), dtype=tf.int32)\n\n# Update the tensor at the corresponding indices with ones\nfor i, label in enumerate(labels):\n    result[i, label] = 1\n"}

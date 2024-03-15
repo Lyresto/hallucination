@@ -1,0 +1,1 @@
+{"trg_prediction": "from statistics import mean\n\ndef df_gt_thres(df, thresh):\n\treturn df.loc[df['value'] > thresh]\n\n\n# YOU NEED TO START WITH THIS SLOW KATA --- PARZIVAL\n"}

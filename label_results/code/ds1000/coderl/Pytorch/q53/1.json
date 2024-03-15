@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import array, sum\nfrom torch import *\n\nt1 = load_data()\nt2 = load_data()\n\nprint((sum(array(t1[1]).values!= array(t2[1]).values)))\n"}

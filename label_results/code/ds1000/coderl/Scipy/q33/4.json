@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport scipy.ndimage\n\ndef reduce_noise(square):\n\treturn np.zeros_like(square) * np.minimum(square.shape) + square\n"}

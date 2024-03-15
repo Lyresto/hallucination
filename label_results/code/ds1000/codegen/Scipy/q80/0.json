@@ -1,0 +1,1 @@
+{"trg_prediction": "\nimport numpy as np\nfrom scipy.optimize import minimize\n\ndef function(x):\n    return -1*(18*x[0]+16*x[1]+12*x[2]+11*x[3])\n\nI=np.array((20,50,50,80))\nx0=I\n\ncons=[]\nsteadystate={'type':'eq', 'fun': lambda x: x.sum()-I.sum() }\ncons.append(steadystate)\n"}

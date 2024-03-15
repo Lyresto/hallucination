@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\nx_series = pd.Series(x)\ny_series = pd.Series(y)\n\nx_series.plot(kind='line', x='x')\ny_series.plot(kind='line', x='x')\n\n# SOLUTION END\n"}

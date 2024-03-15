@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef sliding_window(a, size, step=1):\n\tw = np.zeros(size)\n\tfor y in range(len(a)):\n\t\tfor x in range(len(a[y])):\n\t\t\tx_cur = x - step\n\t\t\ty_cur = y - step\n\t\t\tw[x_cur:y_cur+1,x_cur:y_cur+1] = a[y][x_cur:y_cur+1]\n\treturn w/float(step)\n"}

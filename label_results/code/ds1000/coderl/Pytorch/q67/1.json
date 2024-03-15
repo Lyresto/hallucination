@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\nimport torch\n\nhid_dim = 32\ndata = torch.randn(10, 2, 3, hid_dim)\ndata = data.view(10, 2 * 3, hid_dim)\nW = torch.randn(hid_dim)\nresult = torch.bmm(data, W).squeeze() # error, want (N, 6)\nresult = result.view(10, 2, 3)\n"}

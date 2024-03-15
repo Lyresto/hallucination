@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\n\ndef test_count():\n\tc = Counter(a.numpy()[i] for i in range(100))\n\tassert c['0'] == 1, '0'\n\tassert c['5'] == 1, '5'\n\tassert c['7'] == 2, '7'\n\tassert c['9'] == 1, '9'\n"}

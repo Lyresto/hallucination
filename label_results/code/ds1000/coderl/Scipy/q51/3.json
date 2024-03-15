@@ -1,0 +1,1 @@
+{"trg_prediction": "def kurtosis(a):\n\tn = len(a)\n\tS = sum(a)\n\tp = scipy.stats.norm(scale=1)\n\tk = p.kurtosis(S)\n\treturn (k, p.cdf(k))\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def rename_columns(df):\n\t\"\"\"\n\tRename All Columns\n\t\"\"\"\n\ts = ''\n\tfor c in df.columns:\n\t\tif c[-1] == 'X':\n\t\t\ts += c + 'X'\n\t\telse:\n\t\t\ts += c\n\tdf.columns = [x.rstrip('X') for x in df.columns]\n\treturn df\n"}

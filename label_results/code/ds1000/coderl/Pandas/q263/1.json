@@ -1,0 +1,1 @@
+{"trg_prediction": "def filter_df_by_other(df, filt):\n\treturn df[df.index.get_level_values('a').isin(filt.index.get_level_values('a')) &\n\t\t   df.index.get_level_values('b').isin(filt.index.get_level_values('b'))]\n"}

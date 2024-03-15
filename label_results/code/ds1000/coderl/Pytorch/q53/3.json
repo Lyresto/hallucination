@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\nimport torch\n\ndef cnt_not_equal(a: int, b: int):\n\ta, b = list(map(int, (a, b)))\n\treturn sum(torch.tensor(a, dtype=np.int64).eq(torch.tensor(b, dtype=np.int64)).nonzero()[0][1]\n"}

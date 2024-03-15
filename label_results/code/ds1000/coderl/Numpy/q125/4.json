@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef mean(arr, size): \n\tn = len(arr) \n\treturn np.mean(np.array(arr).reshape(n, size)).tolist()\n\ndef mean_bin(data, size):\n\treturn [mean(arr, size) for arr in data]\n"}

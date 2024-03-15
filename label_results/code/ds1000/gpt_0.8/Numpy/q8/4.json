@@ -1,0 +1,1 @@
+{"trg_prediction": "# Find the maximum value in a\nmax_val = np.max(a)\n\n# Create an empty one-hot array with the appropriate shape\nb = np.zeros((a.shape[0], max_val+1))\n\n# Set the corresponding elements in b to 1\nb[np.arange(a.shape[0])[:, None], a] = 1\n"}

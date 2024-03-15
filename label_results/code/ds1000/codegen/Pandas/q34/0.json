@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\ndf = pd.DataFrame({\n'group': ['A', 'A', 'A', 'B', 'B'],\n'group_color' : ['green', 'green', 'green', 'blue', 'blue'],\n'val1': [5, 2, 3, 4, 5], \n'val2' : [4, 2, 8, 5, 7]\n})\n  group group_color  val1  val2\ngroup                        \nA           green    10    14\nB            blue     9    12\n"}

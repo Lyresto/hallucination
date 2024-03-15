@@ -1,0 +1,1 @@
+{"trg_prediction": "def line_chart(x,y):\n\tdf = pd.DataFrame({'x':x, 'y':y})\n\treturn df.plot.line()\n\ndef y_of_x(x, y):\n\treturn x[y]\n\n# Plot y over x in a line chart and name axis with labels (x and y). Hide tick labels but keep axis labels.\n# SOLUTION START\ny_of_x(x, y)\nplt.title('y-of-x')\nplt.ylabel('y')\n\n"}

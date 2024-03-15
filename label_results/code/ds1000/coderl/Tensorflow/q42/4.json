@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\nfrom tensorflow.python.framework import constant_op\n\ndef rand_tensor(shape, minval, maxval, seed):\n\ttf.set_random_seed(seed)\n\treturn constant_op.constant(list(range(minval, maxval + 1)), shape=shape)\n"}

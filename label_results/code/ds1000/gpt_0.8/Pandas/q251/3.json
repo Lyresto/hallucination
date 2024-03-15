@@ -1,0 +1,1 @@
+{"trg_prediction": "# Get the maximum length of the lists in 'codes'\nmax_len = df['codes'].apply(len).max()\n\n# Create new columns with 'code_' prefix\nnew_columns = [f'code_{i}' for i in range(max_len)]\n\n# Split the lists in 'codes' into separate columns\ndf[new_columns] = pd.DataFrame(df['codes'].tolist())\n\nresult = df\n"}

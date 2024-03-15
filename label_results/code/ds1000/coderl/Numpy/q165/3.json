@@ -1,0 +1,1 @@
+{"trg_prediction": "def distance(a):\n\tn, m = len(a), len(a[0])\n\treturn [[abs(x - y) for y in a] for x in range(n)]\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import DataFrame\n\n\ndef split_df(df, var_split):\n\tparts = df.str.split(var_split)\n\treturn [DataFrame({'id': i, 'var1': var, 'var2': t} for i, t in enumerate(parts)) for var in var_split]\n"}

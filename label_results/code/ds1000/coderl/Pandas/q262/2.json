@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef filter_df(df, filt):\n\tresult = df.copy()\n\tfor k, v in df.index.items():\n\t\tif k in filt.index.keys():\n\t\t\tresult[k] = df[v]\n\treturn result\n"}

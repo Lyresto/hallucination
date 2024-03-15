@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import groupby\n\n\ndef extract(a):\n\txs = list(zip(*a))\n\tr = []\n\tfor (i, j), (i1, j1) in groupby(enumerate(a), key=lambda x: x[0]):\n\t\txs1 = []\n\t\tfor k in range(2):\n\t\t\txs1 += [list(j1[k::2 * k] + j1[k * 2::2 * k])]\n\t\txs.append(xs1)\n\treturn xs\n"}

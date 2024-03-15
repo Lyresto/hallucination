@@ -1,0 +1,1 @@
+{"trg_prediction": "from datetime import datetime\n\ndef fillna(df, dict_, key=None):\n\t# fill_value = np.nan\n\tdf[key or 'Member'] = df['Member'].apply(lambda x: dict_.get(x,np.nan))\n\t\n\treturn df\n"}

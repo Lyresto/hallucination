@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import DataFrame\nfrom collections import Counter\ndef find_duplicates(df):\n\tdf = df.reset_index(drop=True)\n\tdf['index_original'] = df.index\n\tdf_dup = df.duplicated(subset=['col1','col2'], keep='last')\n\tdf_dup = df_dup.loc[df_dup == True]\n\treturn df_dup.drop(df_dup.index.name, axis=1)\n"}

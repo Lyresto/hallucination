@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef get_distance_2(y, x):\n\tmid = np.array([[y[i][j], x[i][j], 0] for i in range(len(y)) for j in range(len(y[i]))])\n\treturn np.dot(mid, mid.T).round()\n"}

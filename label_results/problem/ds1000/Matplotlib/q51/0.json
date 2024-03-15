@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.plot(x, y)\nplt.xticks([])\nplt.show()\n"}

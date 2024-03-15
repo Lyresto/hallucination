@@ -1,0 +1,1 @@
+{"trg_prediction": "from math import ceil, log\n\ndef f(x):\n\treturn ceil((x * 2 - log(x)) / log(2))\n\ndef plot(x, y):\n\tp = (x * 2 - log(x)) / log(2)\n\treturn p.plot(y, x)\n\n# solving the kata\nd = pd.DataFrame({\"x\": x, \"y\": y})\na = plot(d[\"x\"], d[\"y\"])\n"}

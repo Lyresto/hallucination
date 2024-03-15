@@ -1,0 +1,1 @@
+{"trg_prediction": "from datetime import datetime\n\ndef rank_df(df):\n\tranks = {}\n\tfor _, row in df.iterrows():\n\t\ttimes = [datetime.strptime(time, '%Y-%m-%d %H:%M:%S') for time in row['TIME']]\n\t\tranks[row['ID']] = times.count(min(times))\n\treturn ranks\n"}

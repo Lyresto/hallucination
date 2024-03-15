@@ -1,0 +1,1 @@
+{"trg_prediction": "y = np.random.rand(10)\nplt.plot(x, y, linestyle='-', label='solid')\ny = np.random.rand(10)\nplt.plot(x, y, linestyle='--', label='dashed')\ny = np.random.rand(10)\nplt.plot(x, y, linestyle='-.', label='dashdot')\ny = np.random.rand(10)\nplt.plot(x, y, linestyle=':', label='dotted')\n"}

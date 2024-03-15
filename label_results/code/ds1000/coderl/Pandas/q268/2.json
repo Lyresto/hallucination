@@ -1,0 +1,1 @@
+{"trg_prediction": "def df_to_ts(df):\n\t#your code here\n\tdates = [pd.to_datetime(df[c]) for c in df]\n\tvalues = df['Value']\n\treturn pd.Series(values, index=dates)\n"}

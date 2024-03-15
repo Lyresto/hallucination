@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom sklearn import permutation\n\ndef sklearn_to_np(features):\n\treturn np.array([[val == i for val in features[i]] for i in range(len(features))])\n\ndef np_to_sklearn(features):\n\treturn permutation.permutation(np.array(features)).astype(int)\n"}

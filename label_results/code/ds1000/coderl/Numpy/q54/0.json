@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef solve():\n\tcol = int(input())\n\ta = list(map(float, input().split()))\n\tmult = a[col]\n\tc = 0\n\ts = []\n\tfor i in range(len(a)):\n\t\tc += a[i]\n\t\ts.append(c)\n\tresult = s\n\tprint(result)\n\ndef __starting_point():\n\tsolve()\n__starting_point()\n"}

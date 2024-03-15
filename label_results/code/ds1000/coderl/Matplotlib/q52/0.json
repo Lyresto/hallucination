@@ -1,0 +1,1 @@
+{"trg_prediction": "# SOLUTION END\n\n# Plot y over x\n# move the y axis ticks to the right\n# SOLUTION START\n\n# x axis labels\nax = plt.subplot(111)\ndf = pd.DataFrame({\"x\":x, \"y\":y})\ndf.plot.bar(x='x', y='y')\nax.set_ybound(bottom=0)\n\n# SOLUTION END\n"}

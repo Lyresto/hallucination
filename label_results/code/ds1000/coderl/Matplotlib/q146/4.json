@@ -1,0 +1,1 @@
+{"trg_prediction": "# SOLUTION END\n\ndf = pd.DataFrame({'x': x, 'y': y})\ndf['z'] = df['y'] / df['x']\ndf.plot.bar(x='x', y='y', alpha=0.5)\ndf.plot.legend(loc='best')\n"}

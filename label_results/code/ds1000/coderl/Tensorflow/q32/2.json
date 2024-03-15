@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef tf_average_last_dim(x):\n\treturn np.mean(np.mean(np.concatenate(a, axis=-1), axis=-1)) / len(np.concatenate(a, axis=-1))\n"}

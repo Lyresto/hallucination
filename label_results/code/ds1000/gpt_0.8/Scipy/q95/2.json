@@ -1,0 +1,1 @@
+{"trg_prediction": "def eqn(a, x, b):\n    return x + 2*a - b**2\n\nresult = []\n\nfor i in range(len(xdata)):\n    root = fsolve(eqn, x0=0.5, args=(xdata[i], bdata[i]))\n    result.append(root)\n\nresult = np.array(result)\nprint(result)\nEND SOLUTION\n"}

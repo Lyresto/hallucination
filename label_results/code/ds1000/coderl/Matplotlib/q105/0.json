@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\n\ndef plot(t, x):\n\treturn np.concatenate((x[:3], x[3:8]), axis=1).T\n\t\ndef legend(t, x):\n\tn, y = len(x), np.array(t)\n\treturn (np.concatenate((y[:-n], y[-n:]), axis=1).T -\n\t\t\tnp.concatenate((y[:-n], y[-n:]), axis=1))\n\nt = np.arange(0, 20)\nx = plot(t, t)\n# print(x)\nlegend(t, x)\nplt.show()\n"}

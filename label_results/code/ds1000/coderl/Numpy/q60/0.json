@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport scipy.stats\na,b=np.mean(a),np.mean(b)\nc=np.array([sum(np.random.randn(i)) for i in range(40)]).T\nd=np.array([sum(np.random.randn(i)) for i in range(50)]).T\np_value=scipy.stats.t.ppf(c,d)[2]\n"}

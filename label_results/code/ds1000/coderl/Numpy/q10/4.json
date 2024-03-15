@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nA = np.array([[1,2,3,4,5,6],\n\t[7,8,9,10,11,12],\n\t[13,14,15,16,17,18],\n\t[19,20,21,22,23]])\nncol = 2\nB = np.mat(A).T\n"}

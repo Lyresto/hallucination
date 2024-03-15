@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n#solving this problem\nx = np.arange(10)\ny = np.arange(10)\nz = x*y\na = x + y\n\ndf = pd.DataFrame({'a': a, 'b': z})\ndf['c'].plot.bar(y_order=0)\n#solving the next one\n"}

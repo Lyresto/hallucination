@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport torch\nA,B = load_data()\nC = B[:,A]\nprint(C)\n"}

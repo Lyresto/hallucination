@@ -1,0 +1,1 @@
+{"trg_prediction": "from statistics import mean, pstdev\n\ndef std_meann(x):\n\treturn pstdev(x).std()\n"}

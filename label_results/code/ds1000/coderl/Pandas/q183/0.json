@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import Series\n\ndef f(d, df):\n\ts = Series(df['Member'], name='Member')\n\tfor i, v in enumerate(d.values()):\n\t\ts[i] = v\n\treturn df.apply(s.fillna, axis=1)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "fig, axs = plt.subplots(2, 2, figsize=(15, 15))\n\nfor i in range(2):\n    for j in range(2):\n        axs[i, j].plot(x, y)\n        axs[i, j].set_title(f\"Subplot {i+1}-{j+1}\")\n\nplt.show()"}

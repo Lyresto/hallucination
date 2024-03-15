@@ -1,0 +1,1 @@
+{"trg_prediction": "def replace_each_a(df):\n\tfor i, row in enumerate(df.values):\n\t\tif i == 0:\n\t\t\tcontinue\n\t\tdf['a'][i] = str(int(row[0]))\n\treturn df\n"}

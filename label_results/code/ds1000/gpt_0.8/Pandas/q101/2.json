@@ -1,0 +1,1 @@
+{"trg_prediction": "df = df.replace('&LT;', '<', regex=True)\n"}

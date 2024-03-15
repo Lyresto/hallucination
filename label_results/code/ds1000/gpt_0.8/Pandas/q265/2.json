@@ -1,0 +1,1 @@
+{"trg_prediction": "result = df.columns[df.loc[[0, 8]].equals(df.loc[[0, 8]].ffill(axis=1).bfill(axis=1))]"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import merge\n\ndef solve():\n\tdf = pd.DataFrame({'text': ['abc', 'def', 'ghi', 'jkl']})\n\tr1 = merge(df, rows=\"text\")\n\tprint(r1.to_string())\n\t\n\nsolve()\n"}

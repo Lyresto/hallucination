@@ -1,0 +1,1 @@
+{"trg_prediction": "def multiply_thru_frames(df1, df2):\n\treturn (df1[[\"Timestamp\", \"data\"]] * df2[[\"Timestamp\", \"data\"]]).fillna(0)\n\ndef loop_through_each_row_of_df2(df1, df2, idx):\n\tdf2_new = multiply_thru_frames(df2, df1)\n\treturn df2_new[idx]\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "a = a[~np.isnan(a)]\nb = b[~np.isnan(b)]\nt, p_value = scipy.stats.ttest_ind(a, b, equal_var=False)\n"}

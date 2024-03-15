@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\nA = pd.Series(np.random.randn(10,))\na = 2\nb = 3\nBEGIN SOLUTION\n"}

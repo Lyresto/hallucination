@@ -1,0 +1,1 @@
+{"trg_prediction": "df_transform = pd.DataFrame.sparse.from_spmatrix(transform_output)\ndf = pd.concat([df_origin, df_transform], axis=1)\nEND SOLUTION\n<code>"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def drop_duplicates(df, keep='first'):\n\td = {}\n\tfor i, v in df.iterrows():\n\t\tif v in d:\n\t\t\td[v].append(i)\n\t\telse:\n\t\t\td[v] = [i]\n\tprint(d)\n\tfor v in d:\n\t\tprint(v, d[v][0], sep=' ')\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def index_select(t, idx):\n\treturn [t[i] for i in idx]\n"}

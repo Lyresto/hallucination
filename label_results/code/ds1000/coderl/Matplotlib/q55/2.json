@@ -1,0 +1,1 @@
+{"trg_prediction": "def regplot(df):\n\tsns.jointplot(x='total_bill', y='tip', reg=df, kind='reg')\n\t# set y-axis labels\n\tif not df.empty:\n\t\tsns.jointplot(x='total_bill', y='tip', reg=df, kind='reg', y_fmt='%1.1f')\n\treturn plt.gcf()\n"}

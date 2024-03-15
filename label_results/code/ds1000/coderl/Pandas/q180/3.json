@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import defaultdict\nfrom itertools import groupby\n\ndef group_by_value(df):\n\treturn {k: list(v) for k, v in groupby(df['Value'], key=lambda x: int(x))}\n\ndef count_max(df):\n\treturn df.groupby('Value').count().dropna()\n\ndef solution(df):\n\treturn list(map(count_max, group_by_value(df)))\n"}

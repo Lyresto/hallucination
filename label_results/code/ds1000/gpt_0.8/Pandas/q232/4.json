@@ -1,0 +1,1 @@
+{"trg_prediction": "result = df['text'].str.cat(sep=', ')\n"}

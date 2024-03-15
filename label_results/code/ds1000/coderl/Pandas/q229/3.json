@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import groupby\n\ndef count_views_by_user(df, bins):\n\t# your code\n\tdf_t = df.copy()\n\tfor key, group in groupby(df_t['post_id'], key = lambda x: x):\n\t\tbin_width = max(df_t[key] - 1, bins[0] - 1)\n\t\tgroup_count = sum((df_t[key] // bin_width).values())\n\t\tdf_t[key] = group_count\n\treturn df_t.username.count()\n"}

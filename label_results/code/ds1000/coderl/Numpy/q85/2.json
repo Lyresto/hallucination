@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom itertools import compress\n\ndef gen():\n\trandom_label = np.random.randint(2, size=numbers)\n\tfor i in range(0, numbers):\n\t\tif random_label[i] == 0:\n\t\t\tyield 0\n\t\telse:\n\t\t\tyield 1\n\nnums = list(compress(gen(), [int(one_ratio * size) for one_ratio in range(0, 1.1)]))\n"}

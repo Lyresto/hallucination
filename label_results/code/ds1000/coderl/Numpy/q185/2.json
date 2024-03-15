@@ -1,0 +1,1 @@
+{"trg_prediction": "def qcumsum(df,name):\n\tif name == 'Q_cum':\n\t\treturn df.Q_cum\n\telse:\n\t\treturn sum(df[name])\n"}

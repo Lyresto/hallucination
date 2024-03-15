@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef select_elements(a, b):\n\tN, M = a.shape\n\ttarget = np.zeros((N, M), dtype=np.int)\n\tfor n, i in enumerate(b):\n\t\ttarget[n, i] = np.argwhere(a == i)[0].tolist()\n\treturn target\n"}

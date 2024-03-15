@@ -1,0 +1,1 @@
+{"trg_prediction": "result = np.zeros((len(a), len(a))) # initialize result matrix with zeros\nfor i in range(len(a)):\n    for j in range(len(a)):\n        result[i][j] = np.linalg.norm(a[i]-a[j]) # calculate Euclidean distance between i-th and j-th point\n"}

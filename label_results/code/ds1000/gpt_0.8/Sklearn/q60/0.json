@@ -1,0 +1,1 @@
+{"trg_prediction": "from sklearn.preprocessing import MultiLabelBinarizer\n\nmlb = MultiLabelBinarizer()\nnew_features = mlb.fit_transform(features)\n"}

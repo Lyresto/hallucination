@@ -1,0 +1,1 @@
+{"trg_prediction": "def join_dataframes(df1, df2):\n\tdf1_tup = ((df1['Timestamp'], df1['data']),)\n\tdf2_tup = ((df2['Timestamp'], df2['stuff']),)\n\tfor tup in df1_tup:\n\t\tfor x in df2_tup:\n\t\t\tif tup[0] <= x[0] <= tup[1]:\n\t\t\t\tyield tup\n"}

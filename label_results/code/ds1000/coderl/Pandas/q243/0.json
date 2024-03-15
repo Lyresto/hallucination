@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import groupby\n\ndef agg(df):\n\tresult = []\n\tfor key, group in groupby(df, key = lambda x: x[0]):\n\t\tgroup_list = list(group.tolist())\n\t\tresult.append(list(zip(group['time'], group_list)))\n\treturn pd.DataFrame(result)\n"}

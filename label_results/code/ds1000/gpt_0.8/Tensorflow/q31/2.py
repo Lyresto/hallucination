@@ -1,0 +1,1 @@
+result = [tf.strings.decode(x_i, 'utf-8') for x_i in x]

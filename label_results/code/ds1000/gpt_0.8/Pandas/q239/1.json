@@ -1,0 +1,1 @@
+{"trg_prediction": "result = pd.concat([df1, df2], axis=0)\nresult = result.sort_values(by=['id', 'date'])\nresult['city'] = result['city'].fillna(method='ffill')\nresult['district'] = result['district'].fillna(method='ffill')\nresult = result.reset_index(drop=True)\nresult\n"}

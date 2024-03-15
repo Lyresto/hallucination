@@ -1,0 +1,1 @@
+{"trg_prediction": "fig, ax = plt.subplots()\nax.plot(x, y)\nax.yaxis.tick_right()\nplt.show()"}

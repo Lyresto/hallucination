@@ -1,0 +1,1 @@
+{"trg_prediction": "result = np.empty_like(array_of_arrays)\nfor i in range(array_of_arrays.shape[0]):\n    result[i] = np.copy(array_of_arrays[i])\n"}

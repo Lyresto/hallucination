@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef sort_df(s):\n\t# your code here\n\tseries = pd.Series(s)\n\tseries.sort_values(inplace=True)\n\tindex = series.index\n\tnew_series = pd.Series(index)\n\tnew_series.sort_values(inplace=True)\n\treturn new_series\n\t\n"}

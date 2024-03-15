@@ -1,0 +1,1 @@
+{"trg_prediction": "last_column = df.columns[-1]\ndf.rename(columns={last_column: 'Test'}, inplace=True)\nresult = df\n"}

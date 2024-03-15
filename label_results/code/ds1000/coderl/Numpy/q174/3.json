@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import zip_longest\ndef f(*args):\n\tdf = pd.DataFrame({'lat': args[0], 'lon': args[1], 'val': args[2]})\n\tfor i, (a, b) in enumerate(zip_longest(*args)):\n\t\tdf['lat'][i], df['lon'][i], df['val'][i] = a, b, c\n\treturn df\n"}

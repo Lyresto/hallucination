@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import DataFrame\n\ndef convert_to_pandas(px):\n\treturn DataFrame.from_tuples((row[\"index\"], list(row.values())) for row in px.iterrows())\n"}

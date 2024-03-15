@@ -1,0 +1,1 @@
+{"trg_prediction": "def get_mask(lens):\n\tif len(lens) == 0:\n\t\treturn []\n\tx = []\n\tfor i in lens:\n\t\tx.append([0]*i)\n\tfor i in range(len(lens)):\n\t\tfor j in range(i+1, len(lens)+1):\n\t\t\tx[i][j] = 1\n\treturn x\n"}

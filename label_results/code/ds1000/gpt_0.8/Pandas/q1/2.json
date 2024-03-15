@@ -1,0 +1,1 @@
+{"trg_prediction": "df_shuffled = df.iloc[List].reset_index(drop=True)\nresult = len(df_shuffled[df_shuffled['Type'] != df['Type']])\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "mask = torch.zeros(len(lens), max(lens))\nfor i, length in enumerate(lens):\n    mask[i, :length] = 1\nreturn mask.long()\n### END SOLUTION"}

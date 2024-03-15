@@ -1,0 +1,1 @@
+{"trg_prediction": "import re\n\ndef extract_date(df, list):\n\tfor i in range(len(list)):\n\t\tdf['Date'] = re.sub(r'\\d{2}-\\d{2}-\\d{4}', lambda m: f'{m.group(0)}-{m.group(1)}', df['Date'])\n\treturn df['Date'][0:10]\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\nfrom operator import itemgetter\n\ndef accuracy(scores):\n\treturn float(sum(count[1] == value[1] for value, count in Counter(scores.numpy()).items())) / len(set(scores.numpy()))\n"}

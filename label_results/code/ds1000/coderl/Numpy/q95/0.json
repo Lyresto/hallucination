@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import groupby\nfrom numpy import rolling_window\n\ndef sliding_window(a):\n\tl = len(a)\n\treturn [[a[y:y+2*j, x:x+2*j] for j, i in enumerate(list(range(0,l)) + list(range(1,l)))] for x in range(0,l) for y in range(0,l)]\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import re\ndef replace(s):\n\treturn re.sub(r'[&lt;]{2,}[\\s,;]*', '<', s)\n\t\ndef replace_all(df):\n\tfor i, c in df.iteritems():\n\t\tdf[i] = replace(c)\n\treturn df\n"}

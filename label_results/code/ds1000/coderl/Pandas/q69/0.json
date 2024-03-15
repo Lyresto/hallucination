@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef df_select_rows_to_numpy(df):\n\tnum_rows = len(df)\n\tnum_columns = len(df.columns)\n\ttraining_set = np.full((num_rows, num_columns), -np.inf)\n\tfor row, col in zip(df.itertuples(), df.columns.itertuples()):\n\t\tif row[col].min() > 0.45:\n\t\t\ttraining_set[row] = row[col]\n\treturn training_set\n"}

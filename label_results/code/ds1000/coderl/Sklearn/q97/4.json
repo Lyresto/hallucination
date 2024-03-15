@@ -1,0 +1,1 @@
+{"trg_prediction": "def Transform(a):\n\tscaler = MinMaxScaler()\n\treturn [scaler.fit_transform(np_array[:, i]).tolist() for i in range(len(a))]\n"}

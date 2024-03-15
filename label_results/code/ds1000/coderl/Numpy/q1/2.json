@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef remove_nans(x):\n\ta=[]\n\tfor i in x:\n\t\tif i!=np.nan:\n\t\t\ta.append(i)\n\treturn a\n"}

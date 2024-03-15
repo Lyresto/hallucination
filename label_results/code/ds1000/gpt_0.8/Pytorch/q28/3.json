@@ -1,0 +1,1 @@
+{"trg_prediction": "a_lengths = torch.arange(a.size(1)).unsqueeze(0).expand_as(a)\nmask = a_lengths >= lengths.unsqueeze(1)\na[mask] = 0\n"}

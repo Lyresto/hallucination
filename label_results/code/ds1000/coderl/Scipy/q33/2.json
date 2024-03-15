@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.ndimage\ndef prune_noise(square):\n\treturn scipy.ndimage.maximum_filter(square, size=(1,1), mode=\"constant\")\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def time_spent(df1, df2):\n\treturn df1['Timestamp'] - df2['Timestamp']\n"}

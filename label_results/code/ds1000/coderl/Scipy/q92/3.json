@@ -1,0 +1,1 @@
+{"trg_prediction": "from scipy.cluster.hierarchy import linkage\n\ndef closest_to_centroid(centroids, data):\n\treturn list(map(linkage(lambda i,j: tuple(i), data, centroid, mode='distance')[0][0]))\n"}

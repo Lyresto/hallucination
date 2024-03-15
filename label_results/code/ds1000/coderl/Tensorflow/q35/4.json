@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\n\nsess = tf.compat.v1.Session()\n\ndef evaluate(sess, input):\n\top = sess.graph.get_operation_by_name(input)\n\tprint(op)\n\treturn op.outputs[0].eval()\n\n\nprint(evaluate(sess, 'add:0'))\nprint(evaluate(sess,'mul:0'))\nprint(evaluate(sess,'sub:0'))\nprint(evaluate(sess, 'truediv:0'))\n"}

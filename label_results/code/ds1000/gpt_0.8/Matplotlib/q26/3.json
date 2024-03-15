@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.imshow(H, cmap='binary')\nplt.colorbar()\nplt.show()\n"}

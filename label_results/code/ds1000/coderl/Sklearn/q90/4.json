@@ -1,0 +1,1 @@
+{"trg_prediction": "def linear_regression(df):\n\tnpMatrix = np.matrix(df)\n\tX, Y = npMatrix[:, 0], npMatrix[:, 1]\n\tslope = LinearRegression().fit(X,Y)\n\tm = slope.coef_[0]\n\tseries= np.concatenate((SGR_trips, m), axis = 0)\n\treturn series\n\n\n\n"}

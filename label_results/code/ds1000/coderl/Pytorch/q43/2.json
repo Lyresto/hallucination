@@ -1,0 +1,1 @@
+{"trg_prediction": "def softmax(x):\n\treturn [sum(p == x[i]) / len(x[i]) for i,p in enumerate(x)]\n"}

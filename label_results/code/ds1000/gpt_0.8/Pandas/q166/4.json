@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nimport numpy as np\n\ndf = pd.DataFrame({'a':[1,1,1,2,2,2,3,3,3], 'b':[12,13,23,22,23,24,30,35,55]})\n\nresult = df.groupby('a').b.agg(mean=np.mean, std=np.std)\nresult"}

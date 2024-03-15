@@ -1,0 +1,1 @@
+{"trg_prediction": "df = df.loc[:, (df != 0).any(axis=0)]\ndf = df.loc[(df != 0).any(axis=1)]\nresult = df\n"}

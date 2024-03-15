@@ -1,0 +1,1 @@
+{"trg_prediction": "import torch\nimport numpy as np\na = np.ones(5)\na_pt =... # put solution in this variable\ntorch_t = torch.from_numpy(a)\n"}

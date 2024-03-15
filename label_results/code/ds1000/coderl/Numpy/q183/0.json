@@ -1,0 +1,1 @@
+{"trg_prediction": "# def test_remove_contour(c):\n#     print(c in CNTS)\n#     print(c in CNTS[0])\n#     return True\n\n# def test_remove_contour(c):\n#     print(c in CNTS)\n#     print(c in CNTS[0])\n#     return True\n\nimport numpy as np\n\ndef test_is_contour_member(c, CNTS):\n\tprint(c in CNTS)\n\tprint(c in CNTS[0])\n\treturn np.all(c in CNTS)\n"}

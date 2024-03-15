@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\nimport torch\n\ndef convert_tensors_to_tensors(list_of_tensors):\n\treturn [torch.tensor(t) for t in list_of_tensors]\n"}

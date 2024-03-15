@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\na = np.array([4, 1, 0, 8, 5, 2])\nN = 3\ndef get_result(N):\n\tarr = np.array(a)\n\tindex_list = []\n\tfor i in range(len(arr)):\n\t\tif (i == N-1):\n\t\t\tindex_list.append(i)\n\t\telif arr[i] > arr[i+1]:\n\t\t\tindex_list.append(i)\n\treturn index_list\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "r_old = np.random.seed(0)\nr_old = np.random.randint(3, size=(100, 2000)) - 1\n\nr_new = np.random.seed(0)\nr_new = np.random.randint(3, size=(100, 2000)) - 1\n"}

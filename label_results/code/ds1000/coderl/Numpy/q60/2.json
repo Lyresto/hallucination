@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport scipy.stats\n\na = np.array(a)\nb = np.array(b)\nmean1 = a.mean()\nmean2 = b.mean()\nstds1 = (a - mean1) ** 2 + (b - mean2) ** 2\np_value = scipy.stats.ttest_1samp(a,b)[1]\n\n"}

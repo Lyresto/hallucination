@@ -1,0 +1,1 @@
+{"trg_prediction": "# SOLUTION END\ndf = pd.DataFrame({'x': x, 'y': y})\nsns.tsplot(df, x='x', y='y', kind='sin')\nplt.xlabel('x')\nplt.ylabel('y')\n"}

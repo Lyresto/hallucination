@@ -1,0 +1,1 @@
+{"trg_prediction": "x = np.linspace(0, 2 * np.pi, 10)\ny = np.cos(x)\nplt.plot(x, y, label=\"sin\")\nplt.xlabel(\"x\")\nplt.ylabel(\"y\")\nplt.legend()\nplt.show()\n#"}

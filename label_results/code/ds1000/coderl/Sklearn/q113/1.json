@@ -1,0 +1,1 @@
+{"trg_prediction": "from sklearn import cross_validation\nfrom functools import partial\n\ndef predict(X, y):\n\treturn list(partial(cross_validation.cross_val_predict, X, y, scoring='roc', cv=10))\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import groupby\nfrom numpy import chunks\n\ndef chunks_sum(iterable, size):\n\titerable = iter(iterable)\n\treturn sum(sum(chunks(iterable, size), ()) / size)\n\ndef split_tensors_by_step(tensors, chunk_dim):\n\treturn [list(g) for _, g in groupby(tensors, key=chunks_sum)]\n"}

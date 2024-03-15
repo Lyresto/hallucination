@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.spatial\nimport numpy as np\n\ndef extract_closest_point(centroids, data):\n\tN = len(centroids)\n\tdist = np.zeros((N, N))\n\tfor i in range(N):\n\t\tdist[i] = scipy.spatial.distance.pdist(centroids, data).min()\n\treturn [dist[i, j] for i in range(N) for j in range(N)]\n"}

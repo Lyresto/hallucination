@@ -1,0 +1,1 @@
+{"trg_prediction": "C = np.setdiff1d(A, B)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "for t in range (4):\n    def const(x):    \n        y=x[t]\n        return y\n    cons.append({'type':'ineq', 'fun': const})\nout=minimize(function, x0, method=\"SLSQP\", constraints=cons)\nx=out[\"x\"]"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas\n\ndef load_data():\n\tX = []\n\tY = []\n\tfor i in range(0, 40):\n\t\tX.append([i] * 40 + ['a'] * 40 + [i] * 40)\n\tfor i in range(0, 40):\n\t\tX[i][i] = int(np.mean(X[i][:40]))\n\tfor i in range(0, 40):\n\t\tY.append([i] * 40 + ['a'] * 40 + [i] * 40)\n\tX = pandas.DataFrame(X)\n\tY = pandas.DataFrame(Y)\n\treturn (X, Y)\n"}

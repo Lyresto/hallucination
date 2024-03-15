@@ -1,0 +1,1 @@
+{"trg_prediction": "x = [1,2,3,4,5,6,7,8,9,0]\ny = [1,2,3,4,5,6,7,8,9,0]\ndf = pd.DataFrame({'x':x, 'y':y})\ndf.plot(x='x', y='y', kind='line')\n# make legend fontsize 8\n"}

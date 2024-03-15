@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\ndataset = load_data()\nx_train, x_test, y_train, y_test =... # put solution in these variables\nBEGIN SOLUTION\n"}

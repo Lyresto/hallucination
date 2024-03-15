@@ -1,0 +1,1 @@
+{"trg_prediction": "def solve(a, b):\n\t# your code here\n\tt = [list(zip(a[i][:-2] + b[i][:-2], a[i][1:]+b[i][1:])) for i in range(2)]\n\treturn [list(map(mean,i)) for i,mean in zip(*t)]\n\t\ndef mean(t):\n\treturn sum(t[0]) / len(t[0])\n"}

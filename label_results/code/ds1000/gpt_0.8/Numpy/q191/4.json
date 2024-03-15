@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\nx = np.array([-1, 2, 5, 100])\ny = np.array([123, 456, 789, 1255])\n\n# Create the A matrix for the least squares equation\nA = np.column_stack([x**2, x, np.ones_like(x)])\n\n# Solve the least squares equation\nresult, _, _, _ = np.linalg.lstsq(A, y, rcond=None)\n\nresult = result.tolist()\n\nresult\n"}

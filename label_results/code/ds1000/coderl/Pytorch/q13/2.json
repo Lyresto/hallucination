@@ -1,0 +1,1 @@
+{"trg_prediction": "def solve(A_log, B):\n\ttorch.set('A_log', A_log)\n\ttorch.set('B', B)\n\tC = B[:][A_log]\n\treturn C\n"}

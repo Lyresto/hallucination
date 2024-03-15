@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import zip_longest\n\ndf = pd.DataFrame(zip_longest(x, y), columns=['x', 'y'])\nfor p, (ax1, ax2) in enumerate(df.plot.values()):\n\tax2.set_linewidth(7)\n\tax1.set_markersize(2)\n\tp += 1\n"}

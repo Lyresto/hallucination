@@ -1,0 +1,1 @@
+{"trg_prediction": "def plot_df(df):\n\tx_dim = len(df)\n\tfor i, row in enumerate(df):\n\t\tfor j, col in enumerate(row):\n\t\t\tplt.subplot(x_dim+i, x_dim+i+1, j+1)\n\t\t\tplt.plot(col, y)\n\t# Plot a global title \"Figure\"\n\tplt.title(\"Figure\")\n\t\n# SOLUTION END\n\ndf = pd.Series(y)\nplot_df(df)\n"}

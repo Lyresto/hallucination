@@ -1,0 +1,1 @@
+{"trg_prediction": "# Compute the row sums\nrow_sums = df.iloc[:, 1:].sum(axis=1)\n\n# Divide each value by the row sum and multiply by 100 to get the percentage\ndf.iloc[:, 1:] = (df.iloc[:, 1:] / row_sums[:, None]) * 100\n\ndf"}

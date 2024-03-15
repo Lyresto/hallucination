@@ -1,0 +1,1 @@
+{"trg_prediction": "from sklearn.calibration import CalibratedClassifierCV\n\n# Fit the model with probability calibration\ncalibrated_model = CalibratedClassifierCV(model, cv=5, method='sigmoid')\ncalibrated_model.fit(X, y)\n\n# Get probability estimates for the test data\nproba = calibrated_model.predict_proba(x_predict)\n"}

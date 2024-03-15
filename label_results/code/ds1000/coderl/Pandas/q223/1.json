@@ -1,0 +1,1 @@
+{"trg_prediction": "from math import ceil\ndef fillna(df, x='column_x'):\n\tfill_value = df[x].mode()[0]\n\tif fill_value == 0:\n\t\treturn df[x].fillna(0)\n\telse:\n\t\tfill_value = ceil(fill_value*100/16000)\n\t\treturn df[x].fillna(fill_value)\n"}

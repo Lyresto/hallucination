@@ -1,0 +1,5 @@
+g = sns.FacetGrid(df, row="b", height=2, aspect=3)
+g.map(sns.pointplot, "a", "c", color="k", ci=None)
+g.set_xticks(np.arange(1, 31, 2))
+g.set_xticklabels(np.arange(1, 31, 2))
+plt.show()

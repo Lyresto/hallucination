@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef sliding_window(a):\n\tn,m = len(a), len(a[0])\n\treturn [[[(a[b][c] - a[b][c+1])/2 + (a[b][c] - a[b][c+1])/2 for c in range(0,m-1)] for b in range(0,n-1)]\n"}

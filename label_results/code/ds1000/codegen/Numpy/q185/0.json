@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nimport numpy as np\ndata = {'D':[2015,2015,2015,2015,2016,2016,2016,2017,2017,2017], 'Q':np.arange(10)}\nname= 'Q_cum'\ndf =... # put solution in this variable\ndf[name] = np.cumsum(df.Q)\n"}

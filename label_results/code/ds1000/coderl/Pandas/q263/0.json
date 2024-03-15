@@ -1,0 +1,1 @@
+{"trg_prediction": "def filter_dataframe(df, filt):\n\tif len(df.index.levels)!= len(filt.index.levels):\n\t\treturn False\n\tnew_df = df.copy()\n\tfor i,v in enumerate(df.index.levels):\n\t\tif v is not None:\n\t\t\tnew_df.ix[i,v] = df.ix[i,v]\n\tfor i,v in enumerate(filt.index.levels):\n\t\tif v is not None:\n\t\t\tnew_df.ix[i,v] = filt.ix[i,v]\n\treturn new_df\n"}

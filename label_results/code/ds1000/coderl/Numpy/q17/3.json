@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nr_old, r_new = np.random.randint(3, size=(100, 2000)) - 1 # put solution in these variables\n\ndef shuffle_it(r):\n\tnp.random.shuffle(r)\n\treturn r\n"}

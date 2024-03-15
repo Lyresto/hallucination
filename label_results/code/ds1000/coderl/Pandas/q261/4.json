@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nimport operator\n\ndef rank(df):\n\trank = pd.DataFrame(index=df['ID'])\n\tfor i, j in df.groupby('ID'):\n\t\trank = rank.loc[j, 'TIME']\n\treturn rank.rank(ascending=False)\n"}

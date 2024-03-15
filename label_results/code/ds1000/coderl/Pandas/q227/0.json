@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\n\ndef cycle(df):\n\tit = iter(df.iterrows())\n\treturn list(zip(*(next(it) for _ in range(len(df.columns)))))\n\n\n# print(cycle(a))\n# print(cycle(b))\n# print(cycle(c))\n"}

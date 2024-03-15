@@ -1,0 +1,1 @@
+{"trg_prediction": "def diff_type(df1,df2):\n\ti = 0\n\twhile i < len(df1):\n\t\tif df1[\"Type\"][i]!= df2[\"Type\"][i]:\n\t\t\treturn True\n\t\ti += 1\n\treturn False\n"}

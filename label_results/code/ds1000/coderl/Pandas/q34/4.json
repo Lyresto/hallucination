@@ -1,0 +1,1 @@
+{"trg_prediction": "from functools import reduce\nfrom operator import mul\n\ndef groupby_sum(df, col):\n\treturn reduce(mul, map(sum, (df[col].values for col in df.columns)))\n"}

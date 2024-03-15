@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndf = pd.DataFrame({'x': x, 'y': y})\ndf = df.plot(x='x', y='y')\n\nplt.gca().set_title('y over x')\n\nprint(df.legend())\n"}

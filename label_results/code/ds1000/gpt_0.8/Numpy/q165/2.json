@@ -1,0 +1,1 @@
+{"trg_prediction": "from scipy.spatial import distance_matrix\nresult = distance_matrix(a, a)\n"}

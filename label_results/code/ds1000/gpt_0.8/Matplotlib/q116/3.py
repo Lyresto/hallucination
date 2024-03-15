@@ -1,0 +1,6 @@
+plt.scatter(x, y, c=y, cmap='Spectral')
+plt.colorbar(label='y')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Scatter Plot')
+plt.show()

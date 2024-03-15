@@ -1,0 +1,1 @@
+{"trg_prediction": "from scipy import stats\ndef column_zscore(df):\n\txs = [float(i) for i in df.probegenes]\n\treturn (stats.scoreatpercentile(xs, 80)).round(2), (stats.scoreatpercentile(xs, 90)).round(2)\n"}

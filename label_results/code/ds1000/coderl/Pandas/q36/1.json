@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef meanAdvance(df, row_list, column_list, axis=0):\n\tnew_df = df.copy()\n\tfor i in row_list:\n\t\tnew_df[i] = sum(new_df[i]) / len(row_list)\n\tresult = pd.DataFrame(new_df).mean(axis=axis)\n\treturn result\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(sA=example_sA, sB=example_sB):\n\t# your code here\n\treturn sA * sB\n"}

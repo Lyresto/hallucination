@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef gen(a):\n\tfor row in a:\n\t\tfor i, v in enumerate(row):\n\t\t\tyield i, v\n\ndef get_indexes(a):\n\treturn np.argwhere(a).T\n"}

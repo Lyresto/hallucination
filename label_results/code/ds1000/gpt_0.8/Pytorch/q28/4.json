@@ -1,0 +1,1 @@
+{"trg_prediction": "# Find the maximum length in the lengths tensor\nmax_length = torch.max(lengths)\n\n# Create a mask tensor with the same shape as 'a'\nmask = torch.ones_like(a)\n\n# Set all values after the maximum length to 0 in the mask tensor\nmask[:, max_length:] = 0\n\n# Apply the mask tensor to the 'a' tensor\na = a * mask\n"}

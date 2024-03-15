@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import defaultdict\nfrom itertools import groupby\n\ndef count_views_in_bins(df, bins):\n\tcounts = defaultdict(lambda: 0)\n\tfor u, g in groupby(df.copy(), key='post_id'):\n\t\tcounts[u] += g.count()\n\treturn sum(counts[u] for u in counts)\n"}

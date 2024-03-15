@@ -1,0 +1,1 @@
+{"trg_prediction": "def objective(x, a, y):\n    return np.sum(a * x**2 - y)**2\n\nout = scipy.optimize.minimize(objective, x0, args=(a, y), method='L-BFGS-B', bounds=[(lb, None) for lb in x_lower_bounds])\n"}

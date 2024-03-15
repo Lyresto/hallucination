@@ -1,0 +1,1 @@
+df[['fips', 'row']] = df['row'].str.split(' ', n=1, expand=True)

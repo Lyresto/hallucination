@@ -1,0 +1,1 @@
+{"trg_prediction": "def linreg(df1):\n\tdf1 = df1[~np.isnan(df1['A1'])]\n\tnpMatrix = np.matrix(df1)\n\tX, Y = npMatrix[:, 0], npMatrix[:, 1]\n\tslope = LinearRegression().fit(X,Y)\n\tm = slope.coef_[0]\n\tseries = np.concatenate((SGR_trips, m), axis = 0)\n\treturn series\n"}

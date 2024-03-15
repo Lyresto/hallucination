@@ -1,0 +1,1 @@
+{"trg_prediction": "def merge_rows(df):\n\ttext = df['text']\n\ttext_array = list(text)\n\tres = text_array[0]\n\tnew_row = text_array[0]\n\tfor i in range(1, len(text_array)):\n\t\tif text_array[i]!= res:\n\t\t\tres = text_array[i]\n\t\t\tnew_row = text_array[i]\n\ttext_array.remove(res)\n\ttext_array.append(new_row)\n\treturn text_array\n"}

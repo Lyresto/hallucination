@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom scipy.spatial import distance\n\ndef get_distance_2(y, x):\n    mid = np.array([[shape[0]//2, shape[1]//2]])\n    points = np.column_stack((y.flatten(), x.flatten()))\n    distances = distance.cdist(points, mid, 'euclidean')\n    return distances.reshape(shape)\n\ny, x = np.indices(shape)\nresult = get_distance_2(y, x)\nresult"}

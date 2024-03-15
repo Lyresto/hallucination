@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef extract_columns(a, low, high):\n\tfor i in range(low, high + 1):\n\t\ta[:] = np.take(a, range(1, i + 1), axis=0)\n\treturn a\n"}

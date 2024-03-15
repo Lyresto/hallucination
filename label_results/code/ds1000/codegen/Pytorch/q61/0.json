@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\nimport torch\nMyNet = torch.nn.Sequential(torch.nn.Linear(4, 15),\n                            torch.nn.Sigmoid(),\n                            torch.nn.Linear(15, 3),\n                            )\nMyNet.load_state_dict(torch.load(\"my_model.pt\"))\ninput = load_data()\nassert type(input) == torch.Tensor\n"}

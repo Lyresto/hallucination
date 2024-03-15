@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef pearson_coefficient(post, distance):\n\treturn np.linalg.det(np.array(post) - np.array(distance)) / np.linalg.det(np.array(distance))\n"}

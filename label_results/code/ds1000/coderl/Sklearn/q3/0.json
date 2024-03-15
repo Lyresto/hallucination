@@ -1,0 +1,1 @@
+{"trg_prediction": "def solve(data):\n\t# return the solution in this function\n\t# result = solve(data)\n\t# ### BEGIN SOLUTION\n\tiris = data['data']\n\t# pd.DataFrame(iris)\n\treturn pd.DataFrame(iris).values\n"}

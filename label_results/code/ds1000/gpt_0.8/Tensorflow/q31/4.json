@@ -1,0 +1,1 @@
+{"trg_prediction": "result = [s.decode('utf-8') for s in x]\n    ### END SOLUTION\n    return result\n\n# test the function\nprint(f(example_x))"}

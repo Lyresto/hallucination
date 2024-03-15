@@ -1,0 +1,1 @@
+{"trg_prediction": "df['transaction'] = df[['time', 'amount']].apply(tuple, axis=1)\nresult = df.groupby('user')['transaction'].apply(list)\n"}

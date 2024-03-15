@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(df=example_df):\n\tfor i, col in df.iterrows():\n\t\tdf[i] = [val.replace('&', '&amp;') for val in col]\n\treturn df\n"}

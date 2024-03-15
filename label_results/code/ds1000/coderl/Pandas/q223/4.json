@@ -1,0 +1,1 @@
+{"trg_prediction": "def fillna(df, r=0.5):\n\tfor i in range(len(df.columns)):\n\t\tif(df.columns[i]==None):\n\t\t\tcontinue\n\t\tdf.columns[i] = df.columns[i].fillna(df.mode()[r%len(df.columns)],inplace=True)\n"}

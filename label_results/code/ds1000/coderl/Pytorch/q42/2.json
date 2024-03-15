@@ -1,0 +1,1 @@
+{"trg_prediction": "def load_data():\n\treturn list(map(list,zip(*np.loadtxt('softmax_output.txt', skiprows=1))))\n"}

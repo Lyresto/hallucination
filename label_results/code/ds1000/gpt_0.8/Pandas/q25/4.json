@@ -1,0 +1,1 @@
+{"trg_prediction": "df = df[df['Date'].isin(pd.date_range(start=List[0], end=List[1]))]\ndf['Month_Year'] = df['Date'].dt.strftime('%b-%Y')\ndf['Day'] = df['Date'].dt.strftime('%A')\ndf['Date'] = df['Date'].dt.strftime('%d-%b-%Y %A')\ndf = df[['Date']]\n"}

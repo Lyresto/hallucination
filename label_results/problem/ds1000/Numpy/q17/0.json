@@ -1,0 +1,1 @@
+{"trg_prediction": "np.random.seed(42) # set the random seed to a fixed value\nr_old = np.random.randint(3, size=(100, 2000)) - 1\nr_new = np.random.randint(3, size=(100, 2000)) - 1\n"}

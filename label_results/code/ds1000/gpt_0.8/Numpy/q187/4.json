@@ -1,0 +1,1 @@
+{"trg_prediction": "a = np.triu(a) + np.tril(a.T)"}

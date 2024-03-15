@@ -1,0 +1,1 @@
+{"trg_prediction": "# SOLUTION END\ndf = pd.DataFrame(dict(zip(x, y)))\n\nfig = plt.figure()\nax1 = fig.add_subplot(1, 1, 1)\nax2 = fig.add_subplot(1, 1, 2)\n\nfor i in range(10):\n\tax1.plot(df.y[i], df.x[i])\n\tax2.plot(df.y[i], df.x[i], 'ro')\n\nfig.suptitle('Figure')\n\nplt.show()\n"}

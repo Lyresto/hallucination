@@ -1,0 +1,1 @@
+{"trg_prediction": "To calculate the cumulative average for each row from end to head while ignoring zero values, you can use the following code:\n\n<code>\ndf['Cumulative_Average'] = df.iloc[:, 1:].apply(lambda row: row[row != 0].mean(), axis=1)\ndf = df.fillna(0)\ndf = df.round(2)\n"}

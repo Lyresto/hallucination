@@ -1,0 +1,1 @@
+{"trg_prediction": "# filter the dataframe to only include dates between the two dates in the list\ndf = df[(df['Date'] >= List[0]) & (df['Date'] <= List[1])]\n\n# create a new column with the desired format\ndf['Formatted Date'] = df['Date'].dt.strftime('%d-%b-%Y %A')\n\n# select only the 'Formatted Date' column\ndf = df[['Formatted Date']]\n"}

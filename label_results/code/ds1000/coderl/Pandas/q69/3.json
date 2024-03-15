@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import array\n\ndef df_subset(df, x):\n\tr = []\n\tfor i in df.itertuples(index=x):\n\t\tif 0.45 > i[1]:\n\t\t\tr.append(i[0])\n\treturn r\n"}

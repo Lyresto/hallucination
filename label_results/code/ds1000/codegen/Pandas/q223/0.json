@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nimport numpy as np\n\n\ndf = pd.DataFrame({'Column_x': [0,0,0,0,0,0,1,1,1,1,1,1,np.nan,np.nan,np.nan,np.nan,np.nan,np.nan,np.nan,np.nan,np.nan]})\n"}

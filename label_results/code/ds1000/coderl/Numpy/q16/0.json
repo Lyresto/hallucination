@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef shift(xs, shift):\n\tshifts = (shift[0],) + shift[1:]\n\treturn np.roll(xs, shifts, axis=0)\n"}

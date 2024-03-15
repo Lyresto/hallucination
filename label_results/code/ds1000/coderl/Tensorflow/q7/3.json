@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\nds = tf.data.Dataset.from_tensor_slices([10, 20, 30]).map(my_map_func=lambda i: [[i, i+1, i+2]])\nds = ds.flat_map(lambda x: [i for i in x])\nelement = ds.get_next()\nresult = []\nwith tf.compat.v1.Session() as sess:\n\tfor _ in range(9):\n\t\tresult.append(sess.run(element))\nprint(result)\n"}

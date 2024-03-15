@@ -1,0 +1,1 @@
+{"trg_prediction": "def load_data():\n\tt = tuple(map(float, input().split()))\n\tidx = tuple(map(int, input().split()))\n\treturn [list(t[i]) for i in idx], idx\n"}

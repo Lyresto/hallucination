@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef max_of_elements_in_index(a,index):\n\treturn np.array([max(a[i] for i in index)])\n"}

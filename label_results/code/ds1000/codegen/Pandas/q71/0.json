@@ -1,0 +1,1 @@
+{"trg_prediction": "\n    result = df[df.c > 0.5].sum(axis=1)\n    ### END SOLUTION\n    return result\n"}

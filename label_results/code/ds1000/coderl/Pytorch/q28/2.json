@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import product\nfrom functools import reduce\n\ndef fill_mat(a, lengths):\n\treturn reduce(lambda a, b: a[:, None, b] + b, product(range(len(a)), repeat=len(lengths)), 0)\n"}

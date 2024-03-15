@@ -1,0 +1,1 @@
+{"trg_prediction": "def __starting_point():\n\tdf = pd.DataFrame({\"X\": x, \"Y\": y})\n\tax = df.plot(kind=\"line\", x=\"X\")\n\tax.set_xlabel(\"X\")\n\tax.set_ylabel(\"Y\")\n\t# print(df.plot(kind=\"line\", x=\"Y\", y=\"Z\"))\n\t# # SOLUTION END\n\treturn(fig)\n\n__starting_point()\n"}

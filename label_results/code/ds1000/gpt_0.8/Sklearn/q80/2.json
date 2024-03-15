@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\n# Reshape the mse values to a 2D array\nmse_values = df['mse'].values.reshape(-1, 1)\n\n# Use KMeans clustering on mse values\nkmeans = KMeans(n_clusters=2).fit(mse_values)\nlabels = kmeans.labels_\ncentroids = kmeans.cluster_centers_\n"}

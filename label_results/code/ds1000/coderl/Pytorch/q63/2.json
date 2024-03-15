@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\nfrom torch import *\ndef solve(a, b):\n\tt1 = [list(i) for i in zip(*zip(a, b))]\n\tt2 = [list(i) for i in zip(*zip(b, a))]\n\tt = torch.cat(t1, t2)\n\treturn t.tolist()\n"}

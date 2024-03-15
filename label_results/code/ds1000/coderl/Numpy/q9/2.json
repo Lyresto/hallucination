@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\na = np.array([1,2,3,4,5])\np = 25\nnp.percentile(a, p)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def split_columns(df):\n\tcodes = df['codes']\n\tfor i, col in enumerate(codes):\n\t\tif len(col) > 1:\n\t\t\tdf[col] = df[col].apply(lambda x: float(x.pop(0)), axis = 1)\n\treturn df\n"}

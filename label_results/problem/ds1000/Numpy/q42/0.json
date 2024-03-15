@@ -1,0 +1,1 @@
+{"trg_prediction": "from fractions import Fraction\n\nif denominator == 0:\n    result = (float('nan'), float('nan'))\nelse:\n    result = Fraction(numerator, denominator).as_integer_ratio()\n\nresult = tuple(result)\n"}

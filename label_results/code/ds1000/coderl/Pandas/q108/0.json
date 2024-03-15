@@ -1,0 +1,1 @@
+{"trg_prediction": "def timestamp_to_timestamp_range(df1, df2):\n\tdiff = df2['Timestamp'].diff()\n\treturn diff.to_numpy(index=False).astype(int)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from operator import itemgetter\nfrom itertools import zip_longest\n\ndef pivot_table(df):\n\tp_col = list(df.keys())[0]\n\tp_date = list(df[p_col].dt.date)\n\tp_bool = df[p_col].apply(lambda x: bool(x) if x is not None else False)\n\treturn pd.DataFrame(dict(zip_longest(p_date, p_bool, fillvalue=None)))\n"}

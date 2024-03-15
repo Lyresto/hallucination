@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import zip_longest\n\ndef load_data():\n\tt = torch.fromnumpy(np.array(list(zip(*load_data_partial()))).reshape(3,-1))\n\treturn [sum(t[i] * idx[i] for i in range(len(idx))) for i in range(3)]\n\ndef load_data_partial():\n\t# your code\n\treturn list(zip_longest(*list(range(len(dtype))), fillvalue=-1))\n"}

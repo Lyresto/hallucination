@@ -1,0 +1,1 @@
+{"trg_prediction": "# solving this problem by Michael Hunter, Govt Enggineering College\n# https://www.youtube.com/watch?v=e_j_7Wy4_Wg\n\n\ndf = pd.DataFrame({\"x\": x, \"y\": y})\n\nline = df.plot(kind=\"line\", y=1)\nline.set_title(\"y over x\")\nline.show()\n"}

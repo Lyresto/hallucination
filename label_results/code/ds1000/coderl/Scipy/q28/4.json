@@ -1,0 +1,1 @@
+{"trg_prediction": "from math import ceil, log\n\ndef f(img):\n\treturn ceil(log(sum(sum(img[i, j] > threshold * threshold for j in range(512)), 2.0)) / log(2.0, 10))\n"}

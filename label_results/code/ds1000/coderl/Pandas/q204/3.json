@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(df=example_df):\n\t# your code\n\ts = 0\n\tfor i in df.values:\n\t\ts += i\n\treturn s/len(df)\n"}

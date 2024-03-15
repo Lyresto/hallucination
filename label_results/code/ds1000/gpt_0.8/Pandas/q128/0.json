@@ -1,0 +1,1 @@
+{"trg_prediction": "df_sample = df.sample(frac=0.2, random_state=0)\ndf_sample['ProductId'] = 0\ndf_updated = pd.concat([df.drop(df_sample.index), df_sample])\ndf_updated"}

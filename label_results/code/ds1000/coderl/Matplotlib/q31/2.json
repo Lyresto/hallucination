@@ -1,0 +1,1 @@
+{"trg_prediction": "# SOLUTION END\nimport numpy as np\nimport pandas as pd\nimport seaborn as sns\n\nx = np.random.randn(10)\ny = x\n\np = pd.Series(y)\np.plot.scatter(x, y)\n"}

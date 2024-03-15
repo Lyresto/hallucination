@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\n# Define the function\ndef f(x, a, b, c):\n    return a * x ** 2 + b * x + c\n\n# Create the matrix A and the vector b\nA = np.column_stack([np.square(x), x, np.ones(len(x))])\nb = np.array(y)\n\n# Solve the system of linear equations\nresult = np.linalg.lstsq(A, b, rcond=None)[0]\n\n# Print the result\nprint(result)\nEND SOLUTION\n"}

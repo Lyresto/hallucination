@@ -1,0 +1,1 @@
+{"trg_prediction": "def load_data():\n\tt = torch.fromnumpy(np.array(list(zip(*np.array(list(zip(*np.array(list(zip(*np.split(s, 3)))[:2]))))))\n\tidx = np.arange(len(t))\n\treturn t, idx\n"}

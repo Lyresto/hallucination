@@ -1,0 +1,1 @@
+{"trg_prediction": "_, y = torch.max(softmax_output, 1)\ny = y.view(-1, 1)\n"}

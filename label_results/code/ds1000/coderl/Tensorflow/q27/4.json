@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef f(x=example_x,y=example_y,z=example_z):\n\t### BEGIN SOLUTION\n\ta = np.array(x[y][z])\n\treturn a\n"}

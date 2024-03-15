@@ -1,0 +1,1 @@
+{"trg_prediction": "import math\n\nclass SparseMatrix:\n\tdef __init__(self, weight_matrix):\n\t\tself.__weight_matrix = weight_matrix\n\t\tself.shape = weight_matrix.shape\n\t\n\t@property\n\tdef data(self):\n\t\treturn self.__weight_matrix.data\n\n\t@data.setter\n\tdef data(self, value):\n\t\tself.__weight_matrix.data = value\n"}

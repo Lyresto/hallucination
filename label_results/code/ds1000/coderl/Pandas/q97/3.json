@@ -1,0 +1,1 @@
+{"trg_prediction": "def dataframe_filter(df, n):\n\tnew_df = df.copy()\n\tfor i in range(n):\n\t\tfor j in range(n):\n\t\t\tif abs(new_df[i][j]) > 1.0:\n\t\t\t\tnew_df = new_df[i].drop(i, 1)\n\treturn new_df\n"}

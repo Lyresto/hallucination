@@ -1,0 +1,1 @@
+{"trg_prediction": "```python\ndef f(lengths=example_lengths):\n    max_length = max(lengths)\n    mask = tf.sequence_mask(lengths, max_length, dtype=tf.int32)\n    padded_mask = tf.pad(mask, [[0, 0], [0, max_length - tf.shape(mask)[1]]])\n    return padded_mask\n```\n### END SOLUTION\n"}

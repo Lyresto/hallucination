@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef distance_matrix(a):\n\tm, n = len(a), len(a[0])\n\tdist = np.zeros((m, n), dtype=np.int)\n\tfor i in range(m):\n\t\tfor j in range(n):\n\t\t\tdist[i, j] = np.abs(a[i][j] - a[i][j-1])\n\treturn dist\n"}

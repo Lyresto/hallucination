@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef split_df(df):\n\tresult = []\n\tfor col in df.columns:\n\t\tif not all(len(d) == len(df[col]) for d in df.values()):\n\t\t\tresult.append(pd.Series(df[col]))\n\t\telse:\n\t\t\tsplit_df_col = pd.Series(df[col])\n\t\t\tsplit_df_col.fillna(value=np.nan, inplace=True)\n\t\t\tresult.append(split_df_col)\n\treturn pd.concat(result)\n"}

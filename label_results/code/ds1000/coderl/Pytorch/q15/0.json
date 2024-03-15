@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport torch\nidx, B = load_data()\n\nC =... # put solution in this variable\n\ndef index_select(ind, col_slice):\n\tout = []\n\tfor i in col_slice:\n\t\tif i in ind:\n\t\t\tout.append(ind[i])\n\t\telse:\n\t\t\tout.append(np.array([]))\n\treturn torch.LongTensor(out)\n"}

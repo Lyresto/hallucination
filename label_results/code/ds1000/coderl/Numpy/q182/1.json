@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef test_is_member_of_a_list_of_numpy_arrays(c, CNTS):\n\tprint(c in CNTS)\n\tprint(c in CNTS[0])\n\tprint(c in CNTS[1:])\n\treturn (c in CNTS).all()\n"}

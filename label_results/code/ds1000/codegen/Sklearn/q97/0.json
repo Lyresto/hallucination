@@ -1,0 +1,1 @@
+{"trg_prediction": "\n    new_a = a.copy()\n    new_a[:,0] = a[:,0] - a[:,1]\n    new_a[:,1] = a[:,0]\n    return new_a\n    ### END SOLUTION\n\ndef load_data():\n    #"}

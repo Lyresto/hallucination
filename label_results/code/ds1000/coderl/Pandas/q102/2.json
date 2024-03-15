@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(df=example_df):\n\treturn df.replace(\"&\", \"&amp\")\n"}

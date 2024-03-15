@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import min\n\ndef mask(a):\n\tm, n = min(a), max(a)\n\treturn np.array([[i == m or i == n] for i in range(a.shape[0])])\n"}

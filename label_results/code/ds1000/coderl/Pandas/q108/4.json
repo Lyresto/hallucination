@@ -1,0 +1,1 @@
+{"trg_prediction": "def loop_over_dataframe(df1, df2):\n\tif len(df1) == 0:\n\t\treturn df2\n\tif len(df2) == 0:\n\t\treturn df1\n\tfor i in range(len(df1)):\n\t\tfor j in range(len(df2)):\n\t\t\tif df1.index[i] == df2.index[j]:\n\t\t\t\tdf1['data'][j] += df2['data'][j]\n\t\t\t\tdf2['data'][j] = None\n\t\t\t\tbreak\n\treturn df1\n"}

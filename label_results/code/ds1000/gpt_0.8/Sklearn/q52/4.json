@@ -1,0 +1,1 @@
+{"trg_prediction": "from sklearn.svm import SVR\n\n# Create SVR model with default arguments\nmodel = SVR()\n\n# Fit the model to the data\nmodel.fit(X, y)\n\n# Predict the output values for X\ny_pred = model.predict(X)\n\npredict = y_pred\n"}

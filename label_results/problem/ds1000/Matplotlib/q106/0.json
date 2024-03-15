@@ -1,0 +1,1 @@
+{"trg_prediction": "fig = plt.figure(figsize=(6, 6), dpi=80)\nax = fig.add_subplot(111, polar=True)\nax.bar(labels, height)\n"}

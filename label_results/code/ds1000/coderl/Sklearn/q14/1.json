@@ -1,0 +1,1 @@
+{"trg_prediction": "from sklearn.pipeline import Pipeline\nimport numpy as np\nimport pandas as pd\n\nestimators = [('reduce_dim', PCA()), ('svm', SVC())]\nclf = Pipeline(estimators)\nprint(clf.steps)\n"}

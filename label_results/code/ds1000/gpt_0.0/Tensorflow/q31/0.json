@@ -1,0 +1,1 @@
+{"trg_prediction": "result = [s.decode('utf-8') for s in x]\n    ### END SOLUTION\n    return result\n\nprint(f()) # ['\u0628\u0645\u0633\u0623\u0644\u0629', '\u0625\u0646\u0634\u0627\u0621', '\u0642\u0636\u0627\u0621', '\u062c\u0646\u0627\u0626\u064a', '\u062f\u0648\u0644\u064a']"}

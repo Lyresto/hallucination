@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\nexample_df = pd.DataFrame({'A': ['Good &AMP; bad', 'BB', 'CC', 'DD', 'Good &AMP; bad'], 'B': range(5), 'C': ['Good &AMP; bad'] * 5})\n\ndef f(df):\n    df = df.apply(lambda x: x.str.replace('&AMP;', '&', regex=False))\n    return df\n\nresult = f(example_df)\nresult"}

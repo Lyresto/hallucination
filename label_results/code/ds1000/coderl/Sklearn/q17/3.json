@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\nfrom sklearn.svm import SVC\nfrom sklearn.decomposition import PCA\nestimators = [('reduce_dim', PCA()), ('poly', PolynomialFeatures()), ('svm', SVC())]\nclf = Pipeline(estimators)\n"}

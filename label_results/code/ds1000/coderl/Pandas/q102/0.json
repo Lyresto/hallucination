@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(df=example_df):\n\tfor i,j in df.iterrows():\n\t\tdf.loc[i,'Title']=df.loc[i,'Title'].replace(\"&\",\"&amp;\").replace(\"&\",\"&amp;\")\n\treturn df\n"}

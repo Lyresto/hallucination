@@ -1,0 +1,1 @@
+{"trg_prediction": "def np_symmetric_to_0(a):\n\treturn np.dot(a,a.T).tolist()\n"}

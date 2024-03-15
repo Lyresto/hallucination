@@ -1,0 +1,1 @@
+{"trg_prediction": "def parse_first(s):\n\ttry:\n\t\twhile s[-1]!= '_':\n\t\t\ts = s[:-1]\n\t\treturn s\n\texcept:\n\t\treturn s\n\n\ndef parse_last(s):\n\ttry:\n\t\twhile s[0]!= '_':\n\t\t\ts = s[1:]\n\t\treturn s\n\texcept:\n\t\treturn ''\n"}

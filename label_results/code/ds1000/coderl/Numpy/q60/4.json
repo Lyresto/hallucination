@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.stats\na = np.array(a)\nb = np.array(b)\nc = a + b\nmean = c.mean()\nsd = c.std()\np_value = scipy.stats.ttest_ind(c,mean)/sd\n"}

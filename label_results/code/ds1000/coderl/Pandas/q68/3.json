@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nimport numpy as np\n\ndef mask_df_with_rows(df):\n\trows_mask = np.array([i for i, x in enumerate(df) if x[df.columns.get_loc('c')] > 0.5]).reshape(-1, 1)\n\treturn df.loc[rows_mask]\n"}

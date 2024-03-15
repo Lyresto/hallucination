@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef find_best_indices(a):\n\tbest = np.arange(1, max(a) + 1).reshape(1, -1)\n\tfor i in range(len(a)):\n\t\tif a[i] == best:\n\t\t\tyield i\n\ndef deep_copy(a):\n\treturn np.array(a, copy=True)\n"}

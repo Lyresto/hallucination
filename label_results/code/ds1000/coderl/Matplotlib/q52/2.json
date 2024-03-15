@@ -1,0 +1,1 @@
+{"trg_prediction": "# SOLUTION END\ndf = pd.DataFrame({'a':x, 'b':y})\nax = df.plot.bar(y, x)\n\ndef main():\n\tfig = ax.get_figure()\n\treturn fig\n\n\ndef __starting_point():\n\tmain()\n\n__starting_point()\n"}

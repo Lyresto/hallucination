@@ -1,0 +1,1 @@
+{"trg_prediction": "def reg(tips):\n\tx,y=[tips[c] for c in 'total_bill tip'.split()]\n\treturn (x-y)*(x+y)\n\ntips = tips.drop(\"tip\",1)\ntips.sort_values(by=['total_bill'],inplace=True)\nsns.jointplot(x='total_bill',y='tip',reg=reg, size=8)\n#plt.show()\n"}

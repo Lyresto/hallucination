@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef pearson(post, distance):\n\tprint(post, distance)\n\tcount_p = np.array(post).count()\n\tcount_d = np.array(distance).count()\n\tif count_p == 0 or count_d == 0:\n\t\treturn 0\n\treturn (count_p - count_d) / (count_p - count_d)\n"}

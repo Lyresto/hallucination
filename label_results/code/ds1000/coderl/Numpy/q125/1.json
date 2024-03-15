@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef mean(data, bin_size):\n\treturn np.mean(np.concatenate((np.split(data, bin_size), np.split(data, -bin_size)), axis = 0))\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def plot_xy(x, y):\n\treturn (pd.Series(y, index=x)).plot(kind='bar', x='X')\n\n\nfig = plot_xy(x, y)\n\n# Make both the x and y axis labels red\nax = fig.gca()\nax.set_xscale('linear')\nax.set_yscale('linear')\n"}

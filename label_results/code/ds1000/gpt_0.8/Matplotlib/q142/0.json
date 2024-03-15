@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.plot(x, y)\nplt.xticks(x)\nplt.tick_params(axis='x', which='both', bottom=False, top=False, labelbottom=True)\nplt.show()"}

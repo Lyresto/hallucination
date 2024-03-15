@@ -1,0 +1,1 @@
+{"trg_prediction": "def solve(a, b):\n\t# a, b = map(zip, zip(*zip(*sorted(zip(a, b)))))\n\treturn [list(x) for a, b in zip(a, b)][-2:]\n"}

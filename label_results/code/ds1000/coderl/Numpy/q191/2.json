@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef hyp(x,y):\n\tf = lambda x:x*x+y[0]\n\txs = sorted((f(i),i) for i in x)\n\tmin_sq_err = xs[0][0]**2 + xs[0][1]*xs[0][2]\n\tm,n = xs[0][0],xs[0][1]\n\tfor sq_err,i in xs:\n\t\tif sq_err < min_sq_err:\n\t\t\tm,n = i,m\n\t\t\tmin_sq_err = sq_err\n\treturn m,n\nhyp(*np.array(result))\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef pearson(post, distance):\n\tpost_range = np.array(post)\n\tdist_range = np.array(distance)\n\tpost_sum = post_range.sum()\n\tdist_sum = dist_range.sum()\n\treturn np.dot(post_sum - dist_sum, (post_range - dist_range).T) / (np.dot(post_sum, dist_range).T - post_sum)\n\ndef solution():\n\treturn pearson(post, distance)\n"}

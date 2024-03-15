@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nprobabilit = [0.333, 0.333, 0.333]\nlista_elegir = [(3, 3), (3, 4), (3, 5)]\nsamples = 1000\nnp.random.choice(lista_elegir, samples, probabilit)\n"}

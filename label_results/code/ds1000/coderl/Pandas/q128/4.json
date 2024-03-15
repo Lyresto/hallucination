@@ -1,0 +1,1 @@
+{"trg_prediction": "from math import ceil\ndef sample(df, n, r):\n\tdf2 = df.sample(n, random_state=r)\n\treturn df2.apply(lambda row: int(row['ProductId']) if row['UserId'] in row else 0)\n"}

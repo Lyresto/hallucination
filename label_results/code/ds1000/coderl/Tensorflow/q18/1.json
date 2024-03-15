@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\nimport tensorflow as tf\n\nnp.random.seed(10)\na = tf.constant(np.random.rand(50, 100, 512))\nwith tf.Session() as sess:\n\ts = sess.run(a)\n\tprint(s)\n"}

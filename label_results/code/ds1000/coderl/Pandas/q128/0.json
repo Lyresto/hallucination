@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport random\n\ndef random_selection(df):\n\tn = len(df)\n\tr = df.sample(n, random_state=0).reset_index(drop=True)\n\tr['ProductId'] = 0\n\treturn r\n"}

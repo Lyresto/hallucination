@@ -1,0 +1,1 @@
+{"trg_prediction": "import re\nfrom pandas import DataFrame\n\ndef __starting_point():\n\tdf = DataFrame({'SOURCE_NAME': re.findall(r'[^\\w_]+', input())})\n\tprint(df)\n\n__starting_point()\n"}

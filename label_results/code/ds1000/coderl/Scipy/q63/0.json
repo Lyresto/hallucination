@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport scipy.fft as sf\n\ndef dctmtx(N):\n\t# your code here\n\tz = np.zeros(N)\n\tfor i in range(N):\n\t\tz[i] = (i+1) * np.sin(2*np.pi/N*i) / (2*i)\n\treturn np.real(sf.dctn(z))\n"}

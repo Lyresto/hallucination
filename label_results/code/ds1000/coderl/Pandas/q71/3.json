@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(df, columns=['b', 'e']):\n\t# df2 = df.copy()\n\tfor i in range(len(columns)):\n\t\tdf2[columns[i]] += df[columns[i]].sum()\n\treturn df2\n"}

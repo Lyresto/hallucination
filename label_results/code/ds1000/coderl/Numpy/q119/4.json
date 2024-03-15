@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef choice(lista_elegir, samples, probabilit):\n\tnp.random.choice(lista_elegir, samples, probabilit)\n"}

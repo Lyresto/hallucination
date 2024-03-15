@@ -1,0 +1,1 @@
+{"trg_prediction": "# Delete particular days\ndelete_dates = ['2020-02-17', '2020-02-18']\ndf = df[~df.index.date.isin(delete_dates)]\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\n\ndef split_df(df):\n\tfirst, second = df.row.str[:], df['fips'].str[:]\n\tcnt1, cnt3 = Counter(first), Counter(second)\n\tfor c, v in cnt1.items():\n\t\tv = [k for k, c in sorted(v.items())][::-1]\n\t\tfirst[c] = v[0]\n\t\tsecond[c] = v[1]\n\treturn df.merge(other=first, left_on='row', right_on='fips')\n"}

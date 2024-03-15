@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nn1 = [1,2,3,4,5]\nn2 = [6,7,8,9,10]\n\narr = (np.random.rand(5, 50)-0.5) * 50\nfor i in range(len(n1)):\n\tarr[arr < n1[i]] = 0\n\t\nfor i in range(len(n2)):\n\tarr[arr < n2[i]] += 5\n\t\n"}

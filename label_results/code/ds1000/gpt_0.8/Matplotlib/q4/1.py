@@ -1,0 +1,8 @@
+y = np.random.rand(10)
+plt.plot(x, y, linestyle='-', label='solid')
+y = np.random.rand(10)
+plt.plot(x, y, linestyle='--', label='dashed')
+y = np.random.rand(10)
+plt.plot(x, y, linestyle='-.', label='dashdot')
+y = np.random.rand(10)
+plt.plot(x, y, linestyle=':', label='dotted')

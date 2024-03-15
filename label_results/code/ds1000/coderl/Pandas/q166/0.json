@@ -1,0 +1,1 @@
+{"trg_prediction": "def stdMeann(df):\n\ts = [0]*len(df)\n\tfor i in range(len(df)):\n\t\ts[i] = df['b'].mean()\n\t\ts[i+1] = df['b'].std()\n\treturn pd.Series(s)\n"}

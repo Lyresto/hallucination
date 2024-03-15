@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\n\ndef load_data():\n\tnp_array = np.array(pd.read_csv('data.csv'))\n\tscaler = MinMaxScaler()\n\treturn scaler.fit_transform(np_array[:, 1:])\n"}

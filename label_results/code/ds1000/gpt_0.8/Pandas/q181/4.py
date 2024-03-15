@@ -1,0 +1,1 @@
+df['Date'] = df['Member'].map(dict)

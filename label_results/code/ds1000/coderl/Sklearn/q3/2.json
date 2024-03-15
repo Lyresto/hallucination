@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef solve(data):\n\t# return the solution in this function\n\tdf = pd.DataFrame(data)\n\t#print(df)\n\treturn df\n"}

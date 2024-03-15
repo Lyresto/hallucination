@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef solve(a, b):\n\tc = np.zeros(a.shape[0]*a.shape[1], dtype=np.int)\n\tfor n,i in enumerate(b):\n\t\tc[i] = a[n][i]\n\treturn c.astype(np.int)\n"}

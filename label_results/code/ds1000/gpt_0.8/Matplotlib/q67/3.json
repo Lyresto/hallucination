@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.scatter(a, b)\nfor i, txt in enumerate(c):\n    plt.annotate(txt, (a[i], b[i]))\nplt.xlabel('a')\nplt.ylabel('b')\nplt.title('Scatter plot of a over b')\nplt.show()\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nc = np.array([[[ 75, 763]],\n\t\t\t [[ 57, 763]],\n\t\t\t [[ 57, 749]],\n\t\t\t [[ 75, 749]]])\nprint((c in CNTS))\n"}

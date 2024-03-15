@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nimport numpy as np\nimport sklearn\ndf = load_data()\ndf_out = pd.DataFrame()\n\nfor i,j in df.iterrows():\n\tdf_out[i] = pd.Series(list(map(int,j)),dtype = np.int)\n\nfor i,j in df_out.iterrows():\n\tdf_out.loc[i,i] = 1\n"}

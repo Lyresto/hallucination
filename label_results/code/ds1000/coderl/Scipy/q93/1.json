@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.spatial\nimport numpy as np\n\ndef closest_point_to_cluster(centroids, data):\n\treturn [np.argmin(np.sum(data, axis=centroids[i,:] - centroids[i,:]) / (len(centroids) - i)).tolist() for i in range(len(centroids))]\n"}

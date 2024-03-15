@@ -1,0 +1,1 @@
+{"trg_prediction": "check = np.where(df1[columns_check_list] != df2[columns_check_list])\n\nresult = [False] * len(columns_check_list)\nfor i in check[1]:\n    result[i] = True\n"}

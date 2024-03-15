@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\n\ndef load_data():\n\ta = np.array([i for i in range(1000)], dtype = np.int64)\n\tb = np.array([i for i in range(1000)], dtype = np.int64)\n\ta, b = a.reshape(-1, 1), b.reshape(-1, 1)\n\treturn a == b\n\t\ndef Count(a, b):\n\tc = Counter(a) == Counter(b)\n\treturn c.sum()\n"}

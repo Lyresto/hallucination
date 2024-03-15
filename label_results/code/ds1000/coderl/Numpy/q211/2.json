@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef select_elements(a, b):\n\tc = np.empty(len(a), dtype = int)\n\tfor i, j in enumerate(b):\n\t\tc[i] = a[b[i][0]].index(a[b[i][1]])\n\treturn c\n"}

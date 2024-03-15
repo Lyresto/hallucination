@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\na = np.array([1 + 0j, 2 + 0j, np.inf + 0j])\nres = np.mean(a)\n"}

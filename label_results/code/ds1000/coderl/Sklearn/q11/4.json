@@ -1,0 +1,1 @@
+{"trg_prediction": "from scipy.sparse import csr_matrix\nfrom pandas import DataFrame\n\ndef load_data():\n\tdf = DataFrame.from_csv('test.csv')\n\ttransformed = csr_matrix( (df[col] for col in df.columns) )\n\treturn df, transformed\n"}

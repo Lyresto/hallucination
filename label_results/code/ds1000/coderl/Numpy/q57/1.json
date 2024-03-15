@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import combinations\n\ndef get_max_set(a):\n\tV = np.vectorize(tuple)\n\tX = list(zip(*a))\n\tZ = list(zip(*X))\n\tU, V = list(zip(*sorted(set(X) - set(Y) for Y in V))))\n\treturn [[tuple(v) for v in z] for z in U]\n"}

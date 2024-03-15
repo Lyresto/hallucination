@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.integrate\nimport numpy as np\ndef dN1_dt_simple(t, N1):\n\treturn -100 * N1\n\ndef solve_ivp(fun, t_span, y0):\n\tt = np.array(t_span)\n\tsol = scipy.integrate.odeint(fun, y0, t)\n\treturn sol.y\n"}

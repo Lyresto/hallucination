@@ -1,0 +1,1 @@
+{"trg_prediction": "import re\n\ndef extract(df, date):\n\tfor i, row in enumerate(df.itertuples()):\n\t\tif row[0] == date:\n\t\t\treturn row[1], row[2]\n"}

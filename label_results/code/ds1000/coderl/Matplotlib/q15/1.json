@@ -1,0 +1,1 @@
+{"trg_prediction": "def plot(x, y, p='+', s=7):\n\tp = (len(p) + 1) * '+:'\n\treturn plt.plot(x, y, p, s)\n\n# INVINCIBLE WARRIORS & CHEAPS\n"}

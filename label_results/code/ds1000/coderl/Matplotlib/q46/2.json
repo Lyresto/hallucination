@@ -1,0 +1,1 @@
+{"trg_prediction": "sns.distplot(x, y, kind=\"hex\", color=\"k\")\nsns.distplot(x, y, kind=\"kde\", color=\"y\")\n\nplt.xlabel(\"x\")\nplt.ylabel(\"y\")\n\nsns.despine(left=True)\n"}

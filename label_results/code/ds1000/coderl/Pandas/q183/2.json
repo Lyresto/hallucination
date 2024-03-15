@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(dict=example_dict, df=example_df):\n\tfor c, v in enumerate(df['Member']):\n\t\tdf[c] = df[c].apply(lambda d: dict.get(d, d), axis=1)\n\treturn df\n"}

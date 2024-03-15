@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef solve(features):\n\tdf = pd.DataFrame(np.array(features), columns=['f1', 'f2', 'f3', 'f4', 'f5', 'f6'])\n\tidx = np.arange(len(df['f1'])+1)\n\treturn np.array([[idx==i for i in df['f1']] for i in range(len(df['f1']))])[:,1]\n"}

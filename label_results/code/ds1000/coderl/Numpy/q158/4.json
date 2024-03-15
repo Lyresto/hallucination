@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import product\nfrom numpy import sum, mean\n\ndef dist2d(x, y):\n\treturn sum(dist(x, j) for j in range(y)), mean(dist(x, j) for j in range(y))\n\ndef dist(x, y):\n\treturn sum(dist2d(x, j) for j in range(y))\n"}

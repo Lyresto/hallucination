@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import *\na,b=map(int,input().split())\nc=len(x)\nd=len(y)\nfor i in range(c):\n\tif x[i]==a and y[i]==b:\n\t\tprint(i)\n\t\tbreak\n"}

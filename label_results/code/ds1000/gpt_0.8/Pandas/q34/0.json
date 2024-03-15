@@ -1,0 +1,1 @@
+{"trg_prediction": "# Solution 1: using filter() to select columns with 'val' in their name\nresult = df.groupby('group').agg({\"group_color\": \"first\"})\nresult = result.join(df.filter(like='val').sum(axis=1).rename('val_sum'))\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef split_column(df, col):\n\tsep =''\n\tstrs = [sep.join(df[col].values) for i in range(len(df[col]))]\n\treturn pd.DataFrame(strs)\n"}

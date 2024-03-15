@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef score(labels,result):\n\tclasses = np.zeros_like(result)\n\tfor i in range(10):\n\t\tclasses[labels==i] = 1\n\treturn np.sum(classes)/len(classes)\n"}

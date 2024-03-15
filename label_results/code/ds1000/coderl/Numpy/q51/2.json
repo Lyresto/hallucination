@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef f(X = example_X):\n\treturn [list(np.argwhere(X == i))[0] for i in range(X.shape[0])]\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport torch\n\ndef load_data():\n\tA_logical, B = torch.LongTensor([[int(i) for i in row] for row in sys.stdin.read().split()]).numpy()[:2]\n\treturn B[:, A_logical]\n"}

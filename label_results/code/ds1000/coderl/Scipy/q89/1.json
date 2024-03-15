@@ -1,0 +1,1 @@
+{"trg_prediction": "class SparseMatrix:\n\n\tdef __init__(self, weight_matrix):\n\t\tself.__WeightMatrix__ = weight_matrix.tocsr()\n\t\tself.shape = weight_matrix.shape[1]\n\n\tdef dot(self, scalar_product, matrix):\n\t\tfor i in range(self.shape[1]):\n\t\t\tmatrix[i,i] = scalar_product * matrix[i,i]\n\t\treturn matrix\n"}

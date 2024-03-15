@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.plot(x, y, 'r', label='y')\nplt.xlabel('X')\nplt.ylabel('Y')\nplt.title('Plot of Y over X')\nplt.legend()\n#"}

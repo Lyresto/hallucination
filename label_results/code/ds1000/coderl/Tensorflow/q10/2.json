@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\n\ndef mask_tensor(lengths):\n\tlen_array = 8\n\tlen_mask = 8\n\tlen_mask_matrix = [[0]*len_mask for _ in range(len_array)]\n\tfor i in range(len_array):\n\t\tlen_mask_matrix[i][i] = (1-int(lengths[i]))%2\n\t\tlen_mask_matrix[i][i+1] = (1-int(lengths[i+1]))%2\n\treturn len_mask_matrix\n"}

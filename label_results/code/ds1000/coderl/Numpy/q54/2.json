@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\n# def multiply_column_by_number(array, col, multiply_number):\n#     return np.multiply(array[:col], multiply_number)\n\ndef cumulative_sum(array, col):\n\treturn np.cumsum(array[:col])\n"}

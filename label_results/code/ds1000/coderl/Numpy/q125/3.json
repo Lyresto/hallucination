@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom statistics import mean\n\ndef mean_bin(n, data, k):\n\tc = np.ceil(n / k)\n\treturn [mean(np.split(data, c)) for _ in range(k)]\n"}

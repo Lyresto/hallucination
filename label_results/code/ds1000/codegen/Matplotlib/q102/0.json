@@ -1,0 +1,1 @@
+{"trg_prediction": "xlim = [0, 5]\nylim = [1, 4]\n\nplt.figure(figsize=(10, 10))\nplt.imshow(data, cmap='hot', interpolation='nearest',\n           extent=[xlim[0], xlim[1], ylim[0], ylim[1]], aspect='auto')\nplt.colorbar()\nplt.xlabel('x')\nplt.ylabel('y')\nplt.title('Heatmap of data')\nplt.show()\n#"}

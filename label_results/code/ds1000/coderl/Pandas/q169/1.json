@@ -1,0 +1,1 @@
+{"trg_prediction": "def clean_columns(df):\n\tfor i, col in enumerate(df.columns):\n\t\tif col.sum() == 0:\n\t\t\tdf.columns[i] = None\n\treturn df\n\ndef clean_rows(df):\n\tfor i, row in enumerate(df.values):\n\t\tif row.sum() == 0:\n\t\t\tdf.index[i] = None\n\treturn df\n\ndf = clean_columns(clean_rows(clean_columns(clean_rows(clean_columns(df))))\n\nprint(df)\n"}

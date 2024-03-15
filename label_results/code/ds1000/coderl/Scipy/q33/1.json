@@ -1,0 +1,1 @@
+{"trg_prediction": "from scipy.ndimage import threshold\ndef reduce_noise(square):\n\treturn np.pad(square, mode='constant', constant_value = 0)\n"}

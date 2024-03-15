@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef get_indexes_of_the_N_biggest_elements_in_decreasing_order(a, N):\n\tb = np.array(a)\n\tc = b.copy()\n\tfor i in range(1, N+1):\n\t\tc[i] = c[i-1]\n\t\tif c[i] > b[i]:\n\t\t\tc[i] = b[i]\n\treturn c\n"}

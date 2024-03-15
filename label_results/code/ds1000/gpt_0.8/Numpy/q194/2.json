@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\nresult = np.einsum('ijk,jl->ilk', A, B)\n"}

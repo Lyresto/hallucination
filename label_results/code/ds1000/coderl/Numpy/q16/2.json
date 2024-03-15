@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef shift(arr, shift):\n\tn = len(arr[0])\n\ts = np.array([[np.nan]*n]*n)\n\tfor x in range(len(arr)):\n\t\tfor y in range(n):\n\t\t\ts[y][x] = arr[y][x]\n\t\t\ts[y][x] = np.nan if s[y][x] == None else s[y][x] + shift[y]\n\treturn s\n"}

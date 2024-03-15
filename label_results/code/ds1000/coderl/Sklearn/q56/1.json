@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom scipy.spatial import ConvexHull\n\ndef get_tf_idf_query_similarity(queries, documents):\n\ttfidf = get_term_frequency_inverse_data_frequency(documents)\n\treturn ConvexHull(tfidf).cosine(queries).T\n"}

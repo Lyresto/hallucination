@@ -1,0 +1,1 @@
+{"trg_prediction": "def softmax(x):\n\ta = []\n\tfor j in x:\n\t\ta.append(j)\n\treturn a\n\ndef load_data():\n\treturn list(map(list, zip(*softmax(map(list, zip(*map(list, map(list, map(list, zip(*map(list, range(1, len(map(map(map(list, range(1, len(map(map(map(range(1, len(zip(all(map(zip(input())))))[1])))[0]).index('1')[0]))))))))))))\n"}

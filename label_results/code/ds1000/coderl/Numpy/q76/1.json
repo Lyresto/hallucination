@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\n#def deep_copy(arrays):\n#    nps = []\n#    for array in arrays:\n#        nps.append(np.array(array, copy=True))\n#    return nps\n\ndef deep_copy(arrays):\n\tnps = []\n\tfor array in arrays:\n\t\tnps.append(np.array(array, copy=True))\n\treturn nps\n"}

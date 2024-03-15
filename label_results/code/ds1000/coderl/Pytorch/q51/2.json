@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\n\ndef load_data():\n\tA = pd.read_csv('data/A.csv').values\n\tB = pd.read_csv('data/B.csv').values\n\treturn A, B\n"}

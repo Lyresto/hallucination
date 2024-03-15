@@ -1,0 +1,1 @@
+{"trg_prediction": "C = np.isin(A, B)\nC = A[C]\nC"}

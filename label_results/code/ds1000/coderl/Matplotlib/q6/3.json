@@ -1,0 +1,1 @@
+{"trg_prediction": "def line_plot(df, x=0, y=1):\n\tdf.plot.line(x, y, linewidth=2, diamond=True)\n\treturn df.plot.get_figure()\n"}

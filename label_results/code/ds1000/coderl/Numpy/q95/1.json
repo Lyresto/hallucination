@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\n\ndef sliding_window(a):\n\tn, m = len(a), len(a[0])\n\tpatch = np.zeros((n, n//2 + 1), dtype=np.int)\n\tfor i in range(n):\n\t\tfor j in range(m):\n\t\t\tx, y = i*2, j*2\n\t\t\tpatch[x:y, x:y] += a[i][j]\n\treturn patch\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "A = ['np.inf', '33.33', '33.33', '33.37']\nNA = np.asarray(A, dtype=np.float)\nAVG = np.mean(NA, axis=0)\n"}

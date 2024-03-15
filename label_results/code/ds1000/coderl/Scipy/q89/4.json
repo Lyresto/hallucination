@@ -1,0 +1,1 @@
+{"trg_prediction": "import math\n\nclass SparseMatrix(object):\n\tdef __init__(self, A):\n\t\tn = len(A)\n\t\tself.__WeightMatrix__ = [[0 for i in range(n)] for j in range(n)]\n\t\tfor i, x in enumerate(A):\n\t\t\tself.__WeightMatrix__[i][0] = x[0]\n\t\t\tfor j, y in enumerate(x[1:], start=1):\n\t\t\t\tself.__WeightMatrix__[i][j] = math.sqrt(sum(y**2))\n\t\treturn\n"}

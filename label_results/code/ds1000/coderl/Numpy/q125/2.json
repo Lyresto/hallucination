@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef mean(data, bin_size):\n\ttotal = 0\n\tfor i, j in zip(data, data[1:]):\n\t\ttotal += (i + j) / bin_size\n\treturn total\n\ndef bin_mean(data, bin_size):\n\tmean = []\n\tfor i in range(len(data) / bin_size + 1):\n\t\tmean.append(mean(np.array(data[:i * bin_size]), bin_size))\n\treturn mean\n"}

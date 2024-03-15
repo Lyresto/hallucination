@@ -1,0 +1,1 @@
+{"trg_prediction": "data_df = pd.DataFrame(data.data, columns=data.feature_names)\ndata_df['target'] = data.target\nreturn data_df"}

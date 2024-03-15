@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nfrom operator import itemgetter\n\ndef sort_df(df):\n\tresult = []\n\tfor k, g in df.groupby('cokey'):\n\t\ta, b = zip(list(g.sort_values()), list(g.sort_values()))\n\t\tresult.append([k, a, b])\n\treturn pd.DataFrame.from_dict(result).sort_values('A')\n"}

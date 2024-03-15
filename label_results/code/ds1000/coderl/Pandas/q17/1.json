@@ -1,0 +1,1 @@
+{"trg_prediction": "from operator import mul\nfrom functools import reduce\n\n\ndef multiply_scores(df, products):\n\tmultiply = reduce(mul, (float(i[1]) for i in df.groupby('product')))\n\treturn df.apply(mul, {'score': multiply})\n"}

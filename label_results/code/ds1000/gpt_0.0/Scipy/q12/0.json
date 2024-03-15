@@ -1,0 +1,1 @@
+{"trg_prediction": "result = sA.multiply(sparse.csr_matrix(sB).transpose())\n    ### END SOLUTION\n    return result\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def csr_matrix(a):\n\tar = []\n\tfor i,j in zip(a.row,a.col):\n\t\tif i!=j: ar.append(i),ar.append(j)\n\treturn sparse.csr_matrix((ar),(len(a),len(a[0]))).toarray()\n"}

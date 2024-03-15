@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef extrema(n, arr):\n\tc, s = np.modf(np.abs(arr))\n\treturn [i for i in range(len(arr)) if c <= n and s < n][::-1]\n"}

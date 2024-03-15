@@ -1,0 +1,1 @@
+{"trg_prediction": "\n    result = df.replace(dict, inplace=False)\n    ### END SOLUTION\n    return result\n\nf(example_dict, example_df)\n"}

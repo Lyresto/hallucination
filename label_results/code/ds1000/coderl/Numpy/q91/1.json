@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\na = np.array([4, 1, 0, 8, 5, 2])\nresult = []\nfor i, v in enumerate(a):\n\tresult.append(v)\n"}

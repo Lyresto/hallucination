@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nA = ['inf', '33.33', '33.33', '33.37']\nNA = np.asarray(A)\n\n# Convert 'inf' to a large number\nNA[NA == 'inf'] = np.inf\n\n# Convert the array elements to float\nNA = NA.astype(float)\n\n# Calculate the mean\nAVG = np.mean(NA, axis=0)\n"}

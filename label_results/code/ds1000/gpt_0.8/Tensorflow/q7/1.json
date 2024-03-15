@@ -1,0 +1,1 @@
+{"trg_prediction": "ds = tf.data.Dataset.from_tensor_slices(input)\nds = ds.flat_map(lambda x: tf.data.Dataset.from_tensor_slices([x, x+1, x+2]))\nresult = list(ds.as_numpy_iterator())\n"}

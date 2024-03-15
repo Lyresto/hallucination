@@ -1,0 +1,1 @@
+{"trg_prediction": "from operator import itemgetter\n\ndef solve(a, b):\n\tc = []\n\tfor x in range(len(a)):\n\t\tc.append([a[x][b[y][0]] for y in range(len(b))])\n\treturn np.array(c)\n"}

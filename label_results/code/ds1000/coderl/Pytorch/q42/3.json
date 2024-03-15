@@ -1,0 +1,1 @@
+{"trg_prediction": "def load_data():\n\td = pd.read_csv(\"./data.csv\")\n\tdata = list(zip(*d.values.T))\n\tl = len(data)\n\treturn [list(t) for t in zip(*data)][-1]\n"}

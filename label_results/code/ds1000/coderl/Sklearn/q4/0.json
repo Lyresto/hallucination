@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef one_hot(col):\n\tseen = set()\n\treturn [1 if col[i] in seen else 0 for i in range(len(col))]\n\ndef load_data():\n\treturn pd.DataFrame(one_hot(df[col] for col in df.columns), columns=df.columns)\n"}

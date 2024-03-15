@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef dist(x, y):\n\tfor i in range(3):\n\t\tyield [i[0]**2 + i[1]**2, i[2]**2 + i[3]**2]\n\nxdist = np.concatenate(dist(*p) for p in (x, y))\nydist = np.concatenate(dist(*q) for q in (x, y))\n"}

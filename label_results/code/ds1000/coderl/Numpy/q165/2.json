@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef distance(a):\n\tdistances = np.empty((len(a), len(a)))\n\tfor i in range(len(a)):\n\t\tfor j in range(i):\n\t\t\tdistances[i, j] = np.linalg.norm(a[i] - a[j], ord=2)\n\treturn distances\n"}

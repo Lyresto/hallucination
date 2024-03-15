@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef sub2ind(n, k, i, j):\n\ts1 = np.dot(np.arange(n),np.roll(np.arange(n),k))\n\ts2 = np.dot(np.arange(j),np.roll(np.arange(n),i))\n\treturn (s1-s2).round()\n"}

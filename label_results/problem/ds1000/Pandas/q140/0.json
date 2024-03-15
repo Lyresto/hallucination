@@ -1,0 +1,1 @@
+{"trg_prediction": "result = df[~df['Category'].isin(filter_list)]\n"}

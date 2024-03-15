@@ -1,0 +1,1 @@
+{"trg_prediction": "import sklearn\nfrom sklearn import linear_model\nX, y = load_data()\nreg = linear_model.SVR(C=1e5)\nreg.fit(X, y)\npredict = reg.predict(X)\n"}

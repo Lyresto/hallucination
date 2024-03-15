@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef normalize(df):\n\tdf['ProductId'] = df['ProductId'].astype(int)\n\tdf['Quantity'] = df['Quantity'].astype(int)\n\tdf = np.divide(df, np.array(df['Quantity']).sum())\n\tdf = df.astype(int)\n\treturn df\n"}

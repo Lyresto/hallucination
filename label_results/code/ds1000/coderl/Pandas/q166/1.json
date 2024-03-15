@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import mean, std\n\ndef stdMeann(x):\n\treturn std(mean(list(x)))\n"}

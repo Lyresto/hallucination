@@ -1,0 +1,1 @@
+b.setdiag(0)

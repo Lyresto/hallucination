@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.plot(x, y, marker='o', markerfacecolor='none', markeredgecolor='black', markersize=10)\nplt.xlabel('x')\nplt.ylabel('y')\nplt.title('Line Chart with Transparent Marker and Non-Transparent Edge')\nplt.show()"}

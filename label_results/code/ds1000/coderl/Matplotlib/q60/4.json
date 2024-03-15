@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import chain\n\ndef p(*args):\n\treturn chain.from_iterable(zip(*args))\n\ndf = pd.DataFrame({'X': x, 'Y': y})\nax = df.plot(x='X', y='Y', color='R')\nax.set_title('Two variables')\n"}

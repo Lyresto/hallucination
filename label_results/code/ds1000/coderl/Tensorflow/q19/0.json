@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport tensorflow as tf\n\nnp.random.seed(10)\nA = tf.constant(np.random.randint(100,size=(5, 3)))\nsess = tf.Session()\nnp_sum = np.sum(A, axis=1)\nres = sess.run(A)\nprint(np_sum)\n"}

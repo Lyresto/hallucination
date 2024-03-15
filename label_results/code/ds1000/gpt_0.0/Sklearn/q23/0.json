@@ -1,0 +1,1 @@
+{"trg_prediction": "proba = []\nfor train, test in cv:\n    logreg.fit(X[train], y[train])\n    proba.append(logreg.predict_proba(X[test]))\nproba = np.concatenate(proba)\n"}

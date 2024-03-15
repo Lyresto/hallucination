@@ -1,0 +1,1 @@
+{"trg_prediction": "# Use pandas get_dummies to one hot encode the categorical variable\ncat_var = pd.get_dummies(X_train[0], prefix='cat')\nX_train = pd.concat([X_train.drop(0, axis=1), cat_var], axis=1)\n\n# Model\nclf = GradientBoostingClassifier(learning_rate=0.01, max_depth=8, n_estimators=50).fit(X_train, y_train)\n"}

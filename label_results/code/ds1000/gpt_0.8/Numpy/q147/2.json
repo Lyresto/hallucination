@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\npost = [2, 5, 6, 10]\ndistance = [50, 100, 500, 1000]\n\nresult = np.corrcoef(post, distance)[0, 1]\n\nresult"}

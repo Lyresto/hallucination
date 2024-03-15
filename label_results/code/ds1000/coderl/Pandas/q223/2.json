@@ -1,0 +1,1 @@
+{"trg_prediction": "def fillna(df, n=0.5):\n\tfor c in df:\n\t\tif c!=0:\n\t\t\tdf[c] = (df[c] + (n/100)*1.0).round(n)\n\t\t\tn += 1\n"}

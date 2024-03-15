@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef melt(df, value_vars):\n\tnew_cols = list(df.columns)\n\tfor i, v in enumerate(value_vars):\n\t\tnew_cols[i] = [v[0] for _ in range(len(v))] + v[1:]\n\treturn pd.melt(df, new_cols)\n"}

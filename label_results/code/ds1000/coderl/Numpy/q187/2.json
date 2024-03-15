@@ -1,0 +1,1 @@
+{"trg_prediction": "def symmetric(a):\n\treturn [row[i] if i<len(row) else 0 for i,row in enumerate(a)]\n"}

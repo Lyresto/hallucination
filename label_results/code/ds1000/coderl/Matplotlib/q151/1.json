@@ -1,0 +1,1 @@
+{"trg_prediction": "# df = pandas.DataFrame(\n#     {\n#         \"a\": np.arange(1, 31),\n#         \"b\": [\"A\",] * 10 + [\"B\",] * 10 + [\"C\",] * 10,\n#         \"c\": np.random.rand(30),\n#     }\n# )\n\nsns.pointplot(df)\nplt.show()\n"}

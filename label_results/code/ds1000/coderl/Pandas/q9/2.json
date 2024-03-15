@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import OrderedDict\n\ndef drop_duplicates(df, keep_if_dup=True):\n\td = OrderedDict()\n\tfor row in df:\n\t\tk = row.get(\"keep_if_dup\", None)\n\t\tif k is not True:\n\t\t\td[row[\"id\"]] = k\n\t\t\td[row[\"url\"]] = k\n\treturn df.merge(d, left_on=\"id\", right_on=\"url\", how=\"left\")\n"}

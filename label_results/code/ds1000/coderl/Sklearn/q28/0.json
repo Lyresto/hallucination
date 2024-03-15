@@ -1,0 +1,1 @@
+{"trg_prediction": "def cross_val_score(est, X, y, cv=5):\n\tnames = []\n\tfor i, (train, test) in enumerate(zip(X, y)):\n\t\tnames.append(str(est))\n\t\tscores = []\n\t\tfor k, v in enumerate(est.coef_):\n\t\t\tscores.append(v * X[:, i].sum() / (len(X[:, i]) - k))\n\t\tscores.mean()\n\t\tprint(f'Name model: {est}, Mean score: {scores.mean()}')\n\treturn names\n"}

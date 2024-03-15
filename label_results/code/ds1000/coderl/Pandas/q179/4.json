@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\n\ndef get_rows(df):\n\tgroup_by_cols = {col: [col for col in df.columns if col in ['Sp', 'Mt']]}\n\tmin_count = Counter(group_by_cols['Mt']).most_common(1)[0][1]\n\treturn (sum(group_by_cols[col] == min_count for col in group_by_cols['Value'])\n\t\t\tfor col in group_by_cols['Value'])\n"}

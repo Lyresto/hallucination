@@ -1,0 +1,1 @@
+{"trg_prediction": "def line(x,y):\n\tdf = pd.DataFrame({'x':x,'y':y})\n\tdf.plot(x='x',y='y',marker='.',linewidth=2)\n\treturn plt.gcf()\n"}

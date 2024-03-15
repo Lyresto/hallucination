@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.stats\n\ndef ddnxt(a, b, n):\n\treturn (a + b) / n\n\ndef approx_pvalue(z_scores, mu, sigma):\n\tsigma2 = sigma ** 2\n\tdf = ddnxt(sigma2, sigma2 - mu, len(z_scores) - 1)\n\tacf = np.cumsum(z_scores) / df\n\tp_values = scipy.stats.norm.pdf(acf, mu, sigma).round()\n\treturn p_values\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def transform(np_array):\n\t# your code\n\treturn np.array([[float(i) / float(j) for j in range(3)] for i in np_array]).T\n"}

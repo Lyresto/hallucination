@@ -1,0 +1,1 @@
+{"trg_prediction": "def zscore(df):\n\tres = []\n\tfor i, c in enumerate(df.index):\n\t\tx = df.loc[c]\n\t\tres.append((len(df.index)-i-1, x))\n\tres.sort()\n\tsm, p = 0, 0\n\tfor i, r in enumerate(res):\n\t\tsm += r[0]\n\t\tp += r[1]\n\treturn sm, p\ndef column_zscore(df):\n\tsm, p = zscore(df)\n\treturn (sm, p)\n"}

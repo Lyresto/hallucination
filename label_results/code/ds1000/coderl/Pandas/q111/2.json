@@ -1,0 +1,1 @@
+{"trg_prediction": "def state(df, k):\n\ts = 0\n\tfor i in range(len(df[k])):\n\t\tif k =='state':\n\t\t\ts = s + df[k][i]\n\t\telif k == 'col2' and df[k][i] > 50:\n\t\t\ts = s + 50\n\t\telif k == 'col3' and df[k][i] > 50:\n\t\t\ts = s + 100\n\t\telse:\n\t\t\ts = s + df[k][i]\n\treturn s\n"}

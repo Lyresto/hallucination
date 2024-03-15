@@ -1,0 +1,1 @@
+{"trg_prediction": "pipe.fit(data.test)\ntf_idf_out = pipe.named_steps[\"tf_idf\"].transform(data.test)\n"}

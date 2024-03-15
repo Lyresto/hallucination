@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nfrom datetime import datetime\n\ndef datetime_to_seconds(dt):\n\treturn int((dt - datetime(2022, 1, 1)).total_seconds())\n\ndef seconds_to_datetime(seconds):\n\treturn datetime.strptime(f'{seconds:06d}', '%H:%M')\n"}

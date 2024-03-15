@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef zero_out_first_and_second(a):\n\tfor i in range(len(a)):\n\t\tfor j in range(len(a[0])):\n\t\t\ta[i][j] = a[i][0] if a[i][0]!= 0 else 0\n\tfor j in range(len(a[0])):\n\t\ta[0][j] = a[0][j] if a[0][j]!= 0 else 0\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def my_map_func(i):\n  return [i, i+1, i+2]\n\nds = tf.data.Dataset.from_tensor_slices(input)\nds = ds.flat_map(lambda x: tf.data.Dataset.from_tensor_slices(my_map_func(x)))\nelement = tf.compat.v1.data.make_one_shot_iterator(ds).get_next()\nresult = []\nwith tf.compat.v1.Session() as sess:\n  for _ in range(9):\n    result.append(sess.run(element))\n"}

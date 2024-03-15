@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\nfrom sklearn.preprocessing import LabelEncoder\ndf = load_data()\ntransformed_df =... # put solution in this variable\n"}

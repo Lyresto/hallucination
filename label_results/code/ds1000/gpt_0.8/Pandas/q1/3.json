@@ -1,0 +1,1 @@
+{"trg_prediction": "df_shuffled = df.iloc[List]\nresult = sum(df['Type'] != df_shuffled['Type'])\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "result = []\nfor row in X:\n    for element in row:\n        result.append(element)\n    ### END SOLUTION\n    return result"}

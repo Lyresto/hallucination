@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef divide_by_n_zeros(x):\n\tweights = x[0][0][0]\n\tsum_of_zeros = 0\n\tfor i in range(len(x[0][0])):\n\t\tif x[0][0][i]!= 0:\n\t\t\tsum_of_zeros += 1\n\t# print(sum_of_zeros)\n\tfor i in range(len(x[0][0])):\n\t\tweights += x[0][0][i]\n\t# print(weights)\n\treturn weights / sum_of_zeros\n"}

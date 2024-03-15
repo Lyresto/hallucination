@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import remove\n\na, b = list(map(float, input().split()))\nc = remove(a, b)\n"}

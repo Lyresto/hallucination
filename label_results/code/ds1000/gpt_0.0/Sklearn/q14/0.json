@@ -1,0 +1,1 @@
+{"trg_prediction": "# To delete a step, we can simply use the pop() method on the self.steps list\nclf.steps.pop(1) # This will remove the 'poly' step from the pipeline\n"}

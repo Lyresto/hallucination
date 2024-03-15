@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(df=example_df):\n\tres = 0\n\tfor i in range(len(df['Name'])):\n\t\tres += (sum(df[df['Name'][i]])/len(df['Name'][i]))\n\treturn res\n"}

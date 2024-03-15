@@ -1,0 +1,1 @@
+{"trg_prediction": "from dask.dataframe import DataFrame\n\n\ndef split_columns(df, col):\n\tsplit = lambda s: s.split(col)\n\treturn [DataFrame([[split(s)[i] for i in range(len(s))] for _ in range(len(s))]) for s in df]\n"}

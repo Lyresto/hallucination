@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\nfrom torch import Tensor\n\ndef solve(a, b):\n\t# a, b = [torch.from_numpy(np.array(row)).cpu().numpy() for row in (a, b)]\n\ta = a.cpu().numpy()\n\tb = b.cpu().numpy()\n\treturn torch.tensor(np.mean(a, b, axis=1)).numpy()\n"}

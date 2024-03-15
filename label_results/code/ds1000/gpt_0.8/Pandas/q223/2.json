@@ -1,0 +1,1 @@
+{"trg_prediction": "df['Column_x'].fillna(0, inplace=True)\nn = df['Column_x'].isnull().sum()\ndf.loc[df['Column_x'].isnull().head(int(n/2))] = 1\n"}

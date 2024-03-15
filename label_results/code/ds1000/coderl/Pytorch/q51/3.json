@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\n\ndef load_data():\n\ta = np.array([i for i in range(1, 1001)])\n\tb = np.array([i for i in range(1, 1001)])\n\ta, b = torch.from_numpy(a), torch.from_numpy(b)\n\treturn Counter(a), Counter(b)\n"}

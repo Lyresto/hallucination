@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nimport numpy as np\nimport torch\npx = pd.DataFrame(np.random.rand(6,6))\n\ndef get_data():\n\tfor i in range(6):\n\t\tpx[str(i)] = [x.item() if i == 0 else x[i-1] for x in px]\n\treturn px\n"}

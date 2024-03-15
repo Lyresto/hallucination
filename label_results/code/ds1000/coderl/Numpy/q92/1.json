@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\n\ndef get_indices_of_the_N_biggest_elements_in_decreasing_order(a, N):\n\tarr = np.array(a)\n\tindices = []\n\tfor i, n in enumerate(arr):\n\t\tif n == max(arr):\n\t\t\tindices.append(i)\n\t\n\treturn indices\n"}

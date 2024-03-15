@@ -1,0 +1,1 @@
+{"trg_prediction": "from statistics import mean\n\ndef df_aggregate_rows_greater_than(df, threshold):\n\tvalues = list(df.value.values)\n\treturn (mean(values[i:i+threshold]) if values else None for i in range(len(values) - threshold + 1))\n"}

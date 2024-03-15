@@ -1,0 +1,1 @@
+{"trg_prediction": "min_vals = np.min(a, axis=1)\nmask = np.equal(a, min_vals.reshape(-1, 1))\n"}

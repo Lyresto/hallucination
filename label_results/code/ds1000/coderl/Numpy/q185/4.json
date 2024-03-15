@@ -1,0 +1,1 @@
+{"trg_prediction": "# write the function df_cum\ndef df_cum(df, n):\n\tif n == 'Q':\n\t\treturn df[n]\n\telse:\n\t\treturn df[str(n)]\n"}

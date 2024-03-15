@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef get_max_sets(a):\n\tN = len(a)\n\tV = [[] for _ in range(N)]\n\tfor i, j in enumerate(a):\n\t\tfor k in range(len(j)):\n\t\t\tV[i].append(np.argwhere(j == k)[0][0])\n\tV.sort()\n\treturn V[0]\n"}

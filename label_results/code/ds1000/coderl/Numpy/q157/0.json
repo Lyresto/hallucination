@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import zip_longest\n\ndef dist(a, b):\n\treturn sum(b[i][j] - a[i][j] for i in range(len(a)) for j in range(len(a[i])))**0.5\n\ndef permutate(arrays):\n\treturn list(zip_longest(*arrays, fillvalue=0))\n"}

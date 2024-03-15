@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef f(*args):\n\tnp_args = [np.array(a) for a in args]\n\tsess = tf.Session()\n\tres = sess.run(args[0][0][0] + args[0][0][1] + args[0][1][0], \n\t\t\t\t  args[1][0][0] + args[1][0][1], \n\t\t\t\t  args[2][0][0] + args[2][0][1])\n\treturn np_args[res].tolist()\n"}

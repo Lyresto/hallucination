@@ -1,0 +1,1 @@
+{"trg_prediction": "def load_data():\n\t#your code here\n\tnp_array = np.array(pd.read_csv('np_array.csv'))\n\tscaler = MinMaxScaler()\n\treturn np_array.astype(float)/scaler.transform(np_array).reshape(len(np_array),1)\n"}

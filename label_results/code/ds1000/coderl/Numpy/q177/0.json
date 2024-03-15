@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import array, window\n\ndef sliding_window(a, size, center=None):\n\tif center is None:\n\t\tcenter = (size[0]//2, size[1]//2)\n\treturn [array(window(a[i*size[0]:(i+1)*size[0], center=center, axis=i))\n\t\t\tfor i in range(size[0])]\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import concatenate\n\ndef f(X):\n\treturn list(concatenate(X, axis=0))\n"}

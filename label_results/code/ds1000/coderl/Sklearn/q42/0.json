@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\ndf = pd.read_csv('los_10_one_encoder.csv')\ny = df['LOS'] # target\nX= df.drop('LOS',axis=1) # drop LOS column\nclf = ExtraTreesClassifier(random_state=42)\nclf = clf.fit(X,y)\nprint(clf.feature_importances_)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from sklearn.model_selection import StratifiedKFold\nfrom sklearn.linear_model import LogisticRegression\n\n\ndef load_data():\n\treturn np.array(zip(*load_csv(delim=' ')).T)[:,0], np.array(load_csv(delim=' ')).T[:,1]\n\n\ndef load_csv(delim=' ', start=0):\n\treturn pd.read_csv(delim.join((str(start), delim)), delim=delim)\n"}

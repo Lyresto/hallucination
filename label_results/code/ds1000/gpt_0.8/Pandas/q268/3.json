@@ -1,0 +1,1 @@
+{"trg_prediction": "ts = df.set_index('Date')['Value']\n"}

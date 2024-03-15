@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport scipy.stats\na = np.random.randn(40)\nb = 4*np.random.randn(50)\np_value = scipy.stats.ttest_1samp(a,b)\n"}

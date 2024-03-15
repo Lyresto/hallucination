@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\ndef df_filtered(df, filt):\n\tdf2 = df.copy()\n\tfor i, v in enumerate(df.index.get_level_values()):\n\t\tdf2.iloc[i] = df2.iloc[i].apply(lambda x: x!= v)\n\tfilt2 = filt.copy()\n\tfor i, v in enumerate(filt.index.get_level_values()):\n\t\tfilt2.iloc[i] = filt2.iloc[i].apply(lambda x: x < v)\n\treturn df2[filt2]\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\na = np.array([4, 1, 0, 8, 5, 2])\nres = [2,1,5,0,4,3]\nprint(np.argsort(a))\n"}

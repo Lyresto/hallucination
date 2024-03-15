@@ -1,0 +1,1 @@
+{"trg_prediction": "model = svm.LinearSVC(C=1, penalty='l1')\nmodel.fit(X, y)\nproba = model.predict_proba(X)\n"}

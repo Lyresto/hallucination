@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.figure(figsize=(10, 6))\n\nplt.bar(df['celltype'], df['s1'], label='s1')\nplt.bar(df['celltype'], df['s2'], label='s2')\n\nplt.xlabel('celltype')\nplt.xticks(rotation=45)\n\nplt.legend()\n\nplt.show()"}

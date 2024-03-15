@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\n\ndef transform(df):\n\tdf['Sex'] = LabelEncoder.fit_transform(df['Sex'])\n\treturn df\n"}

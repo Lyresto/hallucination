@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\n\ndef groupby_series(df):\n\treturn df.groupby(['Sp', 'Value']).count().itertuples()\n\ndef max_count(df):\n\tmax_count = Counter(df['Value'])\n\treturn [max_count[i] for i in df['Sp']]\n"}

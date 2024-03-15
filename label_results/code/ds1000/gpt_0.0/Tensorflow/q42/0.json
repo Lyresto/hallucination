@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\n\nseed_x = 10\ntf.random.set_seed(seed_x)\nresult = tf.random.uniform(shape=(114,), minval=2, maxval=6, dtype=tf.int32)\n"}

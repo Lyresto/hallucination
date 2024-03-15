@@ -1,0 +1,1 @@
+{"trg_prediction": "\nimport scipy.integrate\nimport numpy as np\nN0 = 10\ntime_span = [-0.1, 0.1]\nresult = scipy.integrate.solve_ivp(fun=dN1_dt_simple, t_span=time_span, y0=[N0,])\n"}

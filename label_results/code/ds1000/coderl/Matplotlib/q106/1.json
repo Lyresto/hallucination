@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import zip_longest\n\nfig, ax = plt.subplots()\n\nfor i, (label, h) in enumerate(zip_longest(labels, height)):\n\tax.bar(i, h, label=label)\n\nax.set_ylim(0, 10)\nax.set_xticks(range(0, len(labels)))\nax.set_yticks(range(0, len(height)))\n\nplt.show()\n"}

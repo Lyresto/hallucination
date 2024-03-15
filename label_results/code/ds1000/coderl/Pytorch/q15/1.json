@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import count\n\ndef index_select(*args):\n\ti, c = args\n\treturn i[i] if isinstance(i, int) else torch.LongTensor(zip(*args))[:i]\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "x = np.arange(0, 1.5, 0.1)\ny = np.arange(0, 1.5, 0.1)\nplt.xticks(x, y)\nplt.yticks(x, y)\n#"}

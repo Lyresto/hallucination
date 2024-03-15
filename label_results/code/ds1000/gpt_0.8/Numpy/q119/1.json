@@ -1,0 +1,1 @@
+{"trg_prediction": "result = np.random.choice(lista_elegir, samples, p=probabilit)\n"}

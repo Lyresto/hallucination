@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\nfrom sklearn.svm import LinearSVC\n\ndef cross_val_score(model, X, y, cv=5):\n\tname = str(model)\n\tmean_score = 0\n\tfor i in range(cv):\n\t\tscores = np.array(cross_val_score(model, X, y, cv=i+1))\n\t\tmean_score += scores.mean()\n\t\n\treturn f'Name model: {name}, Mean score: {mean_score:.5f}'\n"}

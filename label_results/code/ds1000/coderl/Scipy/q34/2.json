@@ -1,0 +1,1 @@
+{"trg_prediction": "def mean(A):\n\treturn sum(A.data)*(1+A.shape[0])/(1+A.shape[1])\n\t# your code here\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom sklearn.pipeline import Pipeline\n\ndef select_features(features):\n\treturn np.array([[c for c in x] for x in features]).T.tolist()\n"}

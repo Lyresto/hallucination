@@ -1,0 +1,1 @@
+{"trg_prediction": "# Flatten the arrays and create a dictionary\ndata_dict = {'lat': lat.flatten(), 'lon': lon.flatten(), 'val': val.flatten()}\n\n# Create the dataframe\ndf = pd.DataFrame(data_dict)\n\n# Return the dataframe\nreturn df\n### END SOLUTION"}

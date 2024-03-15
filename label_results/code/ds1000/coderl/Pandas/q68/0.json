@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import array\n\ndef subset_rows_and_columns(df):\n\tcols = list(df.columns)\n\tsubset = df[df.c > 0.5]\n\treturn array([subset[col] for col in cols])\n"}

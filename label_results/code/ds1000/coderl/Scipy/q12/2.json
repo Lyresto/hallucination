@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef f(sA=example_sA, sB=example_sB):\n\t# return the solution in this function\n\treturn np.dot(sA.todense(), sB.todense())\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from datetime import datetime\n\ndef df_to_str(df):\n\treturn df.to_str('datetime', sep=' ')\n"}

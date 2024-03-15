@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.spatial\ncentroids = np.array(list(zip(*list(zip(*np.random.rand(5, 3))))))\nresult = []\nfor i in range(5):\n\troot = scipy.spatial.Cubic(centroids[i:], data[i:])\n\tp = scipy.cluster.hierarchy.cut_tree(root, leaf_size=1)\n\tresult.append(p[0][0][0])\n"}

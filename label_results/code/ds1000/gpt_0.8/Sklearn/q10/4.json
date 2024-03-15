@@ -1,0 +1,1 @@
+{"trg_prediction": "from sklearn.calibration import CalibratedClassifierCV\n\n# Create the CalibratedClassifierCV object with the LinearSVC model\ncalibrated_model = CalibratedClassifierCV(model, cv=5)\n\n# Fit the model on the training data\ncalibrated_model.fit(X, y)\n\n# Use the calibrated model to predict probabilities\nproba = calibrated_model.predict_proba(x_predict)\n"}

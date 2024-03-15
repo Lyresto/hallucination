@@ -1,0 +1,1 @@
+{"trg_prediction": "def percent_of_category(df):\n\ttotal = len(df['cat'])\n\treturn 1 - sum(v/total for v in df['val1']) / total\n"}

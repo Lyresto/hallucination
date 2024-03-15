@@ -1,0 +1,1 @@
+{"trg_prediction": "def df_to_series(df):\n\tts = df.copy()\n\tfor i, d in enumerate(df.index):\n\t\tts.loc[d,'Date'] = pd.to_datetime(ts.loc[d,'Date'])\n\treturn ts\n"}

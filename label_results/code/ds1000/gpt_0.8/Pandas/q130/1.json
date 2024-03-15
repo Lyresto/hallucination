@@ -1,0 +1,1 @@
+{"trg_prediction": "duplicate_bool = df.duplicated(subset=['col1','col2'], keep='first')\nduplicate = df.loc[duplicate_bool == True]\nduplicate['index_original'] = df[duplicate_bool == True].index[0]\nresult = duplicate\n"}

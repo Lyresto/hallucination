@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import OrderedDict\n\ndef fillna(df, dict_):\n\tfor key, value in dict_.items():\n\t\tdf[key] = df[key].apply(lambda x: value if x in value else pd.Timestamp(value))\n\treturn df\n"}

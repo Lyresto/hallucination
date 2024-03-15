@@ -1,0 +1,1 @@
+{"trg_prediction": "#df = pd.DataFrame(df)\n#sns.stripplot(df, x='sex', y='bill_length_mm', color='species')\n#your code here\n"}

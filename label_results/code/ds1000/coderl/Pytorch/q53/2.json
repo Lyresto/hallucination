@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\nimport torch\n\ndef cnt_not_equal(a, b):\n\ta = a.float()\n\tb = b.float()\n\treturn sum(np.abs(a - b)!= np.abs(a - b).tolist())\n"}

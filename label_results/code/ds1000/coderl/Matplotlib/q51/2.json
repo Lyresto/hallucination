@@ -1,0 +1,1 @@
+{"trg_prediction": "# plot y over x\n# do not show xticks of the plot\n# SOLUTION END\n\ndf = pd.DataFrame({'x': x, 'y': y})\n# print(df)\ndf.plot(x='x', y='y')\n# SOLUTION START\ndf.plot(x='x', y='y', title='plot y over x')\n# print(df)\n\n# SOLUTION END\n"}

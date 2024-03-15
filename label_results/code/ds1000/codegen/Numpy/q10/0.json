@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nA = np.array([1,2,3,4,5,6])\nncol = 2\nB = vec2matrix(A,ncol=ncol)\n"}

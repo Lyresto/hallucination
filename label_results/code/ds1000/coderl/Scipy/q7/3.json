@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.stats\ndef stats_gaussian_kruskal(z_scores, mu, sigma):\n\tlog_z_scores = np.log(z_scores)\n\tmean = mean(z_scores)\n\tsigma = sigma(z_scores)\n\tf = scipy.stats.gaussian_kruskal\n\treturn f(log_z_scores, mean, sigma).pvalue\n"}

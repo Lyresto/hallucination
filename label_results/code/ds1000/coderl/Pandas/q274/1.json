@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom pandas import DataFrame\n\ndef average(list_of_my_columns):\n\tmy_list = []\n\tfor i in list_of_my_columns:\n\t\tmy_list.append(DataFrame[i])\n\tfor i in range(len(my_list)):\n\t\tmy_list[i]['Avg'] = np.mean(my_list[i])\n\treturn my_list[0]\n"}

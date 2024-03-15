@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\n\ndef how_many_rows_have_different_Type_than_origin(df: pd.DataFrame):\n\ttypes = Counter(df['Type'])\n\treturn sum(count!= types[x] for x, count in types.items())\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from sklearn.calibration import CalibratedClassifierCV\n\n# Create a calibrated classifier\ncalibrated_clf = CalibratedClassifierCV(svmmodel, cv=5)\n\n# Fit the calibrated classifier\ncalibrated_clf.fit(X, y)\n\n# Get the predicted probabilities\nproba = calibrated_clf.predict_proba(x_test)\n"}

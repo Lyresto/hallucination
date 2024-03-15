@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\n\ndf = pd.DataFrame({'codes':[[71020], [77085], [36415], [99213, 99287], [99233, 99233, 99233]]})\n"}

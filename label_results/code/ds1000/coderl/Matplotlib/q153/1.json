@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndf = pd.DataFrame(\n\tdata={'x':x, 'y':y}\n)\n\ndf.plot(kind='line', x='x', y='y')\n"}

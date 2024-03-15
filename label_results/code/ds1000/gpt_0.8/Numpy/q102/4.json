@@ -1,0 +1,1 @@
+{"trg_prediction": "result = a[:, low:min(high, a.shape[1])]"}

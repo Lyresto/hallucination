@@ -1,0 +1,1 @@
+{"trg_prediction": "fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(6, 8))\n\nax1.plot(x, y)\nax1.set_title('Y')\nax1.set_xlabel('X')\nax1.set_ylabel('Y')\n\nax2.plot(a, z)\nax2.set_title('Z')\nax2.set_xlabel('A')\nax2.set_ylabel('Z')\n\nfig.suptitle('Y and Z')\n\nplt.tight_layout()\nplt.show()"}

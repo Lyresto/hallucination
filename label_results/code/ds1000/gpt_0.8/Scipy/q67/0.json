@@ -1,0 +1,1 @@
+{"trg_prediction": "zscore = stats.zscore(df, axis=0)\nresult = pd.DataFrame(zscore, index=df.index, columns=df.columns)\n"}

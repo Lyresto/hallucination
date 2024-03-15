@@ -1,0 +1,1 @@
+{"trg_prediction": "def elementwise_function(element_1,element_2):\n\treturn element_1 + element_2\n\nz = [[4, 4, 4],\n\t[4, 4, 4],\n\t[4, 4, 4]]\nfor i in range(0,4):\n\tfor j in range(0,4):\n\t\tz[i][j]=elementwise_function(z[i][j],z[i][j+1])\n"}

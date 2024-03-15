@@ -1,0 +1,1 @@
+{"trg_prediction": "import copy\nresult = np.array([copy.deepcopy(arr) for arr in array_of_arrays])\n"}

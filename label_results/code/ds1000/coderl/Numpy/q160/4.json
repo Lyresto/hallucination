@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy\narr = numpy.zeros((20,)*4)\nprint(arr)\n"}

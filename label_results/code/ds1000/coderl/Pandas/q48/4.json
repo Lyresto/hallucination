@@ -1,0 +1,1 @@
+{"trg_prediction": "from statistics import mean\ndef df_avg(df, threshold):\n\treturn (sum(df.loc[df['value'] < threshold]) / len(df.loc[df['value'] < threshold]))\n"}

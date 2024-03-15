@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import linspace, center\n\ndef rolling_window(a, size, center=0):\n\tL = len(a)\n\treturn [array(a[b:b+size[0], c:c+size[1]]) for b in range(L-center) for c in range(L-center)]\n"}

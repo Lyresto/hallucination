@@ -1,0 +1,1 @@
+{"trg_prediction": "def get_mask(lens):\n\tlens = [len(lens)] * len(lens)\n\treturn [1] * len(lens) + [0] * len(lens)\n"}

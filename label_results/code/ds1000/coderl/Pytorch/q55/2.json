@@ -1,0 +1,1 @@
+{"trg_prediction": "tensors_31=[]\ndef split_tensors(a,chunk_dim):\n\ta_split=torch.chunk(a,chunk_dim,dim=2)\n\tfor i in range(len(tensors_31)):\n\t\ttensors_31[i]=list(map(lambda x: x[i],a_split))\n\treturn tensors_31\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndf = pd.DataFrame({'text': ['abc', 'def', 'ghi', 'jkl']})\nresult = df.merge(df, on='text')\nprint(result)\n"}

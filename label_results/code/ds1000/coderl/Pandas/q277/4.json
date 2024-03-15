@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import pd\ndef sort_index(df):\n\treturn df.sort_index(key=lambda r:r['time'])\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\nN = 100\nfig, ax = np.array([]).reshape(N, N), np.array([])\nfor x, y in data:\n\tax[x, y] = np.array([i for i in range(x+1, x+5)]) + np.array([i for i in range(y+1, y+5)])\n\tfig.set_size_inches(5, 5)\n\t# SOLUTION END\n"}

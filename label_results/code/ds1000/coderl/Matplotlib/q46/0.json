@@ -1,0 +1,1 @@
+{"trg_prediction": "# SOLUTION START\n# SOLUTION START\n# SOLUTION START\n\nfrom itertools import chain\n\ndf = pd.DataFrame({'a':x, 'b':y})\nxs = list(chain.from_iterable([df.a, df.b]))\nls = list(chain.from_iterable([df.a-df.b, df.b-df.a]))\n\nsns.lmplot('a', 'b', data=xs, col='c', ls=ls)\n\n# put legend in lower right\n# SOLUTION END\n"}

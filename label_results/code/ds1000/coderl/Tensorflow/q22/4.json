@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\n\ndef dist(a, b):\n\ta = np.expand_dims(a, axis=0)\n\tb = np.expand_dims(b, axis=0)\n\treturn np.sqrt(np.sub(a, b))\n\nprint((dist([[1,1,1], [1,1,1]])))\nprint((dist([[0,0,0], [1,1,1]]), 3))\n"}

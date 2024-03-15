@@ -1,0 +1,1 @@
+{"trg_prediction": "seaborn.factorplot(x=\"Weight (kg)\", y=\"Height (cm)\", data=df)\nseaborn.despine(left=True)\nplt.show()\n"}

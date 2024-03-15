@@ -1,0 +1,1 @@
+{"trg_prediction": "import math\n\n# Calculate the number of NaN values to fill with 0 and 1\nnum_nan = df['Column_x'].isna().sum()\nnum_fill_0 = math.floor(num_nan/2)\nnum_fill_1 = math.ceil(num_nan/2)\n\n# Fill the NaN values with 0 and 1\ndf['Column_x'].fillna(0, limit=num_fill_0, inplace=True)\ndf['Column_x'].fillna(1, limit=num_fill_1, inplace=True)\n"}

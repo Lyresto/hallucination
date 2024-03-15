@@ -1,0 +1,1 @@
+{"trg_prediction": "def df_with_id(df):\n\treturn df.map(lambda row: str(row['a']) + row['b'] + row['c'], df.index.names)\n"}

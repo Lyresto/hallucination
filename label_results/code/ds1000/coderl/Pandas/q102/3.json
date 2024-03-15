@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import replace\n\ndef f(df=example_df):\n\tfor i, j in df.iterrows():\n\t\tdf.columns[i] = replace(\"&\", \"&\", str(j))\n\treturn df\n"}

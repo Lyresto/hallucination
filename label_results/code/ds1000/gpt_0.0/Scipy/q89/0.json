@@ -1,0 +1,1 @@
+{"trg_prediction": "#iterate through columns\nfor Col in range(sa.shape[1]):\n    Column = sa[:,Col].data\n    List = [x**2 for x in Column]\n    #get the column length\n    Len = math.sqrt(sum(List))\n    #normalize column\n    sa[:,Col] = (1/Len)*Column\nEND SOLUTION\n"}

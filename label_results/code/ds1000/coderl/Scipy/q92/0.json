@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.spatial\nimport numpy as np\nimport itertools\n\ndef closest_to_centroid(data, centroids):\n\treturn list(itertools.accumulate(np.searchsorted(centroids, x) for x in data))[0]\n"}

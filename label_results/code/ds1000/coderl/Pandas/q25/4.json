@@ -1,0 +1,1 @@
+{"trg_prediction": "from datetime import date\ndef extract_date(df,s):\n\tarr = [(date(int(s[0]),int(s[1]),int(s[2]))).strftime('%Y-%m-%d'),]\n\tfor i in range(len(s)-1):\n\t\tarr.append(date(int(s[i+1]),int(s[i+2]),int(s[i+3]))).strftime('%Y-%m-%d')\n\treturn arr[0] if arr[0]!= '00-00' else arr[1]\n"}

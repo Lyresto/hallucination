@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef sort_matrices(a, b):\n\timport numpy.argsort\n\treturn np.sort(b, axis=0).tolist()\n"}

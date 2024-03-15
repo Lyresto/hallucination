@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\nimport numpy as np\n\n\nnp.random.seed(10)\na = tf.constant(np.random.rand(50, 100, 512))\n"}

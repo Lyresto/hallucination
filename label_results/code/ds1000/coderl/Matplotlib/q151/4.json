@@ -1,0 +1,1 @@
+{"trg_prediction": "def df_xy(x,y):\n\treturn [(i,j) for i in range(1,len(df.b)+1) for j in range(len(df.c)) if i <= x <= j]\n\ndef f():\n\tdf1 = pandas.DataFrame(df)\n\tsns.pointplot(df1,\"b\",x=\"a\")\n\tsns.pointplot(df1,\"c\",y=\"a\")\n\t# SAVE AND PLOT WITH INLINE PATTERN\n\tplt.show()\n\ndf_xy(1,0)\ndf_xy(2,1)\n"}

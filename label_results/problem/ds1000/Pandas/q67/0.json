@@ -1,0 +1,1 @@
+{"trg_prediction": "df = pd.melt(df, id_vars=['user', 'someBool'], var_name='date', value_name='value')\ndf = df.dropna(subset=['value'])\ndf['date'] = pd.to_datetime(df['date'], format='%d/%m/%y')\n"}

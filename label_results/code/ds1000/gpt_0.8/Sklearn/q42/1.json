@@ -1,0 +1,1 @@
+{"trg_prediction": "importance = clf.feature_importances_\nmask = importance > np.mean(importance)\nselected_columns = X.columns[mask]\ncolumn_names = selected_columns.tolist()\n"}

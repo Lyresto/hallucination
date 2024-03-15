@@ -1,0 +1,1 @@
+{"trg_prediction": "fig, axes = plt.subplots(1, 2, figsize=(10, 5))\n\naxes[0].plot(x, y)\naxes[0].set_title('Y')\naxes[1].plot(x, y)\naxes[1].set_title('Y')\n\nplt.show()"}

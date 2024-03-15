@@ -1,0 +1,1 @@
+{"trg_prediction": "from sklearn.pipeline import Pipeline\n\ndef pipeline_named_steps(clf):\n\treturn {k: v for k, v in clf.steps.items() if k in clf.steps}\n"}

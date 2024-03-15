@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\nA = ['inf', '33.33', '33.33', '33.37']\nNA = np.asarray(A)\n\nNA = np.where(NA == 'inf', np.nan, NA.astype(float))\nAVG = np.nanmean(NA, axis=0)\n\nAVG"}

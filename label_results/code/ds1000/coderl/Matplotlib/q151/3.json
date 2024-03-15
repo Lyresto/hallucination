@@ -1,0 +1,1 @@
+{"trg_prediction": "# I saw the problem with this Kata on  8/2/2019  01:33 AM...#Hussam'sCodingDiary\n\ndef draw_grid(df):\n\tsns.pairplot(df, x='a', y='b', col='c', size=4)\n\treturn plt.gcf()\n\n# SOLUTION END\n"}

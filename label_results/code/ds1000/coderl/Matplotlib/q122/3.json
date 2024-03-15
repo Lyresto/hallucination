@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndf = pd.DataFrame({'x':x, 'y':y})\ndf['z'] = df['x'] + df['y']\n\n# Adjust the length of the legend handle to 0.3\nlegend = df.plot(y=\"z\", x=\"x\")\nlegend.set_size(0.3)\n\n# SAVE THE MOVE TO A FILE\nplt.savefig('line.png')\n"}

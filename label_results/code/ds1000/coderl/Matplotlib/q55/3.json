@@ -1,0 +1,1 @@
+{"trg_prediction": "def reg(df):\n\tx_mean, y_mean = df['total_bill'].mean(), df['tip'].mean()\n\tx = df['total_bill'].quantile(0.25)\n\ty = df['tip'].quantile(0.25)\n\tsns.jointplot('total_bill', 'tip', x, y, size=6, color='blue')\n\treturn None\n\nreg(tips)\n"}

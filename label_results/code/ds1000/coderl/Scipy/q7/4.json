@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.stats\nfrom scipy.stats import zscore as z_score, pvalue as p_value\ndef mean_and_sigma(z_scores):\n\tmean = sum(z_scores)/len(z_scores)\n\tsigma = sum((z-mean)**2 for z in z_scores)\n\treturn mean, sigma\n"}

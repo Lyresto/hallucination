@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef groupby_views(df, bins):\n\tgroups = df.groupby(pd.cut(df.views, bins))\n\tagg_sum = groups.username.sum()\n\treturn pd.Series(agg_sum, index=df.username)\n"}

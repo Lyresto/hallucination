@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport torch\nidx, B = load_data()\nC = torch.LongTensor([[j[i] for i in range(len(idx))] for j in B])\n"}

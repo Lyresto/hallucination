@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom fractions import Fraction\n\nnumerator = 98\ndenominator = 42\n\nresult = Fraction(numerator, denominator).numerator, Fraction(numerator, denominator).denominator\nEND SOLUTION"}

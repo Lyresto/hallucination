@@ -1,0 +1,1 @@
+{"trg_prediction": "df = pd.DataFrame({'index': s.index, 'value': s.values})\ndf = df.sort_values(by=['value', 'index'], ascending=[True, True])\ndf"}

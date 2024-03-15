@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import mean\n\n# First attempt\ndef find_mean(df, col_name):\n\tif col_name in df:\n\t\tval = df[col_name]\n\t\treturn mean(val)\n\telse:\n\t\treturn None\n\n# Second attempt\ndef find_mean_of_each_value(df, col_name):\n\tval_list = df[col_name]\n\tmean_list = [mean(val_list) for val in val_list]\n\treturn mean(mean_list)\n"}

@@ -1,0 +1,1 @@
+result = df.groupby(['Sp', 'Mt']).apply(lambda x: x[x['count'] == x['count'].min()])

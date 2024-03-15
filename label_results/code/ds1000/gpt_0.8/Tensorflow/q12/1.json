@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\n\nexample_lengths = [4, 3, 5, 2]\n\ndef f(lengths=example_lengths):\n    max_length = max(lengths)\n    mask = tf.sequence_mask(lengths, maxlen=max_length)\n    padded_mask = tf.pad(mask, [[0, 0], [0, 8 - max_length]])\n    return padded_mask\n\nresult = f()\nprint(result)\n### END SOLUTION"}

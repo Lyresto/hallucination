@@ -1,0 +1,1 @@
+{"trg_prediction": "    indices = tf.stack([y,z], axis=1)\n    m = tf.gather_nd(x, indices)\n    return m\n### END SOLUTION\n\nprint(f()) # Output: [2 6]"}

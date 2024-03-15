@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef dist(x, y):\n\treturn np.sqrt((x[0]-y[0])**2 + (x[1]-y[1])**2)\ndef dist_pairs(x, y):\n\treturn list(zip(dist(x, y), dist(y,x)))\n"}

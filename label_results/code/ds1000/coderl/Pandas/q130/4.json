@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import defaultdict\n\ndef find_duplicates(df):\n\td = defaultdict(list)\n\tfor x, i in df.items():\n\t\td[i].append(x)\n\treturn [x for x, i in d.items() if len(i) > 1]\n"}

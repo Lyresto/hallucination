@@ -1,0 +1,1 @@
+{"trg_prediction": "def split_data():\n\tX = dataset.values[:-1]\n\tY = dataset.values[-1]\n\tX_train, X_test = [], []\n\ty_train, y_test = [], []\n\tfor i in range(len(X)):\n\t\tif i % 2 == 0:\n\t\t\ty_train.append(Y[i])\n\t\telse:\n\t\t\ty_test.append(Y[i])\n\treturn (X_train, X_test, y_train, y_test)\n"}

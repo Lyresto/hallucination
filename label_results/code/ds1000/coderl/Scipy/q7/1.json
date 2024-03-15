@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.stats\ndef normal_pdf(z, mu, sigma):\n\treturn scipy.stats.norm.pdf(z, mu, sigma)\ndef gaussian_pdf(z, mu, sigma):\n\treturn scipy.stats.gaussian.pdf(z, mu, sigma)\npvalues = lambda z_scores: [normal_pdf(z, mu, sigma).pdf(i) for i in range(len(z_scores))]\n"}

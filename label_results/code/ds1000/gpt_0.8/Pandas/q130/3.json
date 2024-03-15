@@ -1,0 +1,1 @@
+{"trg_prediction": "df['index_original'] = df.groupby(['col1', 'col2']).transform('first')\nduplicate = df[df.duplicated(subset=['col1', 'col2'], keep='first')]\nresult = duplicate[['col1', 'col2', 'index_original']]\n"}

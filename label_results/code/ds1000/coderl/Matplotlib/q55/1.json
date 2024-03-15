@@ -1,0 +1,1 @@
+{"trg_prediction": "sns.jointplot(tips, x='total_bill', y='tip', color='green')\n\n# DON'T remove\ntips.total_bill.hist(color='green', alpha=0.5)\ntips.tip.hist(color='green', alpha=0.5)\n\n# SOLUTION END\n"}

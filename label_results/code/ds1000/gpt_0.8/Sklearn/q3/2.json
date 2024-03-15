@@ -1,0 +1,1 @@
+{"trg_prediction": "data = load_iris()\ndf = pd.DataFrame(data.data, columns=data.feature_names)\ndf['target'] = data.target\ndf.head()"}

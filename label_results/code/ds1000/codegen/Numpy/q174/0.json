@@ -1,0 +1,1 @@
+{"trg_prediction": "\n    df = pd.DataFrame(data = {'lat':lat, 'lon':lon, 'val':val})\n    ### END SOLUTION\n    return df\n"}

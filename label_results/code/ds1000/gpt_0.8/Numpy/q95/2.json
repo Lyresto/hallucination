@@ -1,0 +1,1 @@
+{"trg_prediction": "result = []\nfor i in range(a.shape[0]-1):\n    for j in range(a.shape[1]-1):\n        result.append(a[i:i+2, j:j+2])\nresult = np.array(result)\n"}

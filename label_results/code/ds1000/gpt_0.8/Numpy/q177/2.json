@@ -1,0 +1,1 @@
+{"trg_prediction": "result = []\nrows, cols = a.shape\nfor i in range(rows):\n    for j in range(cols):\n        window = a[max(0, i-size[0]//2):min(rows, i+size[0]//2+1), max(0, j-size[1]//2):min(cols, j+size[1]//2+1)]\n        result.append(window)\n"}

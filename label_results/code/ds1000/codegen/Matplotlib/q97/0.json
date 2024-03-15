@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.plot(df[\"Type A\"], df[\"Type B\"])\nplt.xlabel(\"Type A\")\nplt.ylabel(\"Type B\")\nplt.title(\"Plot title\")\nplt.show()\n#"}

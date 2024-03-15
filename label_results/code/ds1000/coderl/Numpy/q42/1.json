@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef reduce_fractions(numerator, denominator):\n\tif numerator == 0 and denominator == 0:\n\t\treturn (float(\"NaN\"), float(\"NaN\"))\n\tnum, den = np.fractionalmod(numerator, denominator), np.fractionalmod(denominator, numerator)\n\tif abs(num) == abs(den):\n\t\treturn (float(\"NaN\"), float(\"NaN\"))\n\telse:\n\t\treturn (num, den)\n"}

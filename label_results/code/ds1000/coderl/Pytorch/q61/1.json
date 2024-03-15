@@ -1,0 +1,1 @@
+{"trg_prediction": "import torch\n\ndef predict_allCharacters(input):\n\toutput = MyNet(input)\n\tconf, classes = torch.max(output.reshape(1, 3), 1)\n\tclass_names = '012'\n\treturn conf, class_names[classes.item()]\n"}

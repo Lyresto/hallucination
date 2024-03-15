@@ -1,0 +1,1 @@
+{"trg_prediction": "df = pd.DataFrame([[1,1,0,1],[0,0,0,0],[1,0,0,1],[0,1,0,0],[1,1,0,1]],rows=[0,1,2,3],cols=[4,5,6,7])\nresult = df.sum(axis=1)\n"}

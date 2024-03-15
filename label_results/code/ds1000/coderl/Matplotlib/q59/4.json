@@ -1,0 +1,1 @@
+{"trg_prediction": "def plot_df(x, y):\n\tdf = pd.DataFrame(y)\n\tfor i in df:\n\t\tdf.plot(x, i, color='r')\n\tplt.xlabel('X')\n\t# SOLUTION END\n\treturn df\n"}

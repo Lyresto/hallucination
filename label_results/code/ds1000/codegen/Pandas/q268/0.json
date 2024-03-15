@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\n\ndates = ['2016-1-{}'.format(i)for i in range(1,21)]\nvalues = [i for i in range(20)]\ndata = {'Date': dates, 'Value': values}\ndf = pd.DataFrame(data)\ndf['Date'] = pd.to_datetime(df['Date'])\nts =... # put solution in this variable\n"}

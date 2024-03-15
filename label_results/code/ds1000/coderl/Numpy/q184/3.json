@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom scipy import interpolate as intp\nx = []\ny = []\ndef f(i,j):\n\tx.append(i);y.append(j);return (x[i]*y[j]+y[i]*x[j+1]-x[i]*y[j+1])/4\nfor i in range(2):\n\tfor j in range(2):\n\t\tf(i,j)\nprint(f(0,1))\n"}

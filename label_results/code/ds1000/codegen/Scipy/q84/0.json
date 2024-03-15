@@ -1,0 +1,1 @@
+{"trg_prediction": "\n    result = scipy.integrate.quad(lambda x: c*x,low,high)\n    ### END SOLUTION\n    return result\n"}

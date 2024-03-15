@@ -1,0 +1,1 @@
+{"trg_prediction": "def mask(a):\n\tm, n = np.array(a).min(), len(a)\n\treturn np.array([[i == m or i == n-1] for i in range(n)])\n"}

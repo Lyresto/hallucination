@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef pd_to_series(df):\n\t# your code\n\tts = pd.Series(df['Value'], index=df['Date'])\n\treturn ts\n"}

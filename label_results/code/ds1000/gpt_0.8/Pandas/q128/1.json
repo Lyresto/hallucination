@@ -1,0 +1,1 @@
+{"trg_prediction": "df_sample = df.sample(frac=0.2, random_state=0)\ndf.loc[df_sample.index, 'ProductId'] = 0\nEND SOLUTION\n\nThe resulting DataFrame df will be:\n\nUserId    ProductId    Quantity\n1         1            6\n1         4            1\n1         7            3\n2         0            2\n3         2            7\n3         0            2"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import prod, mean\ndef r_old, r_new:= (mean(r), prod(r)) # put solution in these variables\nBEGIN SOLUTION\n"}

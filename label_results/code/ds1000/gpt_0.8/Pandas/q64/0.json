@@ -1,0 +1,1 @@
+{"trg_prediction": "df['ID'] = df['name'].astype('category').cat.codes + 1\ndf = df.drop(columns=['name', 'a'])\ndf = df[['ID', 'b', 'c']]\n"}

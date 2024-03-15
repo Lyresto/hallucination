@@ -1,0 +1,1 @@
+{"trg_prediction": "x = A.shape[0] // 2\ncnt_not_equal = np.sum(A[x:] != B[x:])\n"}

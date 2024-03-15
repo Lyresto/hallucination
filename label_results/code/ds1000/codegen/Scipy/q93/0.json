@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport scipy.spatial\ncentroids = np.random.rand(5, 3)\ndata = np.random.rand(100, 3)\nresult = scipy.spatial.distance.cdist(centroids, data, 'euclidean')\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef df_average(df, section_left, section_right):\n\tlis = df.index.values\n\tn = len(lis)\n\tlis = [i for i in lis if i < section_left and i > section_right]\n\tresult = sum(df.loc[i]['value'] for i in lis) / len(lis)\n\tfor i in range(section_left, section_right):\n\t\tresult += df.loc[i]['value']\n\treturn result\n"}

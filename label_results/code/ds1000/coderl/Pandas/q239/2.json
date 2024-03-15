@@ -1,0 +1,1 @@
+{"trg_prediction": "from operator import itemgetter\n\ndef dfs_concat(df1, df2):\n\tcity, district = (df1[c].values for c in 'city district'.split())\n\treturn pd.merge(df1, df2, on='id')[\n\t\t[k for k, v in zip(city.take(n=len(city)), district.take(n=len(district))),\n\t\t 'value']].copy()\n"}

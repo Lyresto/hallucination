@@ -1,0 +1,1 @@
+{"trg_prediction": "B = pd.Series(index=A.index)\nB[0] = a * A[0]\nfor t in range(1, len(A)):\n    B[t] = a * A[t] + b * B[t-1]\n"}

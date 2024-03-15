@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\na = np.array([[1,0,3], [2,4,1]])\nn = np.max(a) + 1\n\nb = np.zeros((a.shape[0], n))\nb[np.arange(a.shape[0])[:, np.newaxis], a] = 1\nEND SOLUTION\n\nprint(b)"}

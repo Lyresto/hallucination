@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\nds = tf.data.Dataset.from_tensor_slices([0, 0, 0])\nds = ds.map(lambda x: [i for i in range(x)])\nelement = ds.make_one_shot_iterator().get_next()\nresult =... # put solution in this variable\n"}

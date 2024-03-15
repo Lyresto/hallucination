@@ -1,0 +1,1 @@
+{"trg_prediction": "def f():\n\tp = pd.Series(range(1, 10))\n\treturn [str(i) for i in p.plot(kind='bar')]\n"}

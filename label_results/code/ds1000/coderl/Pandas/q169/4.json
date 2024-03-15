@@ -1,0 +1,1 @@
+{"trg_prediction": "def remove_zeros(df):\n\tfor i in range(len(df.index)):\n\t\tif sum(df.loc[i,col])==0:\n\t\t\tdf.loc[i,col] = None\n\tfor j in range(len(df.columns)):\n\t\tif sum(df.iloc[:,j])==0:\n\t\t\tdf.columns[j] = None\n\treturn df\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(a=example_a):\n\t# your code here\n\t\td = np.array([(a.count(i),i) for i in set(a)])\n\t\treturn sorted(d, reverse=True)[0][1]\n"}

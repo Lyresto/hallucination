@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(x=example_x):\n\tdecode_x = lambda bytes_: [decode(s) for s in bytes_]\n\treturn decode_x(x)\n\ndef decode(s):\n\treturn s.decode('utf-8')\n"}

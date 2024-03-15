@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef sub2ind(size, subscripts, row, col):\n\t# create matlab matrix A\n\tm = np.eye(size, dtype=np.float64)\n\tfor i, sub in enumerate(subscripts):\n\t\tm[i, sub] += 1.0 * (row == i) * (col == i)\n\t# return value of linear index corresponding to subscripts\n\treturn m[tuple(range(size)), subscripts]\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\n\ndef accuracy(labels, result):\n\treturn np.sum(result) / np.sum(labels)\n"}

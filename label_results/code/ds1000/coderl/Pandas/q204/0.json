@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(df=example_df):\n\ttotal = 0\n\tfor i, r in enumerate(df.values):\n\t\ttotal += r\n\treturn total / len(df)\n"}

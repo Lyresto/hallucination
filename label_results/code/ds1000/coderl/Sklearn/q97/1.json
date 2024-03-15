@@ -1,0 +1,1 @@
+{"trg_prediction": "from copy import deepcopy\nfrom scipy.spatial import ConvexHull\ndef Transform(a):\n\treturn deepcopy(a).map(lambda x: ConvexHull(a).transform(a).tolist()[0])\n"}

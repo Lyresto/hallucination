@@ -1,0 +1,1 @@
+{"trg_prediction": "def f(a=example_a):\n\tl=len(a)\n\tx=sorted(a,reverse=True)\n\treturn [x[i]*(-1)**(l-i-1) for i in range(l)]\n"}

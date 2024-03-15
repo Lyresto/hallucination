@@ -1,0 +1,1 @@
+{"trg_prediction": "stdMeann = lambda x: pd.Series({'mean': x.mean(), 'std': x.std()})\nresult = df.groupby('b').a.apply(stdMeann).reset_index()\nresult = result.set_index('b')\n"}

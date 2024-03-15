@@ -1,0 +1,1 @@
+df.replace('&AMP;', '&', regex=True)

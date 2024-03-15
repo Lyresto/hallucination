@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import permutations as p\nimport numpy as np\n\ndef permutation(probabilit, lista_elegir):\n\tnp.random.shuffle(lista_elegir)\n\treturn np.random.choice(lista_elegir, samples, probabilit)\n\t\ndef solution(lista_elegir, samples):\n\treturn np.random.choice(lista_elegir, samples).tolist()\n"}

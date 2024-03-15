@@ -1,0 +1,1 @@
+{"trg_prediction": "featureSelector = LinearSVC(penalty='l1', dual=False)\nfeatureSelector.fit(X, y)\nselected_feature_names = np.asarray(vectorizer.get_feature_names())[featureSelector.coef_[0] != 0]\n"}

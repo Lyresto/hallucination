@@ -1,0 +1,1 @@
+{"trg_prediction": "C = A[(A > B[0]) & (A < B[2])]"}

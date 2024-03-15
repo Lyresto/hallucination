@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\nfrom typing import List\n\n\ndef generate_tensor(seed: int) -> List[int]:\n\tserving_state = seed\n\ttensor = [0] * len(generate_tensor.__code__.co_nlocals)\n\ttf.set_random_seed(serving_state)\n\tfor i, s in enumerate(generate_tensor.__code__.co_consts):\n\t\tif s is not None:\n\t\t\ttensor[i] = s\n\treturn tensor\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "# Using list comprehension to add 'X' to all column headers\nnew_columns = [col+'X' if not col.endswith('X') else col for col in df.columns]\n\n# Renaming all columns with new column headers\ndf.columns = new_columns\n"}

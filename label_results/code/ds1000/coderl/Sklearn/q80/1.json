@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef kmeans(df):\n\tn = len(df)\n\t# get columns of df\n\tcols = df.columns.values\n\t# transform to numpy array\n\tdf = np.array(df[cols])\n\t# KMEANS\n\tkmeans = KMeans(n_clusters=2).fit(df)\n\tlabels = kmeans.predict(df)\n\t# Centroid values\n\tcentroids = kmeans.cluster_centers_\n\t#print(centroids)\n\treturn labels, centroids\n"}

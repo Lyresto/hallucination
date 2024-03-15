@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import chain\n\ndef dist(x,y):\n\treturn list(chain.from_iterable(zip(x,y).T))\n\ndef pairwise(dists):\n\tP = list(zip(*dists))\n\treturn list(zip(P[0], P[1]))\n"}

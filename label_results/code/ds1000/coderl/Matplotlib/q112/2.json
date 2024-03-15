@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\n\ndef func():\n\treturn pd.Series(y).plot(x)\n\nx_range = np.arange(10)\ny_range = np.arange(10)\nfig = func()\n\n# SOLUTION END\n"}

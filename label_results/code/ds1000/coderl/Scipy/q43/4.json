@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import mean, median\ndef anderson(x1,x2):\n\tm, k = mean(x1), median(x1)\n\tn, p = len(x1), mean(x2)\n\treturn k - m == n/p\n"}

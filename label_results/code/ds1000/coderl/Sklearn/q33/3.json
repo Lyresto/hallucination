@@ -1,0 +1,1 @@
+{"trg_prediction": "from heapq import heappush, heappop, heapify\nfrom math import sqrt\ndef regressor(X,Y):\n\tlis = []\n\tfor i in range(len(X)):\n\t\theappush(lis, (X[i],i))\n\tfor i in range(len(X)):\n\t\tX[i] = heappop(lis)[1]\n\tfor i in range(len(X)):\n\t\tY[i] = regressor(X,Y)[1]\n\treturn regressor(X,Y)\n"}

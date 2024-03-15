@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom scipy import interp2d as intp\nx_new = np.linspace(0, 2, 4)\ny_new = np.linspace(0, 2, 4)\nresult = intp.interp2d(x_new, y_new, a).tolist()\nEND SOLUTION\n"}

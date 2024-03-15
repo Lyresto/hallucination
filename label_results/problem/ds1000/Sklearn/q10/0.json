@@ -1,0 +1,1 @@
+{"trg_prediction": "from sklearn.calibration import CalibratedClassifierCV\ncalibrated_model = CalibratedClassifierCV(model, cv=5)\ncalibrated_model.fit(X, y)\nproba = calibrated_model.predict_proba(x_predict)\n"}

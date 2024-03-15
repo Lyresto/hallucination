@@ -1,0 +1,1 @@
+{"trg_prediction": "from statistics import mean, pstdev\n\ndef std_meann(df):\n\treturn pstdev(df.groupby('b').a)\n"}

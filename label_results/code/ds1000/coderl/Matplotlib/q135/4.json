@@ -1,0 +1,1 @@
+{"trg_prediction": "def bar(b, y, x, yerr=0, c='r'):\n\tfor x1, y1 in zip(b, y):\n\t\tax.fill_between(x, y1**x1, y1**y1, color=c[yerr])\n\nbar([2, 3, 4, 5], [1, 1, 2, 1], yerr=1, c='b')\nbar([2, 3, 4, 5], [2, 1, 2, 1], xerr=1, yerr=1, c='r')\n\n# Plot y errors only\nax.fill_between(box_position, 0, box_errors, color='yellow', alpha=0.5)\n\n# SOLUTION END\n"}

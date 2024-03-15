@@ -1,0 +1,1 @@
+{"trg_prediction": "from collections import Counter\n\ndef cnt_not_equal(a, b):\n\treturn sum(v1!=v2 for v1,v2 in zip(a,b))\n"}

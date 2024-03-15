@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport scipy.stats as ss\ndef anderson(x1,x2):\n\tl=len(x1)\n\tif l==0 or l==1:\n\t\treturn False\n\tx1.sort()\n\tx2.sort()\n\tp=ss.scoreatpercentile(x1,75)\n\tq=ss.scoreatpercentile(x2,75)\n\treturn p==q\n"}

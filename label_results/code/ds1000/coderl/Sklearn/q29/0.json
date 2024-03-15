@@ -1,0 +1,1 @@
+{"trg_prediction": "from sklearn.decomposition import NMF\nfrom sklearn.feature_extraction import TfidfVectorizer\n\ndef transform(data):\n\ttfidf = TfidfVectorizer()\n\tnmf = NMF(n_components=2)\n\ttfidf.fit_transform(data.test)\n\ttfidf_out = tfidf.components_.tolist()\n\t\n\treturn pd.DataFrame(tfidf_out, index=data.test)\n"}

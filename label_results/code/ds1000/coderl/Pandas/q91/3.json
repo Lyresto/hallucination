@@ -1,0 +1,1 @@
+{"trg_prediction": "from datetime import datetime\ndef parse_df(df):\n\tfor i, row in enumerate(df.itertuples(), 1):\n\t\tdf.index.levels[i] = datetime.strptime(row[1], '%Y/%m/%d')\n\treturn df\n"}

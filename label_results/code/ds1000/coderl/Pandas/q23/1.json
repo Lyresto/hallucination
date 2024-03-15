@@ -1,0 +1,1 @@
+{"trg_prediction": "from datetime import datetime\ndef extract_month_name_year(df):\n\treturn datetime.strptime(df['Date'], '%Y-%m-%d').strftime('%b'), datetime.strptime(df['Date'],'%Y').strftime('%d')\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "# SOLUTION START\n\n\ndf = pd.DataFrame({'x': x, 'y': y})\n\nfor i in range(2):\n\tdf['y'] = df.y.apply(lambda r: r + i * y)\n\t\ndf.plot.bar()\n\nplt.title('Figure')\n\n# # SOLUTION END\n"}

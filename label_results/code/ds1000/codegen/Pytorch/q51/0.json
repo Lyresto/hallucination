@@ -1,0 +1,1 @@
+{"trg_prediction": "\n    cnt_equal = np.count_nonzero(A == B)\n    ### END SOLUTION\n    return cnt_equal\n\ndef load_data():\n    #"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "df['ID'] = df.groupby(['name', 'a']).ngroup() + 1\nresult = df[['ID', 'b', 'c']]\n"}

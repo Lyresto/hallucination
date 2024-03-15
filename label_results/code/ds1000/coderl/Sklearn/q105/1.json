@@ -1,0 +1,1 @@
+{"trg_prediction": "def train_test_split(df, train_size=0.8):\n\tdf = df.sort([\"date\"])\n\tn = len(df)\n\tx = n * train_size\n\ty = (n-1)*train_size\n\treturn df[:x], df[y:]\n"}

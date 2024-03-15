@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef elementwise_function(element_1,element_2):\n\treturn (element_1 + element_2)\nz = [[5, 5, 5],\n     [5, 5, 5],\n     [5, 5, 5]]\nnp.add.at(0,0,z[0])\nnp.add.at(1,1,z[1])\nnp.add.at(2,2,z[2])\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.plot(x, y, 'o', color='red', markerfacecolor='blue', markersize=10)\nplt.xlabel('X')\nplt.ylabel('Y')\nplt.title('Line Chart')\nplt.show()\n#"}

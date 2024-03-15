@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\n\na = tf.constant([\n  [1,1,1],\n  [1,1,1]\n])\nb = tf.constant([\n  [0,0,0],\n  [1,1,1]\n])\n\ndistances = tf.reduce_sum(tf.square(tf.subtract(a, b)), axis=1)\nresult = distances.numpy().tolist()\nresult"}

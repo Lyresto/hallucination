@@ -1,0 +1,1 @@
+{"trg_prediction": "f = intp.interp2d(x_new, y_new, a, kind='linear')\nresult = f(x_new, y_new)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\ndf1 = pd.DataFrame({'HeaderA': [476],\n\t'HeaderB': [4365],\n\t'HeaderC': [457]})\ndf2 = pd.DataFrame(\n\t{'HeaderA': [76],\n\t'HeaderB': [345],\n\t'HeaderC': [456]})\ndf = pd.concat([df1, df2], ignore_index=True)\ndf.rename(columns={'HeaderA': 'HeaderAX'}, inplace=True)\n"}

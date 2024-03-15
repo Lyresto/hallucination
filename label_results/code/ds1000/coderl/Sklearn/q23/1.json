@@ -1,0 +1,1 @@
+{"trg_prediction": "from sklearn.model_selection import StratifiedKFold\n\ndef proba(y, X):\n\tscores = []\n\tfor train, test in StratifiedKFold(y, n_tests=len(X)).split(X):\n\t\tlogreg.fit(X[train], y[train])\n\t\tprob = logreg.predict_proba(X[test])\n\t\tscores.append(prob)\n\treturn scores\n"}

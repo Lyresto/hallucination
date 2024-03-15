@@ -1,0 +1,1 @@
+{"trg_prediction": "# https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/preprocessing/minmax_scaler.py\n\nfrom sklearn.preprocessing import MinMaxScaler\n\ndef load_data():\n\treturn np.array([[float(i) for i in x] for x in zip(*load_data().T)])\n"}

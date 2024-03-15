@@ -1,0 +1,1 @@
+{"trg_prediction": "def df_to_output(df):\n\tnew_df = pd.DataFrame()\n\tfor i, v in enumerate(df['a']):\n\t\tnew_df['name'][i] = v\n\treturn new_df\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom sklearn.preprocessing import MinMaxScaler\nnp_array = load_data()\ndef Transform(a):\n\treturn np.matrix(MinMaxScaler().fit_transform(np_array[:,0]).tolist()).astype(np.float).toarray()\n"}

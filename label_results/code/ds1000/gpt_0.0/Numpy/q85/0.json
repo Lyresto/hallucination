@@ -1,0 +1,1 @@
+{"trg_prediction": "num_ones = int(size * one_ratio)\nnum_zeros = size - num_ones\nones = np.ones(num_ones, dtype=int)\nzeros = np.zeros(num_zeros, dtype=int)\nnums = np.concatenate((ones, zeros))\nnp.random.shuffle(nums)\n"}

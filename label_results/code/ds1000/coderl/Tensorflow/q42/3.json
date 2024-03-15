@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\nimport numpy as np\nx=np.random.randint(0,10, size=[20000])\ny=np.random.randint(0,10, size=[20000])\nz=np.random.randint(0,10, size=[20000])\nprint(x)\nprint(y)\nprint(z)\nz=np.random.randint(0,10, size=[20000])\ny=np.random.randint(0,10, size=[20000])\nprint(z)\nprint(y)\nprint(np.transpose(y))\n"}

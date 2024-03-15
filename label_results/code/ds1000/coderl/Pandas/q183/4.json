@@ -1,0 +1,1 @@
+{"trg_prediction": "from typing import Dict, List, Tuple\nfrom copy import deepcopy\n\ndef f(dict: Dict[str, str], df: pd.DataFrame):\n\t# return the solution in this function\n\td = deepcopy(dict)\n\tfor i, j in enumerate(df.columns):\n\t\tdf.loc[i, j] = df.loc[j, j].fillna(d.get(j, j))\n\treturn df\n"}

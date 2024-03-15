@@ -1,0 +1,1 @@
+{"trg_prediction": "mask = (df['value'] < section_left) | (df['value'] > section_right)\navg = df.loc[mask, 'value'].mean()\ndf.loc[~mask, 'value'] = avg\ndf = df.groupby(df.index).first() # remove duplicates\ndf = df.reset_index()\ndf.loc[df['value'] == avg, 'lab'] = 'X'\ndf = df.groupby('lab').sum()\n"}

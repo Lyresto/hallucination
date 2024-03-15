@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\nfrom sklearn.model_selection import train_test_split\n\ndef split(df):\n\treturn train_test_split(df, test_size=0.8)\n\ndef load_data():\n\tdf = pd.DataFrame.from_dict({k: v for k, v in zip(range(1, 82), range(1, 82)[::-1])})\n\tdf.sort_values(\"date\")\n\treturn df\n"}

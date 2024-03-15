@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.scatter(x, y, marker='o', edgecolor='none', hatch='|')\nplt.show()"}

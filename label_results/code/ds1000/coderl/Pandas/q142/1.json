@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nfrom itertools import zip_longest\n\ndef melt(df, value_vars, var_name=''):\n\tprint(df)\n\tprint(value_vars)\n\tprint(var_name)\n\tresult = [list(v) for v in zip_longest(*zip(*value_vars))]\n\tprint(result)\n\tfor i, v in enumerate(result):\n\t\tdf.columns[i] = v\n\tprint(df.columns)\n\treturn df\n"}

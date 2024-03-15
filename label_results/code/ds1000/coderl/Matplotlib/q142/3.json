@@ -1,0 +1,1 @@
+{"trg_prediction": "def plot_line(x, y):\n\treturn plt.plot(x, y, label='y')\n\n# Plot y over x in a line chart. Show x axis tick labels but hide the x axis ticks.\n# SOLUTION START\n"}

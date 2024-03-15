@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef max_sets(a):\n\tN = len(a)\n\ts = set()\n\tfor i in range(N):\n\t\tfor j in range(N):\n\t\t\tif a[i][j] == 0:\n\t\t\t\ts.add((i,j))\n\treturn max(s, key = lambda x : len(x[1]))\n\t\n\n\n# YOU'VE DOED THIS KATA!\n"}

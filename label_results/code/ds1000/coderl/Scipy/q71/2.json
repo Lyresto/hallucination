@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom scipy.spatial import distance\n\ndef get_distance_2(y, x):\n\tmid = np.array([[y[i][j], x[i][j]], [y[i][0], x[i][0]], [y[i][j], x[i][j]], [y[i][0], x[i][0]], [y[i][j], x[i][j]]])\n\treturn distance.cdist(mid).tolist()\n"}

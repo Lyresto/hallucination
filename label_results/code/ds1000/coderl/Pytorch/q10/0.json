@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nimport torch\n\ndef load_data():\n\ta, b = pd.read_csv('../../data/input.csv')['A'].values, pd.read_csv('../../data/input.csv')['B'].values\n\ta = a.astype(np.int64)\n\tb = b.astype(np.int64)\n\treturn a[b == 1], b\n"}

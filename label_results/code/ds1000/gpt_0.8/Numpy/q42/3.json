@@ -1,0 +1,1 @@
+{"trg_prediction": "from fractions import Fraction\n\nresult = Fraction(numerator, denominator).limit_denominator()\nresult = (result.numerator, result.denominator)\n"}

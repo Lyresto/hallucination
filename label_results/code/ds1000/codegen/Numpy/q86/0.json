@@ -1,0 +1,1 @@
+{"trg_prediction": "import torch\nimport numpy as np\na = torch.ones(5)\na_np = np.ones(5)\n"}

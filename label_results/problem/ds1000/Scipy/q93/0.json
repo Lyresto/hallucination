@@ -1,0 +1,1 @@
+{"trg_prediction": "result = []\nfor i in range(len(centroids)):\n    cluster_points = data[np.where(labels == i)[0]]\n    distances = scipy.spatial.distance.cdist(cluster_points, [centroids[i]])\n    closest_point_idx = np.argmin(distances)\n    closest_point = cluster_points[closest_point_idx]\n    result.append(closest_point)\n"}

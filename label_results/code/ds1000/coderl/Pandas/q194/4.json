@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nfrom itertools import cycle, islice\n\ndef split_df(df, n):\n\tcols = cycle(df.columns)\n\treturn pd.merge(df, next(cols) for _ in range(n)).dropna()\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "result = np.where((x == a) & (y == b))[0]\nif len(result) > 0:\n    result = result[0]\nelse:\n    result = -1\n"}

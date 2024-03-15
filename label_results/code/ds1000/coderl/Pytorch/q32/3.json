@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\nimport torch\ntensors = [torch.randn(3) for _ in range(10)]\nt = [torch.tensor(tensors) for t in tensors]\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import re\n\ndef expand(keys, df):\n\tpattern = re.compile(r'\\[([a-z]+)\\]: \\[([0-9]+)\\]\\Z')\n\tresult = []\n\tfor k,v in df.items():\n\t\tmatch = pattern.search(v)\n\t\tif match:\n\t\t\tresult.append([k,v.replace(match.group(1),'none').replace(match.group(2),'none'), match.group(3)])\n\treturn result\n"}

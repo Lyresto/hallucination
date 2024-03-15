@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef hyp(x):\n\treturn x**2 + x*x + (x**4 - x*x)\n\ndef solve(x, y):\n\tr = np.array([hyp(i) for i in x])\n\tz = np.array([hyp(j) for j in y])\n\tw = z - r\n\treturn [w.argmin(), w.min(), w.max()]\n"}

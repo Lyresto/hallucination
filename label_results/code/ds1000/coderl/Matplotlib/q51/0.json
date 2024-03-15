@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\n# x: number of x-axis\n# y: number of y-axis\nx_axis = pd.Series(x)\ny_axis = pd.Series(y)\n\n# calculate the difference between x-axis and y-axis\ndiffs = x_axis - y_axis\n\n# plot the difference\nplt.plot(diffs)\n\n# show the plot\nplt.show()\n"}

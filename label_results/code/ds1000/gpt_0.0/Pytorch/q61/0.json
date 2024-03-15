@@ -1,0 +1,1 @@
+{"trg_prediction": "output = MyNet(input)\nsoftmax = torch.nn.Softmax(dim=1)\nconf = softmax(output)\nconfidence_score, classes = torch.max(conf, 1)\n"}

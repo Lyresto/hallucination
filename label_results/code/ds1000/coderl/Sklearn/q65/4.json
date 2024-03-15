@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\nfrom sklearn.cluster import AgglomerativeClustering\n\ndef __starting_point():\n\tsimM = pd.DataFrame(simM)\n\tclusters = AgglomerativeClustering(n_clusters=2).fit(simM)\n\tcluster_labels = clusters.labels_\n\tprint(cluster_labels)\n__starting_point()\n"}

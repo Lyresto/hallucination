@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\ndef f(x=example_x,y=example_y,z=example_z):\n\t# return the solution in this function\n\t# result = f(x,y,z)\n\tm = x[y,z]\n\tresult = tf.matmul(x,m)\n\tresult = result.eval()\n\treturn result\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "# create a list of tick labels\ntick_labels = ['1', 'second', '3', '4', '5', '6', '7', '8', '9']\n\n# set the tick labels for the x axis\nplt.xticks(range(1, 10), tick_labels)\n\n# display the plot\nplt.show()"}

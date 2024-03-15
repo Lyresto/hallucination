@@ -1,0 +1,1 @@
+{"trg_prediction": "from functools import reduce\n\ndef state(df, s):\n\treturn reduce(lambda x, y: x + y, (v for row in df.values() for v in row if v > 50), 0)\n"}

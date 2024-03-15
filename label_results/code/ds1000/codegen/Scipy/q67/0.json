@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nimport io\nfrom scipy import stats\n\ntemp=u\"\"\"probegenes,sample1,sample2,sample3\n1415777_at Pnliprp1,20,0.00,11\n1415805_at Clps,17,0.00,55\n1415884_at Cela3b,47,0.00,100\"\"\"\ndf = pd.read_csv(io.StringIO(temp),index_col='probegenes')\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def fourier(x, *coefficients):\n    result = 0\n    for i in range(len(coefficients)):\n        result += coefficients[i] * np.cos((i+1) * np.pi / tau * x)\n    return result\n\npopt, pcov = curve_fit(fourier, z, Ua, p0=[1] * degree)\n"}

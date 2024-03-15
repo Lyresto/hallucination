@@ -1,0 +1,1 @@
+{"trg_prediction": "def load_data():\n\timport pandas as pd\n\tdf = pd.read_csv('los_10_one_encoder.csv')\n\tX = df.drop('LOS',axis=1)\n\ty = df['LOS'] # target\n\tcol_names = []\n\tfor i in range(len(df.columns)):\n\t\tclf.fit(X[i],y[i])\n\t\tcolumn_names.append(clf.feature_importances_[i])\n\treturn column_names\n"}

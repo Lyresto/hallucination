@@ -1,0 +1,1 @@
+{"trg_prediction": "from scipy.sparse import csr_matrix\nimport numpy as np\n\nx = np.arange(10)\ny = np.linspace(0, 1, 10)\ndf = pd.DataFrame({\"x\":x, \"y\":y})\n\nmatplotlib.use(\"agg\")\nmatplotlib.pcolormesh(df[\"x\"], df[\"y\"], csr_matrix((np.ones(y.shape) * [0, 1, 0, 1])).T)\n\n# SAVE AND PLOT\nplt.show()\n"}

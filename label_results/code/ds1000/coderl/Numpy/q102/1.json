@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\n\ndef extract_columns(a, low=1, high=10):\n\tr = []\n\t\n\twhile low <= len(a) - high:\n\t\tc = a[:][low - 1:high]\n\t\tr.append(list(c[low - 1:high]))\n\t\tlow += 1\n\t\n\treturn r\n"}

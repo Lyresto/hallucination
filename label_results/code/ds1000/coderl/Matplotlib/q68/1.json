@@ -1,0 +1,1 @@
+{"trg_prediction": "def lol(x, y):\n\tprint(x, y)\n\treturn f'{y[1]-x[1]:.2f}'\n\ndef line(x, y):\n\treturn f'{lol(x, y)}'\n\ndf = pd.DataFrame({'x': x, 'y': y})\ndf['line'] = line(df['x'], df['y'])\ndf.plot(kind='line')\nax = df.plot(linewidth=2)\nax.set_title(f'Line Chart with {line(df['x'], df['y'])}')\nax.legend(loc='upper right')\n\n# Solved on 23 Mar 2019 at 02:30AM.\n"}

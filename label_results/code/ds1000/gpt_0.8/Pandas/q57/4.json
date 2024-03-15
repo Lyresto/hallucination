@@ -1,0 +1,1 @@
+{"trg_prediction": "min_date = df['dt'].min()\nmax_date = df['dt'].max()\ndate_range = pd.date_range(min_date, max_date)\n\nresult = pd.DataFrame({'dt': date_range})\nresult['user'] = df['user'].unique()[0]\nresult = result.merge(df, on=['user', 'dt'], how='left').fillna(0)\n"}

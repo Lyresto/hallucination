@@ -1,0 +1,1 @@
+{"trg_prediction": "from datetime import datetime\n\ndef weekdays(df):\n\tstart = datetime(2020, 2, 15)\n\tend = datetime(2020, 2, 18)\n\tdays = []\n\tfor i, d in enumerate(df['Date']):\n\t\tif d < start or d > end:\n\t\t\tdays.append(d.strftime(\"%A\"))\n\treturn days\n"}

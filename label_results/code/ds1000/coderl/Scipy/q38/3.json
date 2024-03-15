@@ -1,0 +1,1 @@
+{"trg_prediction": "def raster_distances(example_array):\n\tdistances = []\n\tfor i in range(len(example_array)):\n\t\tfor j in range(len(example_array)):\n\t\t\tdistances.append(min(example_array[i][j], example_array[i][k] + example_array[k][j]))\n\treturn distances\n"}

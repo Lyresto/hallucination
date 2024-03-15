@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\n# SOLUTION END\n\n\ndef main():\n\tdf = pd.DataFrame({\"x\": np.arange(10), \"y\": y})\n\tfig = df.plot(kind=\"bar\")\n\tfig.set_size_inches(4, 4)\n\n\ndef __starting_point():\n\tmain()\n\n__starting_point()\n"}

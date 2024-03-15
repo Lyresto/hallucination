@@ -1,0 +1,1 @@
+{"trg_prediction": "def regplot(tips):\n\tdf = tips.copy()\n\tdf = df.pivot(index='tip', values='total_bill')\n\tsns.jointplot(x='total_bill', y='tip', data=df)\n\t\nregplot(tips)\nplt.show()\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef split_df(df):\n\tcodes = df['codes']\n\tif len(codes) == 1:\n\t\treturn [[\"NaN\"]]\n\telse:\n\t\tparts = []\n\t\tfor i, col in enumerate(codes):\n\t\t\tparts.append([float(x) if len(x) == len(list(col)) else x for x in col])\n\t\treturn parts\n"}

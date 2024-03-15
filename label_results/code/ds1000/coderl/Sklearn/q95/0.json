@@ -1,0 +1,1 @@
+{"trg_prediction": "def minmax_scaler(a):\n\tm = MinMaxScaler()\n\treturn m.fit_transform(a).tolist()\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "def sort_df(df):\n\t# your code here\n\tsort_col = ['cokey', 'A']\n\treturn df.groupby(sort_col).sort(*sort_col)\n"}

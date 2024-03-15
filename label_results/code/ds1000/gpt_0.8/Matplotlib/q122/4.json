@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.plot(x, y, label=\"Line\")\nleg = plt.legend(handlelength=0.3)\n"}

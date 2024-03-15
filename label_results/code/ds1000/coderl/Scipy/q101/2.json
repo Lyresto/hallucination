@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom scipy.optimize import fmin,fmin_l_bfgs\n\ndef multinomial_probability(df, categories):\n\tfreq = df.value_counts(categories)\n\tn = len(freq)\n\tmean = np.array([freq[cat].mean() for cat in categories]).reshape(-1,1)\n\ts = mean[::-1].reshape(n,1)\n\treturn (s - fmin_l_bfgs(s, fmin(s, mean))).tolist()\n"}

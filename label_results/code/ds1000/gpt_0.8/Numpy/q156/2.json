@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom scipy.stats import rankdata\n\ndef reverse_rankdata(a):\n    ranked = rankdata(a)\n    return len(a) + 1 - ranked.astype(int)\n\na = [1,2,3,4,3,2,3,4]\nresult = reverse_rankdata(a)\nprint(result)"}

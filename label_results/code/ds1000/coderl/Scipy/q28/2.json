@@ -1,0 +1,1 @@
+{"trg_prediction": "import math\ndef f(img = example_img):\n\treturn math.floor((img * 255).sum(1))\n"}

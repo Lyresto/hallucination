@@ -1,0 +1,1 @@
+{"trg_prediction": "clf = GridSearchCV(bc, param_grid=param_grid)\nclf.fit(X_train, y_train)\nproba = clf.predict_proba(X_test)"}

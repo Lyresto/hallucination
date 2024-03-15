@@ -1,0 +1,1 @@
+{"trg_prediction": "def combine_names_and_a(df):\n\tdf_new = df.copy()\n\tfor i in range(len(df['name'])):\n\t\tdf_new['name'][i] = str(i+1)\n\t\n\treturn df_new\n"}

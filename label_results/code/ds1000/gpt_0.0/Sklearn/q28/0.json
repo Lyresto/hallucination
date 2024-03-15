@@ -1,0 +1,1 @@
+{"trg_prediction": "model_name = type(model).__name__\n"}

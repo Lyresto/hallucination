@@ -1,0 +1,1 @@
+{"trg_prediction": "tensors_31 = []\nfor i in range(31):\n    start = i\n    end = i + chunk_dim\n    tensor = a[:, :, :, start:end, :]\n    tensors_31.append(tensor)\n"}

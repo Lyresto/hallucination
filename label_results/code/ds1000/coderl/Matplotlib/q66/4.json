@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport seaborn as sns\n\ndf = pd.read_csv('penguins.csv')\ndf['bill_length_mm'] = df['bill_length_mm'] * 1000\ndf['bill_depth_mm'] = df['bill_depth_mm'] * 1000\ndf['flipper_length_mm'] = df['flipper_length_mm'] * 1000\ndf['body_mass_g'] = df['body_mass_g'] * 1000\n\nsns.pointplot(x='bill_length_mm', y='bill_depth_mm', hue='body_mass_g')\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef is_contained(a):\n\tif len(a) == 0:\n\t\treturn False\n\telif len(a) == 1:\n\t\tif a[0] == 0:\n\t\t\treturn False\n\t\telse:\n\t\t\treturn True\n\telse:\n\t\tfor n in range(len(a)):\n\t\t\tif a[n] == 0:\n\t\t\t\treturn False\n\t\t\telif n > 1:\n\t\t\t\tif a[n - 1] == 0:\n\t\t\t\t\treturn False\n\t\treturn True\n"}

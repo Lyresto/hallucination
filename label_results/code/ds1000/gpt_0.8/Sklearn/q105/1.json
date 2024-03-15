@@ -1,0 +1,1 @@
+{"trg_prediction": "# Calculate the index where the split should occur\nsplit_index = int(len(features_dataframe) * train_size)\n\n# Split the data into train and test sets\ntrain_dataframe = features_dataframe[split_index:]\ntest_dataframe = features_dataframe[:split_index]\n"}

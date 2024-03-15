@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\n\n# SOLUTION END\n# x = np.random.rand(10)\n# y = np.random.rand(10)\n# plt.scatter(x, y)\n\nx = pd.Series(x)\ny = pd.Series(y)\nsns.distplot(x, y, \"y\")\n"}

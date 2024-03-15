@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndf = pd.DataFrame({'x': x, 'y': y})\n\n# Adjust the length of the legend handle to 0.3\ndf['z'] = df['y'].rolling(window='left').mean()\ndf['z'].plot(ax=df.plot(kind='line'), legend='Line')\n\n# SOLUTION END\n"}

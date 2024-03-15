@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom pandas import pd\nimport torch\n\n\ndef tenzor_compose(a, lengths):\n\tbatch_size, sentence_length, embedding_dim = len(a), len(lengths), len(a[0])\n\tt = a.reshape(batch_size, sentence_length, embedding_dim)\n\tt.fill_(0)\n\treturn t\n"}

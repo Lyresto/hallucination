@@ -1,0 +1,1 @@
+{"trg_prediction": "result = []\nfor i in range(len(xdata)):\n    sol = fsolve(lambda a: eqn(xdata[i], a, bdata[i]), x0=0.5)\n    result.append(sol[0])\nresult = np.array(result)\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nfrom scipy.optimize import fsolve\ndef eqn(x, a, b):\n\treturn x + 2 * a - b**2\nfsolve(eqn, x0=0.5, args = (a,b))\n"}

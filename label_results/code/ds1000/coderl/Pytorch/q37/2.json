@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import groupby\n\ndef load_data():\n\tt = [float(x) for x in input().split()]\n\tidx = [0] * len(t)\n\tfor k,g in groupby(t):\n\t\tarr = [x for x,_ in g]\n\t\tidx[k] = idx[k-1] + arr.index(k)\n\treturn tuple(t), idx\n"}

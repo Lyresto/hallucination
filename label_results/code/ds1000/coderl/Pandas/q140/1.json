@@ -1,0 +1,1 @@
+{"trg_prediction": "from pandas import DataFrame\ndef query(df, expr):\n\ttry:\n\t\tl = list(expr.split('!'))\n\texcept:\n\t\treturn df\n\ti = 0\n\twhile i < len(l):\n\t\tif eval(l[i]):\n\t\t\treturn df.ix[i::,df.columns.get(\"Category\")!= \"Foo\"]\n\t\ti += 1\n"}

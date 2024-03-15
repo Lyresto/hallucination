@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef f(x=example_x,y=example_y,z=example_z):\n\t# return the solution in this function\n\t# result = f(x,y,z)\n\tx_np = np.array(x)\n\ty_np = np.array(y)\n\tz_np = np.array(z)\n\tm = x_np[y_np,z_np]\n\treturn m.tolist()\n"}

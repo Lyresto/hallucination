@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport scipy.interpolate\narray = np.random.randint(0, 9, size=(10, 10, 10))\nx = np.linspace(0, 10, 10)\nx_new = np.linspace(0, 10, 100)\nfor i in x:\n    for j in x:\n        f = scipy.interpolate.interp1d(x, array[:, i, j])\n        new_array[:, i, j] = f(x_new)\n"}

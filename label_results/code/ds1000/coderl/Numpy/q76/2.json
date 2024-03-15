@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\narray_of_arrays = np.array([np.arange(a*b).reshape(a,b) for (a,b) in pairs])\na = array_of_arrays[:]\nb = array_of_arrays[:][:]\nc = np.array(array_of_arrays, copy=True)\n"}

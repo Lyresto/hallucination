@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\nn1 = [1,2,3,4,5]\nn2 = [6,7,8,9,10]\n\nmask = np.array(n1) < n2\narr[mask] = 0\n\nfor i in range(n2.size):\n\tarr[(mask & (i==0))] = 30\n\n"}

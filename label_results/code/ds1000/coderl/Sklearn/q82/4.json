@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import product\n\ndef select_features(corpus, y):\n\tvectorizer = TfidfVectorizer()\n\tX = vectorizer.fit_transform(corpus)\n\tp = list(product(list(range(len(corpus))), repeat=2))\n\tres = [name for name,score in p if score in X[i]]\n\treturn res\n"}

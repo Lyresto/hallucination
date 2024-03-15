@@ -1,0 +1,1 @@
+result = pd.melt(df, value_vars=[('E', 'B', 'A'), ('F', 'B', 'A'), ('G', 'C', 'A'), ('H', 'C', 'A'), ('I', 'D', 'A'), ('J', 'D', 'A')], var_name=['variable_0', 'variable_1', 'variable_2'], value_name='value')

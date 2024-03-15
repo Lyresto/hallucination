@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.optimize as sp\na = np.array([[0, 0, 1, 1, 1],\n\t\t\t [1, 0, 1, 0, 1],\n\t\t\t [0, 1, 0, 1, 0]])\nx_opt = sp.optimize.fmin_l_bfgs_b(lambda x, a: np.dot(a, x ** 2), a, x0=0)\nprint(x_opt)\n"}

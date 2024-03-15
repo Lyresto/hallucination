@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\nimport numpy as np\nimport sklearn\n\ndef one_hot_encode(list):\n\treturn list.map(lambda x: 1 if x in x.split() else 0)\n\t\ndef load_data():\n\tdf = pd.DataFrame.from_dict({i:[] for i in range(1,len(df)+1)})\n\tfor i in df:\n\t\tdf[i] = one_hot_encode(df[i])\n\treturn df\n\t\n\t\t\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "cnt_equal = np.sum(A.numpy() == B.numpy())\n    ### END SOLUTION\n    return cnt_equal\n"}

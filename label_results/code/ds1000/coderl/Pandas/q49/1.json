@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef aggregate_rows_not_in_c(df, section_left, section_right):\n\tleft = []\n\tfor i in range(section_left, section_right+1):\n\t\tleft.append(df.loc[i-1:i])\n\treturn sum(sum(left[j] / len(left[j])) for j in range(len(df.index) - section_left + 1)) / (section_right - section_left + 1)\n"}

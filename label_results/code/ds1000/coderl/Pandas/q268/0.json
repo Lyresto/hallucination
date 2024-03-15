@@ -1,0 +1,1 @@
+{"trg_prediction": "def to_series(df):\n\tfrom datetime import datetime\n\td = []\n\tfor i,j in df.iteritems():\n\t\td.append(datetime.strptime(i, '%Y-%m-%d'))\n\treturn df.assign(Value=lambda a,b:sum(b)*a,Date=d)\n"}

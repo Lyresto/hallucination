@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport pandas as pd\nfrom sklearn.pipeline import Pipeline\n\ndef named_steps(clf):\n\tfor k,v in clf.steps.items():\n\t\tif k not in clf.named_steps():\n\t\t\tyield k,v\n"}

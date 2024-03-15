@@ -1,0 +1,1 @@
+result = np.maximum.reduceat(a, np.arange(len(a))[index == np.arange(len(a))])

@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\n\ndef max_value_2(df):\n\tresult = []\n\tfor i in df.itertuples():\n\t\tif max(i[1]) == 2:\n\t\t\tresult.append([i[0], i[1][0], i[1][1]])\n\tfor i in df.columns:\n\t\tif max(i[1]) == 2:\n\t\t\tresult.append([i[0], i[1][0], i[1][1]])\n\treturn result\n"}

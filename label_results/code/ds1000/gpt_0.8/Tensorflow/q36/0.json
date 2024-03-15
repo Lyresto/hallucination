@@ -1,0 +1,1 @@
+{"trg_prediction": "result = tf.argmax(a, axis=1)\n"}

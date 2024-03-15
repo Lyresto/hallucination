@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport math\ndef generate(min,max,size):\n\ttotal = 0\n\tsamples = np.array([])\n\tfor i in range(size):\n\t\tmean = min + (i+1)*min/size\n\t\tstd = max + (i+1)*(max-min)/size\n\t\tsamples.append(math.log(std/mean))\n\treturn samples\n"}

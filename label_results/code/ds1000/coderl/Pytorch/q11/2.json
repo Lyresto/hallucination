@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\nimport torch\nimport pandas as pd\nC = torch.LongTensor([[999, 777], [9999, 7777]])\nA_log, B = load_data()\nD = C[:, A_log]\n"}

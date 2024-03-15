@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\ndef pearson(post,distance):\n\tpost = np.array(post)\n\tdistance = np.array(distance)\n\treturn np.linalg.norm(post-distance)**2\n"}

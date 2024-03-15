@@ -1,0 +1,1 @@
+{"trg_prediction": "def df_filter(df, n):\n\tnew_df = df.copy()\n\tfor i in range(n):\n\t\tfor j in range(len(df.columns)):\n\t\t\tif abs(df[j][i])<1:\n\t\t\t\tnew_df[j]=new_df[j][:i]+'Value'+new_df[j][i+1:]\n\treturn new_df\n"}

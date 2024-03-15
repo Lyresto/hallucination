@@ -1,0 +1,1 @@
+{"trg_prediction": "# Find the minimum value along axis 1\nmin_values = np.min(a, axis=1)\n\n# Create a mask array with True where the value is equal to the minimum value along axis 1, False otherwise\nmask = a == min_values[:, np.newaxis]\nEND SOLUTION\n"}

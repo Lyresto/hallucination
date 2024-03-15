@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\ndef f(lengths=example_lengths):\n\tprint(lengths)\n\tx = []\n\tfor i in lengths:\n\t\tx.append([0]*i)\n\tres = []\n\tfor i in x:\n\t\tres.append(i+(i%2==1))\n\treturn res\n"}

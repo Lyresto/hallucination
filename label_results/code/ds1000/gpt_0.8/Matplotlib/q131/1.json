@@ -1,0 +1,1 @@
+{"trg_prediction": "fig, axes = plt.subplots(2, 2, figsize=(15, 15))\n\nfor ax in axes.flatten():\n    ax.plot(x, y)\n\nplt.show()"}

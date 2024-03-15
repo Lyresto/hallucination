@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import groupby\nfrom collections import Counter\n\ndef extract(a):\n\tc = Counter(tuple(l) for _, l in groupby(a))\n\treturn [[tuple(b) for b in a[i:i+2*len(a)].T] for i in range(0, len(a), 2*len(a))]\n"}

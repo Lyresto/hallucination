@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy.spatial\nimport numpy as np\n\ndef closest_to_centroid(centroids, data):\n\treturn [i for i, c in enumerate(centroids) if np.all(np.abs(c - data) == np.minimum(c, data))][0]\n"}

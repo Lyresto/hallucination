@@ -1,0 +1,1 @@
+{"trg_prediction": "from numpy import unpackbits\ndef matrix(a):\n\tm, n = len(a), len(a[0])\n\treturn [unpackbits(a[i:i+m])[::-1] for i in range(0, n)]\n"}

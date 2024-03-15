@@ -1,0 +1,1 @@
+{"trg_prediction": "labels = [0, 6, 5, 4, 2]\nresult = tf.one_hot(labels, 10)\n"}

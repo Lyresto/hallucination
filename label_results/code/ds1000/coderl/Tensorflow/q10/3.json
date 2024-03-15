@@ -1,0 +1,1 @@
+{"trg_prediction": "import tensorflow as tf\n\ndef mask_tensor(lengths):\n\treturn [tf.zeros((8, len(lengths)), dtype=tf.int32) for _ in lengths]\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "# Compute row totals\nrow_totals = df.iloc[:, 1:].sum(axis=1)\n\n# Divide each value by its corresponding row total\ndf.iloc[:, 1:] = df.iloc[:, 1:].div(row_totals, axis=0)\n\n# Round to 3 decimal places\ndf.iloc[:, 1:] = df.iloc[:, 1:].round(3)\n\n# Rename columns\ndf.columns = ['cat', 'val1%', 'val2%', 'val3%', 'val4%']\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "y1 = np.random.randint(0, 10, 10)\ny2 = np.random.randint(0, 10, 10)\ny3 = np.random.randint(0, 10, 10)\n\nplt.plot(x, y1, linestyle='-', label='solid')\nplt.plot(x, y2, linestyle='--', label='dashed')\nplt.plot(x, y3, linestyle=':', label='dotted')\n\nplt.legend()\nplt.show()\n"}

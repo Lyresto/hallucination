@@ -1,0 +1,1 @@
+{"trg_prediction": "result = ss.anderson_ksamp([x1, x2])\nprint(result)\n"}

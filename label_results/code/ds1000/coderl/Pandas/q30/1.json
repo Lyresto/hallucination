@@ -1,0 +1,1 @@
+{"trg_prediction": "from copy import deepcopy\nimport pandas as pd\ndf = pd.DataFrame(\n\t{'HeaderA': [476],\n     'HeaderB': [4365],\n     'HeaderC': [457]})\ndf = deepcopy(df)\ndf.rename(columns={'HeaderA': 'HeaderAX', 'HeaderB': 'HeaderBX', 'HeaderC': 'HeaderCX'}, inplace=True)\n"}

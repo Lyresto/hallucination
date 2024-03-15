@@ -1,0 +1,1 @@
+{"trg_prediction": "mean = col.mean()\nstandard_deviation = np.sqrt(col.power(2).mean() - mean**2)\n"}

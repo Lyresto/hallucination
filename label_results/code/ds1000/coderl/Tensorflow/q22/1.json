@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\n# tf.reduce_sum doesn't allow to reduce by row\ndef dist(a,b):\n\treturn np.sqrt(np.sub(a,b))**2\n\n# what I want to do is calculate the L2 distance d(A,B) element-wise. \n# First I did a tf.sub(lhs, rhs) to get\n[\n[1,1,1],\n[0,0,0],\n[1,1,1]\n]\n# and then I want to do an element-wise reduce which returns \n[\n3,\n  0\n]\n\n"}

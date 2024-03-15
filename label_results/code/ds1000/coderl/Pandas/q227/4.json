@@ -1,0 +1,1 @@
+{"trg_prediction": "from itertools import cycle\n\ndef get_first_first(df):\n\tfor i in df.itertuples():\n\t\tyield i[0]\n\ndef join_dataframes(f, *args):\n\tfor i in cycle(f):\n\t\tfor j in i:\n\t\t\targs[0].append(j)\n\t\t\targs[1].append(i.next())\n\treturn pd.DataFrame(args[0], args[1])\n"}

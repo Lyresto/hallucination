@@ -1,0 +1,5 @@
+plt.plot(x, y)
+plt.title(r"$\boldsymbol{\phi}$", fontsize=16)
+plt.xlabel("x")
+plt.ylabel("y")
+plt.show()

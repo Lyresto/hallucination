@@ -1,0 +1,108 @@
+[
+  [
+    {
+      "type": 0,
+      "use model": true,
+      "with code": false,
+      "notice function": true,
+      "method": "Please provide a new problem that is related to some keywords mentioned above but introduces new keywords with major logical differences, and provide the implementation code for the new problem.\nNote: the implementation code should be wrapped in \"```\".",
+      "examples": null,
+      "checked": true
+    },
+    {
+      "type": 0,
+      "use model": true,
+      "with code": true,
+      "method": "Please introduce some statements or logic completely unrelated to the problem into the code.\nNote: Do not introduce print statements, dead code, or statements that do not affect the return value.",
+      "examples": null,
+      "checked": true
+    }
+  ],
+  [
+    {
+      "type": 1,
+      "use model": true,
+      "with code": true,
+      "method": "Please introduce some small logical errors(not grammar errors) into the code(but must be related to the problem), such as ",
+      "examples": ["expression error", "expression error or variable usage error", "add a branch", "constant error", "branch condition error", "remove a branch",
+        "remove an assignment statement", "add a control flow statement(i.e. break or continue)", "remove a control flow statement(i.e. break or continue)"],
+      "checked": true
+    }
+  ],
+  [
+    {
+      "type": 2,
+      "use model": false,
+      "with code": true,
+      "method": "generate_copy_of_input|input",
+      "examples": null,
+      "checked": true
+    },
+    {
+      "type": 2,
+      "use model": true,
+      "with code": true,
+      "method": "Please introduce duplicate statements/code blocks into the code (there can be slight differences between two duplicate statements).",
+      "examples": null,
+      "checked": true
+    },
+    {
+      "type": 2,
+      "use model": false,
+      "with code": true,
+      "method": "generate_function_duplication|code",
+      "examples": null,
+      "checked": true
+    },
+    {
+      "type": 2,
+      "use model": false,
+      "with code": true,
+      "method": "generate_unlimited_code|code",
+      "examples": null,
+      "checked": true
+    }
+  ],
+  [
+    {
+      "type": 3,
+      "use model": false,
+      "with code": true,
+      "method": "generate_code_with_invalid_identifier|code",
+      "examples": null,
+      "checked": true
+    },
+    {
+      "type": 3,
+      "use model": true,
+      "with code": true,
+      "method": "Please introduce some library method related errors into the code, such as ",
+      "examples": ["missing parameter(s)", "incorrect parameter(s)", "an irrelevant call to other method in this library", "incorrect library method selection"]
+    }
+  ],
+  [
+    {
+      "type": 4,
+      "use model": true,
+      "with code": true,
+      "keep right": true,
+      "method": "Please introduce a redundant statement into the code, such as ",
+      "examples": ["build an expression using certain variables/constants in the code and then assign it to a variable that will not be used later",
+        "perform an identity transformation on a variable", "perform an identity transformation on a variable"],
+      "checked": true
+    },
+    {
+      "type": 4,
+      "use model": false,
+      "with code": true,
+      "method": "generate_invalid_code|code",
+      "examples": null,
+      "checked": true
+    }
+  ],
+  {
+    "filter": [
+      "相似度判据"
+    ]
+  }
+]

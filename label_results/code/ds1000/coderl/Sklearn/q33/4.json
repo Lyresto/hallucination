@@ -1,0 +1,1 @@
+{"trg_prediction": "from math import exp,sqrt\nfrom collections import defaultdict\nfrom itertools import product\n\ndef fit_regressor(y, x):\n\td = defaultdict(list)\n\tfor i, xi in enumerate(x):\n\t\td[i].append(y[i])\n\tfor k, v in d.items():\n\t\tv.sort()\n\treturn regressor(array([sqrt(xi/yi) for xi, yi in product(x, y)]), x_index=0)\n"}

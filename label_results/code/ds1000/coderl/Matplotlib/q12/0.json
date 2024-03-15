@@ -1,0 +1,1 @@
+{"trg_prediction": "seaborn.figure(figsize=(8, 8))\nseaborn.relplot(df, x=\"Gender\", y=\"Height (cm)\", color=\"Weight (kg)\")\nplt.show()\n"}

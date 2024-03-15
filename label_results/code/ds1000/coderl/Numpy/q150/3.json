@@ -1,0 +1,1 @@
+{"trg_prediction": "import numpy as np\n\ndef is_contained(a):\n\tnumber = 0\n\tfor x in a:\n\t\tif x == number:\n\t\t\treturn True\n\t\telse:\n\t\t\tnumber += 1\n\treturn False\n"}

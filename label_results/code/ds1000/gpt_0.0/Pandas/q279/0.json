@@ -1,0 +1,1 @@
+{"trg_prediction": "# Solution for deleting particular days\ndates_to_delete = ['2020-02-17', '2020-02-18']\nfor date in dates_to_delete:\n    df = df[df.index.date != pd.to_datetime(date).date()]\n\n# Solution for converting date to desired format\ndf['DayOfWeek'] = df.index.strftime('%d-%b-%Y %A')\ndf = df[['DayOfWeek'] + list(df.columns[:-1])]\nEND SOLUTION"}

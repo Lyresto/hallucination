@@ -1,0 +1,1 @@
+{"trg_prediction": "# SOLUTION END\nimport numpy as np\ndf = pd.DataFrame({\"x\": np.arange(10), \"y\": np.arange(10)})\ndf.plot(x=\"x\", y=\"y\")\n"}

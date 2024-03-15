@@ -1,0 +1,1 @@
+{"trg_prediction": "df = pd.DataFrame({'x': x, 'y': y})\n\n# SOLUTION END\n\nf, ax = plt.subplots()\ndf['y'].plot(f, ax=ax)\nf.suptitle('Title', size=20)\nf.set_facecolor('0.5')\n\n# SOLUTION START\n# [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]\n"}

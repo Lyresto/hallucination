@@ -1,0 +1,1 @@
+{"trg_prediction": "fig, ax = plt.subplots(1, 2, figsize=(10, 5))\nax[0].plot(x, y, 'o', label='y')\nax[0].plot(x, z, 'o', label='z')\nax[0].set_title('Y and Z')\nax[0].legend()\n\nax[1].plot(x, a, 'o', label='a')\nax[1].set_title('A')\nax[1].legend()\n\n#"}

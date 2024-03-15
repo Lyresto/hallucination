@@ -1,0 +1,1 @@
+{"trg_prediction": "def filter_dataframe(df, filt):\n\treturn df.reindex(df.index.append(filt.index).set_index(['a', 'b'])).to_dict('records')\n"}

@@ -1,0 +1,1 @@
+{"trg_prediction": "import pandas as pd\ndef mean(df):\n\tv_col = df.columns.values\n\treturn pd.DataFrame(dict.fromkeys(v_col), index=v_col).mean()\n"}

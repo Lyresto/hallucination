@@ -1,0 +1,1 @@
+df = df.loc[(abs(df.filter(like='Value')) < 1).all(axis=1)]

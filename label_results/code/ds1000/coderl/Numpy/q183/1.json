@@ -1,0 +1,1 @@
+{"trg_prediction": "def remove_contour(c, contours):\n\tprint(c in contours)\n\tfor i,contour in enumerate(contours):\n\t\tif np.all(np.isnan(contour)):\n\t\t\tcontours.remove(contour)\n\t\t\tbreak\n\treturn len(contours)==0\n"}

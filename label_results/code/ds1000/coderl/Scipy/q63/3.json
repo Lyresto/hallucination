@@ -1,0 +1,1 @@
+{"trg_prediction": "import scipy as sf\nimport numpy as np\n\ndef dct_matrix(N):\n\tmatrix = np.zeros((N,N),dtype=np.complex128)\n\tfor i in range(N):\n\t\tfor j in range(N):\n\t\t\tmatrix[i,j] = np.abs(np.fft.fft(matrix[i,:j]+matrix[i,j+N:]))\n\treturn matrix\n"}

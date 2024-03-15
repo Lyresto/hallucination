@@ -1,0 +1,1 @@
+{"trg_prediction": "df['Altered'] = False\nfor user in df['UserId'].unique():\n    user_df = df[df['UserId'] == user]\n    altered_df = user_df.sample(frac=0.2, random_state=0)\n    df.loc[altered_df.index, 'Quantity'] = 0\n    df.loc[altered_df.index, 'Altered'] = True\nEND SOLUTION\n"}

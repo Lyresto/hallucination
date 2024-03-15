@@ -1,0 +1,1 @@
+{"trg_prediction": "plt.imshow(H, cmap='gray', interpolation='nearest')\nplt.colorbar()\nplt.show()\n"}
