@@ -13,9 +13,9 @@
     - 用于对ds1000数据集的生成代码进行评测
     
     -  |   参数名   |   参数值   |
-      | :--: | :--: |
-      |   base_dir   |  DS-1000数据集所在文件夹    |
-      |    model  |   评测的代码是被什么模型生成的   |
+        | :--: | :--: |
+        |   base_dir   |  DS-1000数据集所在文件夹    |
+        |    model  |   评测的代码是被什么模型生成的   |
     
 2. ds1000_sample.py
     - 用于对ds1000数据集生成的代码进行采样
@@ -30,9 +30,9 @@
 3. humaneval_code_judge.py
     - 用于对humaneval数据集的生成代码进行评测
     -  |   参数名   |   参数值   |
-      | :--: | :--: |
-      |   base_project_dir   |  humaneval数据集所在文件夹    |
-      |    completion_file  |   生成代码所在文件   |
+        | :--: | :--: |
+        |   base_project_dir   |  humaneval数据集所在文件夹    |
+        |    completion_file  |   生成代码所在文件   |
 
 ## 三、data_score
 1. models
