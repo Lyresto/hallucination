@@ -29,7 +29,7 @@ class ClassifierModel(nn.Module):
         return x
 
 
-def evaluate():
+def evaluate(model, val_loader):
     model.eval()
     correct = 0
     wrong = 0
@@ -57,58 +57,51 @@ def evaluate():
     return accuracy
 
 
-input_size = 8
-num_classes = 5
+def main():
+    with open(f'score_data_{data_version}.json') as f:
+        data = json.load(f)
 
-hidden_size = 16
-batch_size = 4
-print(batch_size)
-num_epochs = 160
-lr = 5e-4
-data_version = 7
+    metrics = []
+    scores = []
+    for item in data:
+        metrics.append(list(item["metrics"].values()))
+        scores.append(item["scores"])
+    metrics = torch.tensor(metrics, dtype=torch.float)
+    scores = torch.tensor(scores, dtype=torch.float)
 
-# writer.add_hparams({
-#     "hidden size": hidden_size,
-#     "batch size": batch_size,
-#     "epochs": num_epochs,
-#     "lr": lr,
-#     "data version": data_version
-# }, {})
-with open(f'score_data_{data_version}.json') as f:
-    data = json.load(f)
+    metric_train, metric_val, score_train, score_val = train_test_split(metrics, scores, test_size=0.2, random_state=42)
 
-metrics = []
-scores = []
-for item in data:
-    metrics.append(list(item["metrics"].values()))
-    scores.append(item["scores"])
-metrics = torch.tensor(metrics, dtype=torch.float)
-scores = torch.tensor(scores, dtype=torch.float)
+    train_dataset = TensorDataset(metric_train, score_train)
+    val_dataset = TensorDataset(metric_val, score_val)
 
-metric_train, metric_val, score_train, score_val = train_test_split(metrics, scores, test_size=0.2, random_state=42)
+    train_loader = DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=True)
+    val_loader = DataLoader(dataset=val_dataset, batch_size=batch_size, shuffle=False)
 
-train_dataset = TensorDataset(metric_train, score_train)
-val_dataset = TensorDataset(metric_val, score_val)
+    model = ClassifierModel(input_size, hidden_size, num_classes)
+    optimizer = optim.Adam(model.parameters(), lr=lr)
 
-train_loader = DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=True)
-val_loader = DataLoader(dataset=val_dataset, batch_size=batch_size, shuffle=False)
-
-model = ClassifierModel(input_size, hidden_size, num_classes)
-optimizer = optim.Adam(model.parameters(), lr=lr)
+    for epoch in range(num_epochs):
+        model.train()
+        running_loss = 0.0
+        for metric, score in train_loader:
+            optimizer.zero_grad()
+            output = model(metric)
+            loss = torch.norm(output - score, dim=1).sum()
+            loss.backward()
+            optimizer.step()
+            running_loss += loss.item()
+        epoch_loss = running_loss / len(data)
+        print(f'Epoch [{epoch + 1}/{num_epochs}], Loss: {epoch_loss:.4f}')
+        evaluate(model, val_loader)
 
 
-for epoch in range(num_epochs):
-    model.train()
-    running_loss = 0.0
-    for metric, score in train_loader:
-        optimizer.zero_grad()
-        output = model(metric)
-        loss = torch.norm(output - score, dim=1).sum()
-        loss.backward()
-        optimizer.step()
-        running_loss += loss.item()
-    epoch_loss = running_loss / len(data)
-    print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {epoch_loss:.4f}')
-    evaluate()
-    # writer.add_scalar('Train/Loss', epoch_loss, epoch)
-    # writer.add_scalar('Validation/Accuracy', evaluate(), epoch)
+if __name__ == '__main__':
+    input_size = 8
+    num_classes = 5
+
+    hidden_size = 16
+    batch_size = 4
+    num_epochs = 160
+    lr = 5e-4
+    data_version = 7
+    main()

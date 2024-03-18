@@ -66,49 +66,36 @@ def has_python_reversed_words(_problem):
     return False
 
 
-with open("code_alpaca_20k.json") as f:
-    problems = json.load(f)
+def main():
+    with open("code_alpaca_20k.json") as f:
+        problems = json.load(f)
 
-filtered_problems = []
-cnt = 0
-for problem in tqdm(problems):
-    key_words = ["following code", "rewrite", "modify", "edit", "update",
-                 "given code", "refactor", "complete"]
-    if any(key_word in problem["instruction"].lower() for key_word in key_words) and len(problem["input"]) == 0:
-        continue
-    filtered_problems.append(problem)
-
-    python = False
-    if 10 <= len(list(problem["output"])) <= 2500:
-        if not has_excluded_languages(problem) and has_python_reversed_words(problem) and is_python_file(problem):
-            python = True
-        else:
-            python = False
-        if python:
-            filtered_problems.append(problem)
-            if len(filtered_problems) % 200 == 0:
-                print("get " + str(len(filtered_problems)) + " in " + str(cnt) + " cases")
-                with open("./code_alpaca_20k_filtered_5.json", 'w+') as f:
-                    f.write(json.dumps(filtered_problems, indent=4))
-    cnt += 1
-
-    code = problem["output"]
-    if not code.startswith('def'):
-        continue
-    if len(re.findall(r'[ \t]return ', code)) == 0:
-        continue
-    code_lines_new = []
-    in_func = False
-    for line_ in code.split('\n'):
-        if line_.startswith('def'):
-            in_func = True
-        elif not re.match('([ \t]).*', line_):
-            in_func = False
-        if in_func:
-            code_lines_new.append(line_)
-    problem["output"] = '\n'.join(code_lines_new).strip()
-    if len(re.findall(r'print\(', problem["output"])) == 0:
+    filtered_problems = []
+    cnt = 0
+    for problem in tqdm(problems):
+        key_words = ["following code", "rewrite", "modify", "edit", "update",
+                     "given code", "refactor", "complete"]
+        if any(key_word in problem["instruction"].lower() for key_word in key_words) and len(problem["input"]) == 0:
+            continue
         filtered_problems.append(problem)
 
-# with open("./code_alpaca_20k_filtered_6.json", 'w+') as f:
-#     f.write(json.dumps(filtered_problems, indent=4))
+        python = False
+        if 10 <= len(list(problem["output"])) <= 2500:
+            if not has_excluded_languages(problem) and has_python_reversed_words(problem) and is_python_file(problem):
+                python = True
+            else:
+                python = False
+            if python:
+                filtered_problems.append(problem)
+                if len(filtered_problems) % 200 == 0:
+                    print("get " + str(len(filtered_problems)) + " in " + str(cnt) + " cases")
+                    with open(output_file, 'w+') as f:
+                        f.write(json.dumps(filtered_problems, indent=4))
+
+    with open(output_file, 'w+') as f:
+        f.write(json.dumps(filtered_problems, indent=4))
+
+
+if __name__ == '__main__':
+    output_file = 'code_alpaca_20k_filtered_7.json'
+    main()

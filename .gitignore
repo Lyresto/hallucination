@@ -1,4 +1,6 @@
-/*.*
+/*.json
+/*.py
+/*.csv
 .idea
 .gitignore
 testFolder
@@ -14,4 +16,9 @@ generate_results/check_tool.py
 generate_results/vision_tool.py
 label_results/convert_xlsx2json.py
 label_results/*.xlsx
+label_results/test_code*
+label_results/tool.py
+label_results/*_pids.json
+label_results/test_problems.json
+
 

@@ -45,6 +45,7 @@ def execute_code():
 
 
 def fix_code_v2(code_: str, prompt_: str = None):
+    code_ = re.sub('\t', '    ', code_)
     funcs = []
     start = 0
     if prompt_ is not None:
@@ -153,32 +154,25 @@ def fix_check_func(func: str):
     return head + "\n" + new_func
 
 
-if __name__ == '__main__':
-    base_project_dir = "D:\\代码分析\\数据\\CodeGen_Results\\Human-eval"
+def main():
     configs = {}
     result = []
-    # model = ["chatgpt", "codegeex2", "codegen25"]
-
+    all_pass = 0
+    all_pass_point = 0
     with open(base_project_dir + "\\data\\human-eval-v2-20210705.jsonl") as config_file:
         for line in config_file:
             config_line = json.loads(line)
             configs[config_line["task_id"]] = config_line
     codes_result = []
-    model = "coderl"
     with open(
-            "modified.jsonl",
+            completion_file,
             encoding='utf8') as f:
         for line in f:
             codes_result.append(json.loads(line))
-    # with xlrd.open_workbook("C:\\Users\\Dell\\Desktop\\代码分析\\数据\\weakness\\humaneval_new.xlsx") as code_file:
     cnt_all = []
-    # index = 687
     for line in codes_result:
-        # if index > 0:
-        #     index -= 1
-        #     continue
-        taskId = line["task_id"]
-        config = configs[taskId]
+        task_id = line["task_id"]
+        config = configs[task_id]
         code = line["completion"]
         judge_code = "from typing import List, Tuple, Optional, Any\n\n\n" + \
                      fix_code_v2(code, config["prompt"]) \
@@ -193,14 +187,24 @@ if __name__ == '__main__':
         pss_cnt = execute_code()
         cnt_all.append(pss_cnt)
         all_case = len(re.findall(r'candidate\(', config["test"]))
-        print(f'{taskId}: {pss_cnt} / {all_case}')
+        print(f'{task_id}: {pss_cnt} / {all_case}')
         if all_case < pss_cnt:
             print("error pass cnt")
             exit(-1)
+        if all_case == pss_cnt:
+            all_pass += 1
+        all_pass_point += pss_cnt
         result.append({
             "pass": pss_cnt,
             "all": all_case
         })
 
-    with open(f'modified_result.json', 'w+') as f:
+    with open(f'result.json', 'w+') as f:
         f.write(json.dumps(result))
+    print(all_pass, all_pass_point)
+
+
+if __name__ == '__main__':
+    base_project_dir = "path/to/human-eval"
+    completion_file = "completion.jsonl"
+    main()

@@ -20,23 +20,29 @@ class ClassifierModel(nn.Module):
         return x
 
 
-model = ClassifierModel(7, 16, 5)
-model.load_state_dict(torch.load('models/2023-12-01_22-35-03__0.5730337078651685__batch2.pth'))
-model.eval()
+def main():
+    model = ClassifierModel(7, 16, 5)
+    model.load_state_dict(torch.load(score_model))
+    model.eval()
 
-with open('../code_alpaca_20k_filtered_6.json') as f:
-    data = json.load(f)
+    with open(base_dataset) as f:
+        data = json.load(f)
 
-type_cnt = [0] * 5
-for item in tqdm(data):
-    metrics = list(item["metrics"].values())[:7]
-    scores = model(torch.tensor(metrics).to(torch.float))
-    if item == data[0]:
-        print(scores)
-    item["scores"] = scores.tolist()
-    type_cnt[argmax(scores).item()] += 1
+    type_cnt = [0] * 5
+    for item in tqdm(data):
+        metrics = list(item["metrics"].values())[:7]
+        scores = model(torch.tensor(metrics).to(torch.float))
+        if item == data[0]:
+            print(scores)
+        item["scores"] = scores.tolist()
+        type_cnt[argmax(scores).item()] += 1
 
-print(type_cnt)
-print([it / sum(type_cnt) for it in type_cnt])
-# with open('../code_alpaca_20k_filtered_6.json', 'w+') as f:
-#     f.write(json.dumps(data, indent=4))
+    with open(base_dataset, 'w+') as f:
+        f.write(json.dumps(data, indent=4))
+
+
+if __name__ == '__main__':
+    base_dataset = "path/to/your/base/dataset"
+    score_model = "path/to/your/score/model"
+    main()
+
